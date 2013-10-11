@@ -1,0 +1,87 @@
+<Type Name="DebugLevel" FullName="ExitGames.Client.Photon.DebugLevel">
+  <TypeSignature Language="C#" Value="public enum DebugLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DebugLevel extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ALL">
+      <MemberSignature Language="C#" Value="ALL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.DebugLevel ALL = unsigned int8(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.DebugLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR">
+      <MemberSignature Language="C#" Value="ERROR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.DebugLevel ERROR = unsigned int8(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.DebugLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="INFO">
+      <MemberSignature Language="C#" Value="INFO" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.DebugLevel INFO = unsigned int8(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.DebugLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OFF">
+      <MemberSignature Language="C#" Value="OFF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.DebugLevel OFF = unsigned int8(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.DebugLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WARNING">
+      <MemberSignature Language="C#" Value="WARNING" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.DebugLevel WARNING = unsigned int8(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.DebugLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

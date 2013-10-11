@@ -1,0 +1,20 @@
+<Type Name="SupportClass+IntegerMillisecondsDelegate" FullName="ExitGames.Client.Photon.SupportClass+IntegerMillisecondsDelegate">
+  <TypeSignature Language="C#" Value="public delegate int SupportClass.IntegerMillisecondsDelegate();" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed SupportClass/IntegerMillisecondsDelegate extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Int32</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

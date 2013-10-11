@@ -1,0 +1,61 @@
+<Type Name="OperationRequest" FullName="ExitGames.Client.Photon.OperationRequest">
+  <TypeSignature Language="C#" Value="public class OperationRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationRequest extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OperationRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationCode">
+      <MemberSignature Language="C#" Value="public byte OperationCode;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 OperationCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;byte,object&gt; Parameters;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Collections.Generic.Dictionary`2&lt;unsigned int8, object&gt; Parameters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.Byte,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,66 @@
+<Type Name="LiteEventCode" FullName="ExitGames.Client.Photon.Lite.LiteEventCode">
+  <TypeSignature Language="C#" Value="public static class LiteEventCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LiteEventCode extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public const byte Join = 255;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 Join = (255)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>255</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Leave">
+      <MemberSignature Language="C#" Value="public const byte Leave = 254;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 Leave = (254)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>254</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertiesChanged">
+      <MemberSignature Language="C#" Value="public const byte PropertiesChanged = 253;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 PropertiesChanged = (253)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>253</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

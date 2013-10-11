@@ -1,0 +1,378 @@
+<Type Name="StatusCode" FullName="ExitGames.Client.Photon.StatusCode">
+  <TypeSignature Language="C#" Value="public enum StatusCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusCode extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="Connect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode Connect = int32(1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="Disconnect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode Disconnect = int32(1025)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectByServer">
+      <MemberSignature Language="C#" Value="DisconnectByServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode DisconnectByServer = int32(1041)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectByServerLogic">
+      <MemberSignature Language="C#" Value="DisconnectByServerLogic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode DisconnectByServerLogic = int32(1043)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectByServerUserLimit">
+      <MemberSignature Language="C#" Value="DisconnectByServerUserLimit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode DisconnectByServerUserLimit = int32(1042)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionEstablished">
+      <MemberSignature Language="C#" Value="EncryptionEstablished" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode EncryptionEstablished = int32(1048)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionFailedToEstablish">
+      <MemberSignature Language="C#" Value="EncryptionFailedToEstablish" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode EncryptionFailedToEstablish = int32(1049)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="Exception" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode Exception = int32(1026)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionOnConnect">
+      <MemberSignature Language="C#" Value="ExceptionOnConnect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode ExceptionOnConnect = int32(1023)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionOnReceive">
+      <MemberSignature Language="C#" Value="ExceptionOnReceive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode ExceptionOnReceive = int32(1039)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalReceiveException">
+      <MemberSignature Language="C#" Value="InternalReceiveException" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode InternalReceiveException = int32(1039)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Replaced by ExceptionOnReceive")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueIncomingReliableWarning">
+      <MemberSignature Language="C#" Value="QueueIncomingReliableWarning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode QueueIncomingReliableWarning = int32(1033)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueIncomingUnreliableWarning">
+      <MemberSignature Language="C#" Value="QueueIncomingUnreliableWarning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode QueueIncomingUnreliableWarning = int32(1035)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueOutgoingAcksWarning">
+      <MemberSignature Language="C#" Value="QueueOutgoingAcksWarning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode QueueOutgoingAcksWarning = int32(1031)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueOutgoingReliableWarning">
+      <MemberSignature Language="C#" Value="QueueOutgoingReliableWarning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode QueueOutgoingReliableWarning = int32(1027)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueOutgoingUnreliableWarning">
+      <MemberSignature Language="C#" Value="QueueOutgoingUnreliableWarning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode QueueOutgoingUnreliableWarning = int32(1029)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueSentWarning">
+      <MemberSignature Language="C#" Value="QueueSentWarning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode QueueSentWarning = int32(1037)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityExceptionOnConnect">
+      <MemberSignature Language="C#" Value="SecurityExceptionOnConnect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode SecurityExceptionOnConnect = int32(1022)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendError">
+      <MemberSignature Language="C#" Value="SendError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode SendError = int32(1030)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpRouterResponseEndpointUnknown">
+      <MemberSignature Language="C#" Value="TcpRouterResponseEndpointUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode TcpRouterResponseEndpointUnknown = int32(1046)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("TCP routing was removed after becoming obsolete.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpRouterResponseNodeIdUnknown">
+      <MemberSignature Language="C#" Value="TcpRouterResponseNodeIdUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode TcpRouterResponseNodeIdUnknown = int32(1045)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("TCP routing was removed after becoming obsolete.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpRouterResponseNodeNotReady">
+      <MemberSignature Language="C#" Value="TcpRouterResponseNodeNotReady" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode TcpRouterResponseNodeNotReady = int32(1047)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("TCP routing was removed after becoming obsolete.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpRouterResponseOk">
+      <MemberSignature Language="C#" Value="TcpRouterResponseOk" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode TcpRouterResponseOk = int32(1044)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("TCP routing was removed after becoming obsolete.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeoutDisconnect">
+      <MemberSignature Language="C#" Value="TimeoutDisconnect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.StatusCode TimeoutDisconnect = int32(1040)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.StatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

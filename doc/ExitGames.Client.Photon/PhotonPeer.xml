@@ -1,0 +1,1045 @@
+<Type Name="PhotonPeer" FullName="ExitGames.Client.Photon.PhotonPeer">
+  <TypeSignature Language="C#" Value="public class PhotonPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PhotonPeer extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PhotonPeer (ExitGames.Client.Photon.ConnectionProtocol protocolType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(valuetype ExitGames.Client.Photon.ConnectionProtocol protocolType) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="protocolType" Type="ExitGames.Client.Photon.ConnectionProtocol" />
+      </Parameters>
+      <Docs>
+        <param name="protocolType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhotonPeer (ExitGames.Client.Photon.IPhotonPeerListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class ExitGames.Client.Photon.IPhotonPeerListener listener) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the constructor with ConnectionProtocol instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="listener" Type="ExitGames.Client.Photon.IPhotonPeerListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhotonPeer (ExitGames.Client.Photon.IPhotonPeerListener listener, ExitGames.Client.Photon.ConnectionProtocol protocolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class ExitGames.Client.Photon.IPhotonPeerListener listener, valuetype ExitGames.Client.Photon.ConnectionProtocol protocolType) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="listener" Type="ExitGames.Client.Photon.IPhotonPeerListener" />
+        <Parameter Name="protocolType" Type="ExitGames.Client.Photon.ConnectionProtocol" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <param name="protocolType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PhotonPeer (ExitGames.Client.Photon.IPhotonPeerListener listener, bool useTcp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class ExitGames.Client.Photon.IPhotonPeerListener listener, bool useTcp) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the constructor with ConnectionProtocol instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="listener" Type="ExitGames.Client.Photon.IPhotonPeerListener" />
+        <Parameter Name="useTcp" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <param name="useTcp">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ByteCountCurrentDispatch">
+      <MemberSignature Language="C#" Value="public int ByteCountCurrentDispatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ByteCountCurrentDispatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ByteCountLastOperation">
+      <MemberSignature Language="C#" Value="public int ByteCountLastOperation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ByteCountLastOperation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesIn">
+      <MemberSignature Language="C#" Value="public long BytesIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesIn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesOut">
+      <MemberSignature Language="C#" Value="public long BytesOut { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelCount">
+      <MemberSignature Language="C#" Value="public byte ChannelCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 ChannelCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandBufferSize">
+      <MemberSignature Language="C#" Value="public int CommandBufferSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CommandBufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public virtual bool Connect (string serverAddress, string applicationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Connect(string serverAddress, string applicationName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serverAddress" Type="System.String" />
+        <Parameter Name="applicationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serverAddress">To be added.</param>
+        <param name="applicationName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrcEnabled">
+      <MemberSignature Language="C#" Value="public bool CrcEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CrcEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugOut">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.DebugLevel DebugOut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExitGames.Client.Photon.DebugLevel DebugOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.DebugLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public virtual void Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disconnect() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectTimeout">
+      <MemberSignature Language="C#" Value="public int DisconnectTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DisconnectTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchIncomingCommands">
+      <MemberSignature Language="C#" Value="public virtual bool DispatchIncomingCommands ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DispatchIncomingCommands() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EstablishEncryption">
+      <MemberSignature Language="C#" Value="public bool EstablishEncryption ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EstablishEncryption() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FetchServerTimestamp">
+      <MemberSignature Language="C#" Value="public virtual void FetchServerTimestamp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FetchServerTimestamp() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncryptionAvailable">
+      <MemberSignature Language="C#" Value="public bool IsEncryptionAvailable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEncryptionAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSendingOnlyAcks">
+      <MemberSignature Language="C#" Value="public bool IsSendingOnlyAcks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSendingOnlyAcks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSimulationEnabled">
+      <MemberSignature Language="C#" Value="public virtual bool IsSimulationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSimulationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitOfUnreliableCommands">
+      <MemberSignature Language="C#" Value="public int LimitOfUnreliableCommands { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LimitOfUnreliableCommands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Listener">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.IPhotonPeerListener Listener { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExitGames.Client.Photon.IPhotonPeerListener Listener" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.IPhotonPeerListener</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalMsTimestampDelegate">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.SupportClass.IntegerMillisecondsDelegate LocalMsTimestampDelegate { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExitGames.Client.Photon.SupportClass/IntegerMillisecondsDelegate LocalMsTimestampDelegate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.SupportClass+IntegerMillisecondsDelegate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalTimeInMilliSeconds">
+      <MemberSignature Language="C#" Value="public int LocalTimeInMilliSeconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LocalTimeInMilliSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Should be replaced by: SupportClass.GetTickCount(). Internally this is used, too.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumTransferUnit">
+      <MemberSignature Language="C#" Value="public int MaximumTransferUnit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumTransferUnit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkSimulationSettings">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.NetworkSimulationSet NetworkSimulationSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExitGames.Client.Photon.NetworkSimulationSet NetworkSimulationSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.NetworkSimulationSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpCustom">
+      <MemberSignature Language="C#" Value="public virtual bool OpCustom (byte customOpCode, System.Collections.Generic.Dictionary&lt;byte,object&gt; customOpParameters, bool sendReliable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpCustom(unsigned int8 customOpCode, class System.Collections.Generic.Dictionary`2&lt;unsigned int8, object&gt; customOpParameters, bool sendReliable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="customOpCode" Type="System.Byte" />
+        <Parameter Name="customOpParameters" Type="System.Collections.Generic.Dictionary&lt;System.Byte,System.Object&gt;" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="customOpCode">To be added.</param>
+        <param name="customOpParameters">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpCustom">
+      <MemberSignature Language="C#" Value="public virtual bool OpCustom (ExitGames.Client.Photon.OperationRequest operationRequest, bool sendReliable, byte channelId, bool encrypt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpCustom(class ExitGames.Client.Photon.OperationRequest operationRequest, bool sendReliable, unsigned int8 channelId, bool encrypt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationRequest" Type="ExitGames.Client.Photon.OperationRequest" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+        <Parameter Name="encrypt" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="operationRequest">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="encrypt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpCustom">
+      <MemberSignature Language="C#" Value="public virtual bool OpCustom (byte customOpCode, System.Collections.Generic.Dictionary&lt;byte,object&gt; customOpParameters, bool sendReliable, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpCustom(unsigned int8 customOpCode, class System.Collections.Generic.Dictionary`2&lt;unsigned int8, object&gt; customOpParameters, bool sendReliable, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="customOpCode" Type="System.Byte" />
+        <Parameter Name="customOpParameters" Type="System.Collections.Generic.Dictionary&lt;System.Byte,System.Object&gt;" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="customOpCode">To be added.</param>
+        <param name="customOpParameters">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpCustom">
+      <MemberSignature Language="C#" Value="public virtual bool OpCustom (byte customOpCode, System.Collections.Generic.Dictionary&lt;byte,object&gt; customOpParameters, bool sendReliable, byte channelId, bool encrypt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpCustom(unsigned int8 customOpCode, class System.Collections.Generic.Dictionary`2&lt;unsigned int8, object&gt; customOpParameters, bool sendReliable, unsigned int8 channelId, bool encrypt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="customOpCode" Type="System.Byte" />
+        <Parameter Name="customOpParameters" Type="System.Collections.Generic.Dictionary&lt;System.Byte,System.Object&gt;" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+        <Parameter Name="encrypt" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="customOpCode">To be added.</param>
+        <param name="customOpParameters">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="encrypt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutgoingStreamBufferSize">
+      <MemberSignature Language="C#" Value="public static int OutgoingStreamBufferSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 OutgoingStreamBufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PacketLossByCrc">
+      <MemberSignature Language="C#" Value="public int PacketLossByCrc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PacketLossByCrc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerID">
+      <MemberSignature Language="C#" Value="public string PeerID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PeerID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerState">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.PeerStateValue PeerState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExitGames.Client.Photon.PeerStateValue PeerState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.PeerStateValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueuedIncomingCommands">
+      <MemberSignature Language="C#" Value="public int QueuedIncomingCommands { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 QueuedIncomingCommands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueuedOutgoingCommands">
+      <MemberSignature Language="C#" Value="public int QueuedOutgoingCommands { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 QueuedOutgoingCommands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterType">
+      <MemberSignature Language="C#" Value="public static bool RegisterType (Type customType, byte code, ExitGames.Client.Photon.SerializeMethod serializeMethod, ExitGames.Client.Photon.DeserializeMethod constructor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RegisterType(class System.Type customType, unsigned int8 code, class ExitGames.Client.Photon.SerializeMethod serializeMethod, class ExitGames.Client.Photon.DeserializeMethod constructor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="customType" Type="System.Type" />
+        <Parameter Name="code" Type="System.Byte" />
+        <Parameter Name="serializeMethod" Type="ExitGames.Client.Photon.SerializeMethod" />
+        <Parameter Name="constructor" Type="ExitGames.Client.Photon.DeserializeMethod" />
+      </Parameters>
+      <Docs>
+        <param name="customType">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="serializeMethod">To be added.</param>
+        <param name="constructor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResentReliableCommands">
+      <MemberSignature Language="C#" Value="public int ResentReliableCommands { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ResentReliableCommands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundTripTime">
+      <MemberSignature Language="C#" Value="public int RoundTripTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RoundTripTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundTripTimeVariance">
+      <MemberSignature Language="C#" Value="public int RoundTripTimeVariance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RoundTripTimeVariance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAcksOnly">
+      <MemberSignature Language="C#" Value="public virtual bool SendAcksOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SendAcksOnly() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendOutgoingCommands">
+      <MemberSignature Language="C#" Value="public virtual bool SendOutgoingCommands ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SendOutgoingCommands() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SentCountAllowance">
+      <MemberSignature Language="C#" Value="public int SentCountAllowance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SentCountAllowance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerAddress">
+      <MemberSignature Language="C#" Value="public string ServerAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerTimeInMilliSeconds">
+      <MemberSignature Language="C#" Value="public int ServerTimeInMilliSeconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ServerTimeInMilliSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Service">
+      <MemberSignature Language="C#" Value="public virtual void Service ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Service() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopThread">
+      <MemberSignature Language="C#" Value="public virtual void StopThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopThread() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimePingInterval">
+      <MemberSignature Language="C#" Value="public int TimePingInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TimePingInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimestampOfLastSocketReceive">
+      <MemberSignature Language="C#" Value="public int TimestampOfLastSocketReceive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TimestampOfLastSocketReceive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrafficStatsElapsedMs">
+      <MemberSignature Language="C#" Value="public long TrafficStatsElapsedMs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 TrafficStatsElapsedMs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrafficStatsEnabled">
+      <MemberSignature Language="C#" Value="public bool TrafficStatsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TrafficStatsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrafficStatsGameLevel">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.TrafficStatsGameLevel TrafficStatsGameLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExitGames.Client.Photon.TrafficStatsGameLevel TrafficStatsGameLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.TrafficStatsGameLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrafficStatsIncoming">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.TrafficStats TrafficStatsIncoming { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExitGames.Client.Photon.TrafficStats TrafficStatsIncoming" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.TrafficStats</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrafficStatsOutgoing">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.TrafficStats TrafficStatsOutgoing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExitGames.Client.Photon.TrafficStats TrafficStatsOutgoing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.TrafficStats</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrafficStatsReset">
+      <MemberSignature Language="C#" Value="public void TrafficStatsReset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrafficStatsReset() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsedProtocol">
+      <MemberSignature Language="C#" Value="public ExitGames.Client.Photon.ConnectionProtocol UsedProtocol { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExitGames.Client.Photon.ConnectionProtocol UsedProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.ConnectionProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VitalStatsToString">
+      <MemberSignature Language="C#" Value="public string VitalStatsToString (bool all);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string VitalStatsToString(bool all) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="all" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="all">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WarningSize">
+      <MemberSignature Language="C#" Value="public int WarningSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WarningSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

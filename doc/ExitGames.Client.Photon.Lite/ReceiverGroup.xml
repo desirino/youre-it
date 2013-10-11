@@ -1,0 +1,59 @@
+<Type Name="ReceiverGroup" FullName="ExitGames.Client.Photon.Lite.ReceiverGroup">
+  <TypeSignature Language="C#" Value="public enum ReceiverGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReceiverGroup extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.ReceiverGroup All = unsigned int8(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.ReceiverGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MasterClient">
+      <MemberSignature Language="C#" Value="MasterClient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.ReceiverGroup MasterClient = unsigned int8(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.ReceiverGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Others">
+      <MemberSignature Language="C#" Value="Others" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.ReceiverGroup Others = unsigned int8(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.ReceiverGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

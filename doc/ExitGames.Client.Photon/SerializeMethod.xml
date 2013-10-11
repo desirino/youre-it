@@ -1,0 +1,23 @@
+<Type Name="SerializeMethod" FullName="ExitGames.Client.Photon.SerializeMethod">
+  <TypeSignature Language="C#" Value="public delegate byte[] SerializeMethod(object customObject);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerializeMethod extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="customObject" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Byte[]</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="customObject">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

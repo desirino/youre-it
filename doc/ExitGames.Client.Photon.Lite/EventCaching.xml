@@ -1,0 +1,129 @@
+<Type Name="EventCaching" FullName="ExitGames.Client.Photon.Lite.EventCaching">
+  <TypeSignature Language="C#" Value="public enum EventCaching" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventCaching extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddToRoomCache">
+      <MemberSignature Language="C#" Value="AddToRoomCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching AddToRoomCache = unsigned int8(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToRoomCacheGlobal">
+      <MemberSignature Language="C#" Value="AddToRoomCacheGlobal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching AddToRoomCacheGlobal = unsigned int8(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotCache">
+      <MemberSignature Language="C#" Value="DoNotCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching DoNotCache = unsigned int8(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeCache">
+      <MemberSignature Language="C#" Value="MergeCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching MergeCache = unsigned int8(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCache">
+      <MemberSignature Language="C#" Value="RemoveCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching RemoveCache = unsigned int8(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromRoomCache">
+      <MemberSignature Language="C#" Value="RemoveFromRoomCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching RemoveFromRoomCache = unsigned int8(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromRoomCacheForActorsLeft">
+      <MemberSignature Language="C#" Value="RemoveFromRoomCacheForActorsLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching RemoveFromRoomCacheForActorsLeft = unsigned int8(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceCache">
+      <MemberSignature Language="C#" Value="ReplaceCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExitGames.Client.Photon.Lite.EventCaching ReplaceCache = unsigned int8(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExitGames.Client.Photon.Lite.EventCaching</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

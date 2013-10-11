@@ -1,0 +1,520 @@
+<Type Name="LitePeer" FullName="ExitGames.Client.Photon.Lite.LitePeer">
+  <TypeSignature Language="C#" Value="public class LitePeer : ExitGames.Client.Photon.PhotonPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LitePeer extends ExitGames.Client.Photon.PhotonPeer" />
+  <AssemblyInfo>
+    <AssemblyName>Photon3DotNet</AssemblyName>
+    <AssemblyVersion>3.2.1.6</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExitGames.Client.Photon.PhotonPeer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected LitePeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected LitePeer (ExitGames.Client.Photon.ConnectionProtocol protocolType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype ExitGames.Client.Photon.ConnectionProtocol protocolType) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="protocolType" Type="ExitGames.Client.Photon.ConnectionProtocol" />
+      </Parameters>
+      <Docs>
+        <param name="protocolType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LitePeer (ExitGames.Client.Photon.IPhotonPeerListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class ExitGames.Client.Photon.IPhotonPeerListener listener) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="listener" Type="ExitGames.Client.Photon.IPhotonPeerListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LitePeer (ExitGames.Client.Photon.IPhotonPeerListener listener, ExitGames.Client.Photon.ConnectionProtocol protocolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class ExitGames.Client.Photon.IPhotonPeerListener listener, valuetype ExitGames.Client.Photon.ConnectionProtocol protocolType) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="listener" Type="ExitGames.Client.Photon.IPhotonPeerListener" />
+        <Parameter Name="protocolType" Type="ExitGames.Client.Photon.ConnectionProtocol" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <param name="protocolType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpChangeGroups">
+      <MemberSignature Language="C#" Value="public virtual bool OpChangeGroups (byte[] groupsToRemove, byte[] groupsToAdd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpChangeGroups(unsigned int8[] groupsToRemove, unsigned int8[] groupsToAdd) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupsToRemove" Type="System.Byte[]" />
+        <Parameter Name="groupsToAdd" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="groupsToRemove">To be added.</param>
+        <param name="groupsToAdd">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpGetProperties">
+      <MemberSignature Language="C#" Value="public virtual bool OpGetProperties (byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpGetProperties(unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpGetPropertiesOfActor">
+      <MemberSignature Language="C#" Value="public virtual bool OpGetPropertiesOfActor (int[] actorNrList, byte[] properties, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpGetPropertiesOfActor(int32[] actorNrList, unsigned int8[] properties, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actorNrList" Type="System.Int32[]" />
+        <Parameter Name="properties" Type="System.Byte[]" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="actorNrList">To be added.</param>
+        <param name="properties">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpGetPropertiesOfActor">
+      <MemberSignature Language="C#" Value="public virtual bool OpGetPropertiesOfActor (int[] actorNrList, string[] properties, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpGetPropertiesOfActor(int32[] actorNrList, string[] properties, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actorNrList" Type="System.Int32[]" />
+        <Parameter Name="properties" Type="System.String[]" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="actorNrList">To be added.</param>
+        <param name="properties">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpGetPropertiesOfGame">
+      <MemberSignature Language="C#" Value="public virtual bool OpGetPropertiesOfGame (byte[] properties, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpGetPropertiesOfGame(unsigned int8[] properties, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Byte[]" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpGetPropertiesOfGame">
+      <MemberSignature Language="C#" Value="public virtual bool OpGetPropertiesOfGame (string[] properties, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpGetPropertiesOfGame(string[] properties, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.String[]" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpJoin">
+      <MemberSignature Language="C#" Value="public virtual bool OpJoin (string gameName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpJoin(string gameName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gameName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="gameName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpJoin">
+      <MemberSignature Language="C#" Value="public virtual bool OpJoin (string gameName, System.Collections.Hashtable gameProperties, System.Collections.Hashtable actorProperties, bool broadcastActorProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpJoin(string gameName, class System.Collections.Hashtable gameProperties, class System.Collections.Hashtable actorProperties, bool broadcastActorProperties) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gameName" Type="System.String" />
+        <Parameter Name="gameProperties" Type="System.Collections.Hashtable" />
+        <Parameter Name="actorProperties" Type="System.Collections.Hashtable" />
+        <Parameter Name="broadcastActorProperties" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="gameName">To be added.</param>
+        <param name="gameProperties">To be added.</param>
+        <param name="actorProperties">To be added.</param>
+        <param name="broadcastActorProperties">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpLeave">
+      <MemberSignature Language="C#" Value="public virtual bool OpLeave ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpLeave() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpRaiseEvent">
+      <MemberSignature Language="C#" Value="public virtual bool OpRaiseEvent (byte eventCode, bool sendReliable, object customEventContent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpRaiseEvent(unsigned int8 eventCode, bool sendReliable, object customEventContent) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCode" Type="System.Byte" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="customEventContent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="eventCode">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="customEventContent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpRaiseEvent">
+      <MemberSignature Language="C#" Value="public virtual bool OpRaiseEvent (byte eventCode, System.Collections.Hashtable customEventContent, bool sendReliable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpRaiseEvent(unsigned int8 eventCode, class System.Collections.Hashtable customEventContent, bool sendReliable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCode" Type="System.Byte" />
+        <Parameter Name="customEventContent" Type="System.Collections.Hashtable" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="eventCode">To be added.</param>
+        <param name="customEventContent">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpRaiseEvent">
+      <MemberSignature Language="C#" Value="public virtual bool OpRaiseEvent (byte eventCode, byte interestGroup, System.Collections.Hashtable customEventContent, bool sendReliable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpRaiseEvent(unsigned int8 eventCode, unsigned int8 interestGroup, class System.Collections.Hashtable customEventContent, bool sendReliable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCode" Type="System.Byte" />
+        <Parameter Name="interestGroup" Type="System.Byte" />
+        <Parameter Name="customEventContent" Type="System.Collections.Hashtable" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="eventCode">To be added.</param>
+        <param name="interestGroup">To be added.</param>
+        <param name="customEventContent">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpRaiseEvent">
+      <MemberSignature Language="C#" Value="public virtual bool OpRaiseEvent (byte eventCode, System.Collections.Hashtable customEventContent, bool sendReliable, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpRaiseEvent(unsigned int8 eventCode, class System.Collections.Hashtable customEventContent, bool sendReliable, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCode" Type="System.Byte" />
+        <Parameter Name="customEventContent" Type="System.Collections.Hashtable" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="eventCode">To be added.</param>
+        <param name="customEventContent">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpRaiseEvent">
+      <MemberSignature Language="C#" Value="public virtual bool OpRaiseEvent (byte eventCode, System.Collections.Hashtable customEventContent, bool sendReliable, byte channelId, int[] targetActors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpRaiseEvent(unsigned int8 eventCode, class System.Collections.Hashtable customEventContent, bool sendReliable, unsigned int8 channelId, int32[] targetActors) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCode" Type="System.Byte" />
+        <Parameter Name="customEventContent" Type="System.Collections.Hashtable" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+        <Parameter Name="targetActors" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="eventCode">To be added.</param>
+        <param name="customEventContent">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="targetActors">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpRaiseEvent">
+      <MemberSignature Language="C#" Value="public virtual bool OpRaiseEvent (byte eventCode, System.Collections.Hashtable customEventContent, bool sendReliable, byte channelId, ExitGames.Client.Photon.Lite.EventCaching cache, ExitGames.Client.Photon.Lite.ReceiverGroup receivers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpRaiseEvent(unsigned int8 eventCode, class System.Collections.Hashtable customEventContent, bool sendReliable, unsigned int8 channelId, valuetype ExitGames.Client.Photon.Lite.EventCaching cache, valuetype ExitGames.Client.Photon.Lite.ReceiverGroup receivers) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCode" Type="System.Byte" />
+        <Parameter Name="customEventContent" Type="System.Collections.Hashtable" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+        <Parameter Name="cache" Type="ExitGames.Client.Photon.Lite.EventCaching" />
+        <Parameter Name="receivers" Type="ExitGames.Client.Photon.Lite.ReceiverGroup" />
+      </Parameters>
+      <Docs>
+        <param name="eventCode">To be added.</param>
+        <param name="customEventContent">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="cache">To be added.</param>
+        <param name="receivers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpRaiseEvent">
+      <MemberSignature Language="C#" Value="public virtual bool OpRaiseEvent (byte eventCode, bool sendReliable, object customEventContent, byte channelId, ExitGames.Client.Photon.Lite.EventCaching cache, int[] targetActors, ExitGames.Client.Photon.Lite.ReceiverGroup receivers, byte interestGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpRaiseEvent(unsigned int8 eventCode, bool sendReliable, object customEventContent, unsigned int8 channelId, valuetype ExitGames.Client.Photon.Lite.EventCaching cache, int32[] targetActors, valuetype ExitGames.Client.Photon.Lite.ReceiverGroup receivers, unsigned int8 interestGroup) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCode" Type="System.Byte" />
+        <Parameter Name="sendReliable" Type="System.Boolean" />
+        <Parameter Name="customEventContent" Type="System.Object" />
+        <Parameter Name="channelId" Type="System.Byte" />
+        <Parameter Name="cache" Type="ExitGames.Client.Photon.Lite.EventCaching" />
+        <Parameter Name="targetActors" Type="System.Int32[]" />
+        <Parameter Name="receivers" Type="ExitGames.Client.Photon.Lite.ReceiverGroup" />
+        <Parameter Name="interestGroup" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="eventCode">To be added.</param>
+        <param name="sendReliable">To be added.</param>
+        <param name="customEventContent">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <param name="cache">To be added.</param>
+        <param name="targetActors">To be added.</param>
+        <param name="receivers">To be added.</param>
+        <param name="interestGroup">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpSetPropertiesOfActor">
+      <MemberSignature Language="C#" Value="public virtual bool OpSetPropertiesOfActor (int actorNr, System.Collections.Hashtable properties, bool broadcast, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpSetPropertiesOfActor(int32 actorNr, class System.Collections.Hashtable properties, bool broadcast, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actorNr" Type="System.Int32" />
+        <Parameter Name="properties" Type="System.Collections.Hashtable" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="actorNr">To be added.</param>
+        <param name="properties">To be added.</param>
+        <param name="broadcast">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpSetPropertiesOfGame">
+      <MemberSignature Language="C#" Value="public virtual bool OpSetPropertiesOfGame (System.Collections.Hashtable properties, bool broadcast, byte channelId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OpSetPropertiesOfGame(class System.Collections.Hashtable properties, bool broadcast, unsigned int8 channelId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>3.2.1.6</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.Hashtable" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="channelId" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <param name="broadcast">To be added.</param>
+        <param name="channelId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
