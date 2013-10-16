@@ -3,8 +3,5 @@ Debug/
 Release/
 Obj/
 
-*.csproj
-*.unityproj
-*.sln
 *.DS_store
 *.userprefs
