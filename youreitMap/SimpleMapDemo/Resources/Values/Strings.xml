@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="app_name" >You Are It Map Demo</string>
+
+  <string name="mapsAppText" >Show Maps App</string>
+  <string name="mapsAppTextDescription">Start up the Android Map application.</string>
+  
+  <string name="streetViewText" >Show Street View</string>
+
+  <string name="activity_label_axml">AXML demo"</string>
+  <string name="activity_description_axml">Load the MapFrament in the layout file.</string>
+
+  <string name="activity_label_mapwithmarkers">New Markers Demo</string>
+  <string name="activity_description_mapwithmarkers">Shows how to add some markers to the map.</string>
+
+  <string name="activity_label_mapwithoverlays">Overlays Test</string>
+  <string name="activity_description_mapwithoverlays">Shows how our overlays are going to work.</string>
+
+</resources>
