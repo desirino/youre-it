@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-    <JavaMaximumHeapSize>1GB</JavaMaximumHeapSize>
+    <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_Froyo|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,6 +58,11 @@
     <Reference Include="GooglePlayServicesLib">
       <HintPath>..\Components\googleplayservices12-12.0.0\lib\android\GooglePlayServicesLib.dll</HintPath>
     </Reference>
+    <Reference Include="SQLite">
+      <HintPath>..\Components\sqlite-net-1.0.1\lib\android\SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Mono.Data.Sqlite" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ErrorDialogFragment.cs" />
@@ -70,6 +75,10 @@
     <Compile Include="MapWithMarkersActivity.cs" />
     <Compile Include="BasicDemoActivity.cs" />
     <Compile Include="SimpleMapDemoActivityAdapter.cs" />
+    <Compile Include="DBFiles\Customization.cs" />
+    <Compile Include="DBFiles\Hotspots.cs" />
+    <Compile Include="DBFiles\PowerUp.cs" />
+    <Compile Include="DBFiles\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -85,6 +94,7 @@
     </None>
     <AndroidResource Include="Resources\Drawable\cafe.png" />
     <AndroidResource Include="Resources\Drawable\cafe1.gif" />
+    <AndroidResource Include="Resources\Raw\youreit.sqlite" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml">
@@ -131,5 +141,14 @@
       <Version>12.0.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+    <XamarinComponentReference Include="sqlite-net">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>1.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Raw\" />
+    <Folder Include="DBFiles\" />
   </ItemGroup>
 </Project>

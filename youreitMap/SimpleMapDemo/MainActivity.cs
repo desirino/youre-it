@@ -1,7 +1,12 @@
 ﻿namespace youreit
 {
-    using System.Collections.Generic;
-
+	using System;
+	using System.Threading;
+	using System.Threading.Tasks;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+	using System.IO;
     using Android.App;
     using Android.Content;
     using Android.Gms.Common;
@@ -9,23 +14,35 @@
     using Android.Util;
     using Android.Views;
     using Android.Widget;
+	using Android.Locations;
 
     using AndroidUri = Android.Net.Uri;
 
 	// **********  ADDED FOR MAP SCREEN
 	using Android.Gms.Maps;
 	using Android.Gms.Maps.Model;
-	using System;
 	// **********  
+
+	/// <summary>
+	/// ADDED FOR DB MANAGEMENT 
+	/// </summary>
+	using SQLite;
+	using Environment = System.Environment;
 	
     [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+	public class MainActivity : Activity, ILocationListener
     {
-        public static readonly int InstallGooglePlayServicesId = 1000;
+		public static readonly int InstallGooglePlayServicesId = 1000;
         public static readonly string Tag = "You're It Map Testing";
 
 		//private SampleActivity activity;
 		private bool _isGooglePlayServicesInstalled;
+
+		//Get Location 
+		static readonly string LocationTag = "- - - - -  Location";
+		Location _currentLocation;
+		LocationManager _locationManager;
+		string _locationProvider;
 
 		// **********  ADDED FOR MAP SCREEN
 		private static readonly LatLng[] HotspotLocations = new[]
@@ -38,10 +55,15 @@
 			new LatLng(45.413712, -75.710656),
 			new LatLng(45.421073, -75.695847)
 		};
+
+		//Lists where all the data is stored 
+		private List<HotspotData> hotspotList;
+		private List<CustomizationData> customizationList;
+		private List<PowerupData> powerupList;
+
 		private GoogleMap _map;
 		private MapFragment _mapFragment;
 		// **********  
-
 
 		// COULD REMOVE :D
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
@@ -63,6 +85,18 @@
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+			//DATAMANAGEMENT STUFF!
+			SQLite3.Config (SQLite3.ConfigOption.Serialized);
+
+			//Returns a list of hotspots (ID, Name, Longtitude, Latitude, Reward, Price, TimeDate)
+			hotspotList = Hotspots.DoSomeDataAccess ();
+			powerupList = Powerups.DoSomeDataAccess ();
+			customizationList = Customizations.DoSomeDataAccess ();
+			Console.WriteLine ("---- " +hotspotList + "---" +  powerupList + "---" + customizationList );
+			//hotspotList.ForEach(item => Console.Write("\n------ " + item.Name));
+
+			InitializeLocationManager();
             _isGooglePlayServicesInstalled = TestIfGooglePlayServicesIsInstalled();
 			//InitializeListView();
 
@@ -70,6 +104,7 @@
 
 			SetContentView(Resource.Layout.MapWithOverlayLayout);
 
+			//Start up location Manager to get long and lat.
 			InitMapFragment();
 			SetupMapIfNeeded();
 			// **********  
@@ -77,8 +112,46 @@
 			//activity = new SampleActivity(Resource.String.activity_label_mapwithoverlays, Resource.String.activity_description_mapwithoverlays, typeof(MapWithOverlaysActivity));
 
 			//activity.Start(this);
+
+
         }
+
 		// **********  ADDED FOR MAP SCREEN
+		void InitializeLocationManager()
+		{
+
+			_locationManager = (LocationManager)GetSystemService (LocationService);
+			Criteria criteriaForLocationService = new Criteria {
+				Accuracy = Accuracy.Fine
+			};
+			IList<string> acceptableLocationProviders = _locationManager.GetProviders (criteriaForLocationService, true);
+
+			if (acceptableLocationProviders.Any ()) {
+				_locationProvider = acceptableLocationProviders.First ();
+			} else {
+				_locationProvider = String.Empty;
+			}
+			Log.Debug(LocationTag, "Using " + _locationProvider + ".");
+
+		}
+
+		public void OnLocationChanged(Location location)
+		{
+			_currentLocation = location;
+		}
+
+		public void OnProviderDisabled(string provider)
+		{
+		}
+
+		public void OnProviderEnabled(string provider)
+		{
+		}
+
+		public void OnStatusChanged(string provider, Availability status, Bundle extras)
+		{
+			Log.Debug(LocationTag, "{0}, {1}", provider, status);
+		}
 
 		protected override void OnPause()
 		{
@@ -91,11 +164,20 @@
 			_map.MarkerClick -= MapOnMarkerClick;
 
 			_map.InfoWindowClick += HandleInfoWindowClick;
+
+			_locationManager.RemoveUpdates(this);
+			Log.Debug(LocationTag, "No longer listening for location updates.");
+
+
 		}
 
 		protected override void OnResume()
 		{
 			base.OnResume();
+			_locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
+			Log.Debug(LocationTag, "Listening for location updates using " + _locationProvider + ".");
+
+
 			if (SetupMapIfNeeded())
 			{
 				_map.MyLocationEnabled = true;
@@ -231,24 +313,22 @@
 		*/
 
         private bool TestIfGooglePlayServicesIsInstalled()
-        {
-            int queryResult = GooglePlayServicesUtil.IsGooglePlayServicesAvailable(this);
-            if (queryResult == ConnectionResult.Success)
-            {
-                Log.Info(Tag, "Google Play Services is installed on this device.");
-                return true;
-            }
+		{
+			int queryResult = GooglePlayServicesUtil.IsGooglePlayServicesAvailable (this);
+			if (queryResult == ConnectionResult.Success) {
+				Log.Info (Tag, "Google Play Services is installed on this device.");
+				return true;
+			}
 
-            if (GooglePlayServicesUtil.IsUserRecoverableError(queryResult))
-            {
-                string errorString = GooglePlayServicesUtil.GetErrorString(queryResult);
-                Log.Error(Tag, "There is a problem with Google Play Services on this device: {0} - {1}", queryResult, errorString);
-                Dialog errorDialog = GooglePlayServicesUtil.GetErrorDialog(queryResult, this, InstallGooglePlayServicesId);
-                ErrorDialogFragment dialogFrag = new ErrorDialogFragment(errorDialog);
+			if (GooglePlayServicesUtil.IsUserRecoverableError (queryResult)) {
+				string errorString = GooglePlayServicesUtil.GetErrorString (queryResult);
+				Log.Error (Tag, "There is a problem with Google Play Services on this device: {0} - {1}", queryResult, errorString);
+				Dialog errorDialog = GooglePlayServicesUtil.GetErrorDialog (queryResult, this, InstallGooglePlayServicesId);
+				ErrorDialogFragment dialogFrag = new ErrorDialogFragment (errorDialog);
 
-                dialogFrag.Show(FragmentManager, "GooglePlayServicesDialog");
-            }
-            return false;
-        }
+				dialogFrag.Show (FragmentManager, "GooglePlayServicesDialog");
+			}
+			return false;
+		}
     }
 }
