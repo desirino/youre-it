@@ -8,3 +8,4 @@ Obj/
 *.sln
 *.DS_store
 *.userprefs
+!UI/*
