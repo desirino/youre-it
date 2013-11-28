@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#6ebbe5">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:id="@+id/HamburgerButton"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/HamburgerButton" />
+    <TextView
+        android:text="You're It"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ProfileButton"
+        android:background="@drawable/profile_icon"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/HotspoteButton"
+        android:background="@drawable/hotspot_icon"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp" />
+</LinearLayout>

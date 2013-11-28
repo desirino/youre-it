@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Youre_It_UI.Youre_It_UI">
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+	<application android:label="Youre-It-UI">
+	</application>
+</manifest>

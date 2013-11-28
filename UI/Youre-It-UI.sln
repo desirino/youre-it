@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youre-It-UI", "Youre-It-UI\Youre-It-UI.csproj", "{B80F306C-F125-4596-91D4-2E361EE63D54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference Solutions", "Reference Solutions", "{8812A1A2-B6D3-4E14-A0AA-653C5879B73C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloMultiScreen", "..\..\..\Projects\HelloMultiScreen\HelloMultiScreen\HelloMultiScreen.csproj", "{5D9B0721-07F3-4D87-9AB4-3BAC094920E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D9B0721-07F3-4D87-9AB4-3BAC094920E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9B0721-07F3-4D87-9AB4-3BAC094920E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9B0721-07F3-4D87-9AB4-3BAC094920E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9B0721-07F3-4D87-9AB4-3BAC094920E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80F306C-F125-4596-91D4-2E361EE63D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80F306C-F125-4596-91D4-2E361EE63D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80F306C-F125-4596-91D4-2E361EE63D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80F306C-F125-4596-91D4-2E361EE63D54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D9B0721-07F3-4D87-9AB4-3BAC094920E8} = {8812A1A2-B6D3-4E14-A0AA-653C5879B73C}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Youre-It-UI\Youre-It-UI.csproj
+	EndGlobalSection
+EndGlobal
