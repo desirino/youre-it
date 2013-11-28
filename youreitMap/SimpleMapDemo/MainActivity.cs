@@ -41,7 +41,7 @@
 		//Get Location 
 		static readonly string LocationTag = "- - - - -  Location";
 		Location _currentLocation;
-		LocationManager _locationManager;
+		LocationManager _locMgr;
 		string _locationProvider;
 
 		// **********  ADDED FOR MAP SCREEN
@@ -60,6 +60,7 @@
 		private List<HotspotData> hotspotList;
 		private List<CustomizationData> customizationList;
 		private List<PowerupData> powerupList;
+		private List<UserData> userList;
 
 		private GoogleMap _map;
 		private MapFragment _mapFragment;
@@ -93,10 +94,14 @@
 			hotspotList = Hotspots.DoSomeDataAccess ();
 			powerupList = Powerups.DoSomeDataAccess ();
 			customizationList = Customizations.DoSomeDataAccess ();
-			Console.WriteLine ("---- " +hotspotList + "---" +  powerupList + "---" + customizationList );
+			userList = User.DoSomeDataAccess ();
+			Console.WriteLine ("---- " +hotspotList + "---" +  powerupList + "---" + customizationList + userList);
 			//hotspotList.ForEach(item => Console.Write("\n------ " + item.Name));
 
-			InitializeLocationManager();
+
+			_locMgr = GetSystemService (Context.LocationService) as LocationManager;
+
+
             _isGooglePlayServicesInstalled = TestIfGooglePlayServicesIsInstalled();
 			//InitializeListView();
 
@@ -117,27 +122,11 @@
         }
 
 		// **********  ADDED FOR MAP SCREEN
-		void InitializeLocationManager()
-		{
-
-			_locationManager = (LocationManager)GetSystemService (LocationService);
-			Criteria criteriaForLocationService = new Criteria {
-				Accuracy = Accuracy.Fine
-			};
-			IList<string> acceptableLocationProviders = _locationManager.GetProviders (criteriaForLocationService, true);
-
-			if (acceptableLocationProviders.Any ()) {
-				_locationProvider = acceptableLocationProviders.First ();
-			} else {
-				_locationProvider = String.Empty;
-			}
-			Log.Debug(LocationTag, "Using " + _locationProvider + ".");
-
-		}
-
 		public void OnLocationChanged(Location location)
 		{
 			_currentLocation = location;
+			Log.Debug(LocationTag, "{0}, {1}", location.Longitude, location.Latitude);
+
 		}
 
 		public void OnProviderDisabled(string provider)
@@ -165,7 +154,7 @@
 
 			_map.InfoWindowClick += HandleInfoWindowClick;
 
-			_locationManager.RemoveUpdates(this);
+			_locMgr.RemoveUpdates(this);
 			Log.Debug(LocationTag, "No longer listening for location updates.");
 
 
@@ -174,7 +163,7 @@
 		protected override void OnResume()
 		{
 			base.OnResume();
-			_locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
+			_locMgr.RequestLocationUpdates (LocationManager.GpsProvider, 2000, 1, this);
 			Log.Debug(LocationTag, "Listening for location updates using " + _locationProvider + ".");
 
 

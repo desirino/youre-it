@@ -1,111 +1,74 @@
-using SQLite;
 using System;
-using System.Data;
+using System.Collections.Generic;
 using System.IO;
+using Mono.Data.Sqlite;
 
 namespace youreit
 {
-	[Table("User")]
-	public class User
+
+	public class UserData
 	{
-		[PrimaryKey, AutoIncrement]
+
+		public UserData(int ID, string Username, int TaggedCount, int Points, Double Longitude, Double Latitude, string Powerups, string Customization, string Hotspots)
+		{
+			this.ID = ID;
+			this.Username = Username;
+			this.TaggedCount = TaggedCount;
+			this.Points = Points;
+			this.Longitude = Longitude;
+			this.Latitude = Latitude;
+			this.PowerUps = PowerUps;
+			this.Customizations = Customization;
+			this.Hotspots = Hotspots;
+		}
+
 		public int ID { get; set; }
 		public string Username { get; set;} 
-		public int Tagged { get; set;}
+		public int TaggedCount { get; set;}
 		public int Points { get; set;}
-		public float Longitude { get; set; }
-		public float Latitude { get; set; }
+		public Double Longitude { get; set; }
+		public Double Latitude { get; set; }
 
 		//Stores ids of all of the following. 
 		public string PowerUps { get; set;} 
-		public string customizations { get; set; }
-		public string Friends { get; set; }
-		public string Events { get; set; }
+		public string Customizations { get; set; }
+		public string Hotspots { get; set; }
 	}
-	
-	public static class UserExample {
 
-		/// <returns>
-		/// Output of test query
-		/// </returns>
-		public static string DoSomeDataAccess () {
+	public class User
+	{
+		public static SqliteConnection connection;
 
-			var output = ""; 
-			Console.WriteLine("---- Creating database, if it doesn't already exist");
+
+		public static List<UserData>  DoSomeDataAccess ()
+		{
+			List<UserData> userList = new List<UserData>(); 
+
 			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
 
-			var db = new SQLiteConnection (dbPath);
-			db.CreateTable<User> ();
+			connection = new SqliteConnection ("Data Source=" + dbPath);
+			connection.Open ();
 
-			if (db.Table<User> ().Count() == 0) {
-				// only insert the data if it doesn't already exist
-				var newUser = new User ();
-				newUser.Username = "Jack";
-				db.Insert (newUser); 
+			// query the database to prove data was inserted!
 
-				newUser = new User ();
-				newUser.Username = "Andrew";
-				db.Insert (newUser); 
+			using (var contents = connection.CreateCommand ()) {
+				contents.CommandText = "SELECT * from [Users]";
+				var r = contents.ExecuteReader ();
+				while (r.Read ())
+					userList.Add(new UserData(
+						Convert.ToInt32(r["ID"]), r ["Username"].ToString(),
+						Convert.ToInt32(r["TaggedCount"]), Convert.ToInt32(r["Points"]),
+						Convert.ToDouble(r["Longitude"]),Convert.ToDouble(r["Latitude"]), 
+						r ["Powerups"].ToString(), r ["Customizations"].ToString(), r ["Hotspots"].ToString()
 
-				newUser = new User ();
-				newUser.Username = "Kevin";
-				db.Insert (newUser);
+					));
 			}
+			connection.Close ();
 
-			Console.WriteLine ("----Reading data using Orm");
-			var table = db.Table<User> ();
-			foreach (var s in table) {
-				output += "\n" + s.ID + " " + s.Username;
-			}
-			Console.WriteLine ("------" + output);
-			return output;
-		}
-
-		public static string MoreComplexQuery () 
-		{
-			var output = "";
-			output += "\nComplex query example: ";
-			string dbPath = Path.Combine (
-				Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
-
-			var db = new SQLiteConnection (dbPath);
-
-			var query = db.Query<User> ("SELECT * FROM [User] WHERE Symbol = ?", "MSFT");
-			foreach (var s in query) {
-				output += "\n" + s.ID + " " + s.Username;
-			}
-
-			return output;
-		}
-
-		public static string Get () 
-		{
-			var output = "";
-			output += "\nGet query example: ";
-			string dbPath = Path.Combine (
-				Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
-
-			var db = new SQLiteConnection (dbPath);
-
-			var returned = db.Get<User>(3);
-
-			return output;
-		}
-
-		public static string Delete () 
-		{
-			var output = "";
-			output += "\nDelete query example: ";
-			string dbPath = Path.Combine (
-				Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
-
-			var db = new SQLiteConnection (dbPath);
-
-			var rowcount = db.Delete(new User(){ID=3});
-
-			return output;
+			return userList;
 		}
 
 
 	}
 }
+	
