@@ -33,7 +33,6 @@
 	public class MainActivity : Activity, ILocationListener
     {
 
-		Window.RequestFeature(WindowFeatures.NoTitle);
 
 		public static readonly int InstallGooglePlayServicesId = 1000;
         public static readonly string Tag = "You're It Map Testing";
@@ -47,6 +46,7 @@
 		LocationManager _locMgr;
 		string _locationProvider;
 
+		//public class List<Tag>
 		// **********  ADDED FOR MAP SCREEN
 		private static readonly LatLng[] HotspotLocations = new[]
 		{
