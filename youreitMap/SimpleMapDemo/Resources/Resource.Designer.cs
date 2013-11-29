@@ -144,10 +144,10 @@ namespace youreit
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int cafe = 2130837504;
+			public const int bar = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int cafe1 = 2130837505;
+			public const int cafe = 2130837505;
 			
 			// aapt resource value: 0x7f020002
 			public const int common_signin_btn_icon_dark = 2130837506;
@@ -222,28 +222,37 @@ namespace youreit
 			public const int common_signin_btn_text_pressed_light = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int ic_plusone_medium_off_client = 2130837530;
+			public const int events = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int ic_plusone_small_off_client = 2130837531;
+			public const int hotel = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int ic_plusone_standard_off_client = 2130837532;
+			public const int ic_plusone_medium_off_client = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int ic_plusone_tall_off_client = 2130837533;
+			public const int ic_plusone_small_off_client = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int Icon = 2130837534;
+			public const int ic_plusone_standard_off_client = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int monkey = 2130837535;
+			public const int ic_plusone_tall_off_client = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int monoandroidsplash = 2130837536;
+			public const int Icon = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int polarbear = 2130837537;
+			public const int monoandroidsplash = 2130837537;
+			
+			// aapt resource value: 0x7f020022
+			public const int resturant = 2130837538;
+			
+			// aapt resource value: 0x7f020023
+			public const int shop = 2130837539;
+			
+			// aapt resource value: 0x7f020024
+			public const int tourism = 2130837540;
 			
 			static Drawable()
 			{

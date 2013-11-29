@@ -9,12 +9,13 @@ namespace youreit
 	public class HotspotData
 	{
 
-		public HotspotData(int ID, string Name, Double Longitude, Double Latitude, string Reward, Double Price, string Time)
+		public HotspotData(int ID, string Name, int Category, Double Latitude, Double Longitude, int Reward, Double Price, string Time)
 		{
 			this.ID = ID;
 			this.Name = Name;
-			this.Longitude = Longitude;
+			this.Category = Category;
 			this.Latitude = Latitude;
+			this.Longitude = Longitude;
 			this.Reward = Reward;
 			this.Price = Price;
 			this.Time = Time;
@@ -22,11 +23,12 @@ namespace youreit
 
 		public int ID { get; set; }
 		public string Name { get; set;}
+		public int Category { get; set; }
 		public string Time { get; set;} 
 		public Double Price { get; set;}
-		public string Reward { get; set; }
-		public Double Longitude { get; set; }
+		public int Reward { get; set; }
 		public Double Latitude { get; set; }
+		public Double Longitude { get; set; }
 
 	}
 
@@ -52,13 +54,13 @@ namespace youreit
 
 				//TODO: Need to learn how to fill this from an external DB. (For a later day)
 				var commands = new[] {
-					"CREATE TABLE [Hotspots] (ID int, Name ntext, Longitude float, Latitude float, Reward string, Price float, Time DateTime );"
+					"CREATE TABLE [Hotspots] (ID int, Name ntext, Category int,  Latitude float, Longitude float, Reward int, Price float, Time DateTime );"
 					,
-					"INSERT INTO [Hotspots] ([ID], [Name], [Longitude], [Latitude], [Reward], [Price]) VALUES ('1', 'Starbucks', '49.1', '49.2', 'No reward', '0.1')"
+					"INSERT INTO [Hotspots] ([ID], [Name], [Category], [Latitude], [Longitude], [Reward], [Price]) VALUES ('1', 'Starbucks', '1', '45.403208', '-75.688433', '1', '0.1')"
 					,
-					"INSERT INTO [Hotspots] ([ID], [Name], [Longitude], [Latitude], [Reward], [Price]) VALUES ('2', 'Starbucks', '59.1', '44.2', 'No reward', '0.1')"
+					"INSERT INTO [Hotspots] ([ID], [Name], [Category], [Latitude], [Longitude], [Reward], [Price]) VALUES ('2', 'Kelseys', '2', '45.397619', '-75.622478', '2', '0.1')"
 					,
-					"INSERT INTO [Hotspots] ([ID], [Name], [Longitude], [Latitude], [Reward], [Price]) VALUES ('3', 'Starbucks', '69.1', '534.2', 'No reward', '0.1')"
+					"INSERT INTO [Hotspots] ([ID], [Name], [Category], [Latitude], [Longitude], [Reward], [Price]) VALUES ('3', 'Pour Boy Pub', '3', '45.413839', '-75.700421', '3', '0.1')"
 
 					,"CREATE TABLE [Powerups] (ID int, Name ntext, Longitude float, Latitude float, Edition int, Price float );"
 					,
@@ -100,9 +102,9 @@ namespace youreit
 				var r = contents.ExecuteReader ();
 				while (r.Read ())
 					hotspotList.Add(new HotspotData(
-						Convert.ToInt32(r["ID"]), r ["Name"].ToString(),
-						Convert.ToDouble(r["Longitude"]),Convert.ToDouble(r["Latitude"]), 
-						r ["Reward"].ToString(), Convert.ToDouble(r["Price"]),
+						Convert.ToInt32(r["ID"]), r ["Name"].ToString(),Convert.ToInt32(r["Category"]),
+						Convert.ToDouble(r["Latitude"]),Convert.ToDouble(r["Longitude"]), 
+						Convert.ToInt32(r["Reward"]), Convert.ToDouble(r["Price"]),
 						r["Time"].ToString()
 						));
 			}

@@ -11,19 +11,19 @@ namespace youreit
     [Activity(Label = "@string/activity_label_mapwithoverlays")]
     public class MapWithOverlaysActivity : Activity
     {
-        private static readonly LatLng InMaui = new LatLng(20.72110, -156.44776);
-        private static readonly LatLng LeaveFromHereToMaui = new LatLng(82.4986, -62.348);
-        private static readonly LatLng[] LocationForCustomIconMarkers = new[]
-		{
-                                                                                new LatLng(40.741773, -74.004986),
-                                                                                new LatLng(41.051696, -73.545667),
-                                                                                new LatLng(41.311197, -72.902646)
-                                                                            };
-        private string _gotoMauiMarkerId;
+//        private static readonly LatLng InMaui = new LatLng(20.72110, -156.44776);
+//        private static readonly LatLng LeaveFromHereToMaui = new LatLng(82.4986, -62.348);
+//        private static readonly LatLng[] LocationForCustomIconMarkers = new[]
+//		{
+//                                                                                new LatLng(40.741773, -74.004986),
+//                                                                                new LatLng(41.051696, -73.545667),
+//                                                                                new LatLng(41.311197, -72.902646)
+//                                                                            };
+//        private string _gotoMauiMarkerId;
         private GoogleMap _map;
         private MapFragment _mapFragment;
-        private Marker _polarBearMarker;
-        private GroundOverlay _polarBearOverlay;
+//        private Marker _polarBearMarker;
+//        private GroundOverlay _polarBearOverlay;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -59,41 +59,41 @@ namespace youreit
             }
         }
 
-        private void AddInitialPolarBarToMap()
-        {
-            MarkerOptions markerOptions = new MarkerOptions()
-                .SetSnippet("Click me to go on vacation.")
-                .SetPosition(LeaveFromHereToMaui)
-                .SetTitle("Goto Maui");
-            _polarBearMarker = _map.AddMarker(markerOptions);
-            _polarBearMarker.ShowInfoWindow();
-
-            _gotoMauiMarkerId = _polarBearMarker.Id;
-
-            PositionPolarBearGroundOverlay(LeaveFromHereToMaui);
-        }
+//        private void AddInitialPolarBarToMap()
+//        {
+//            MarkerOptions markerOptions = new MarkerOptions()
+//                .SetSnippet("Click me to go on vacation.")
+//                .SetPosition(LeaveFromHereToMaui)
+//                .SetTitle("Goto Maui");
+//            _polarBearMarker = _map.AddMarker(markerOptions);
+//            _polarBearMarker.ShowInfoWindow();
+//
+//            _gotoMauiMarkerId = _polarBearMarker.Id;
+//
+//            PositionPolarBearGroundOverlay(LeaveFromHereToMaui);
+//        }
 
         /// <summary>
         ///   Add three markers to the map.
         /// </summary>
-        private void AddMonkeyMarkersToMap()
-        {
-            for (int i = 0; i < LocationForCustomIconMarkers.Length; i++)
-            {
-                BitmapDescriptor icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.monkey);
-                MarkerOptions markerOptions = new MarkerOptions()
-                    .SetPosition(LocationForCustomIconMarkers[i])
-                    .InvokeIcon(icon)
-                    .SetSnippet(String.Format("This is marker #{0}.", i))
-                    .SetTitle(String.Format("Marker {0}", i));
-                _map.AddMarker(markerOptions);
-            }
-        }
+//        private void AddMonkeyMarkersToMap()
+//        {
+//            for (int i = 0; i < LocationForCustomIconMarkers.Length; i++)
+//            {
+//                BitmapDescriptor icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.monkey);
+//                MarkerOptions markerOptions = new MarkerOptions()
+//                    .SetPosition(LocationForCustomIconMarkers[i])
+//                    .InvokeIcon(icon)
+//                    .SetSnippet(String.Format("This is marker #{0}.", i))
+//                    .SetTitle(String.Format("Marker {0}", i));
+//                _map.AddMarker(markerOptions);
+//            }
+//        }
 
         private void HandleInfoWindowClick(object sender, GoogleMap.InfoWindowClickEventArgs e)
         {
             CircleOptions circleOptions = new CircleOptions();
-            circleOptions.InvokeCenter(InMaui);
+			// circleOptions.InvokeCenter(InMaui);
             circleOptions.InvokeRadius(100.0);
         }
 
@@ -119,7 +119,7 @@ namespace youreit
             markerClickEventArgs.Handled = true;
 
             Marker marker = markerClickEventArgs.P0;
-            if (marker.Id.Equals(_gotoMauiMarkerId))
+			/* if (marker.Id.Equals(_gotoMauiMarkerId))
             {
                 PositionPolarBearGroundOverlay(InMaui);
                 _map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(InMaui, 13));
@@ -128,26 +128,26 @@ namespace youreit
                 _polarBearMarker = null;
             }
             else
-            {
+            {*/
                 Toast.MakeText(this, String.Format("You clicked on Marker ID {0}", marker.Id), ToastLength.Short).Show();
-            }
+			//}
         }
 
-        private void PositionPolarBearGroundOverlay(LatLng position)
-        {
-            if (_polarBearOverlay == null)
-            {
-                BitmapDescriptor image = BitmapDescriptorFactory.FromResource(Resource.Drawable.polarbear);
-                GroundOverlayOptions groundOverlayOptions = new GroundOverlayOptions()
-                    .Position(position, 150, 200)
-                    .InvokeImage(image);
-                _polarBearOverlay = _map.AddGroundOverlay(groundOverlayOptions);
-            }
-            else
-            {
-                _polarBearOverlay.Position = InMaui;
-            }
-        }
+//        private void PositionPolarBearGroundOverlay(LatLng position)
+//        {
+//            if (_polarBearOverlay == null)
+//            {
+//                BitmapDescriptor image = BitmapDescriptorFactory.FromResource(Resource.Drawable.polarbear);
+//                GroundOverlayOptions groundOverlayOptions = new GroundOverlayOptions()
+//                    .Position(position, 150, 200)
+//                    .InvokeImage(image);
+//                _polarBearOverlay = _map.AddGroundOverlay(groundOverlayOptions);
+//            }
+//            else
+//            {
+//                _polarBearOverlay.Position = InMaui;
+//            }
+//        }
 
         private bool SetupMapIfNeeded()
         {
@@ -156,11 +156,11 @@ namespace youreit
                 _map = _mapFragment.Map;
                 if (_map != null)
                 {
-                    AddMonkeyMarkersToMap();
-                    AddInitialPolarBarToMap();
+					//AddMonkeyMarkersToMap();
+					//AddInitialPolarBarToMap();
 
                     // Animate the move on the map so that it is showing the markers we added above.
-                    _map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(LocationForCustomIconMarkers[1], 2));
+					_map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(new LatLng()));
                     return true;
                 }
                 return false;

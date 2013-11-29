@@ -46,18 +46,6 @@
 		LocationManager _locMgr;
 		string _locationProvider;
 
-		//public class List<Tag>
-		// **********  ADDED FOR MAP SCREEN
-		private static readonly LatLng[] HotspotLocations = new[]
-		{
-			new LatLng(45.393435, -75.683029),
-			new LatLng(45.401843, -75.710067),
-			new LatLng(45.416081, -75.688838),
-			new LatLng(45.420254, -75.649044),
-			new LatLng(45.421869, -75.698430),
-			new LatLng(45.413712, -75.710656),
-			new LatLng(45.421073, -75.695847)
-		};
 
 		//Lists where all the data is stored 
 		private List<HotspotData> hotspotList;
@@ -181,15 +169,32 @@
 		/// </summary>
 		private void AddHotspotMarkersToMap()
 		{
-			for (int i = 0; i < HotspotLocations.Length; i++)
-			{
-				BitmapDescriptor icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.cafe1);
+			BitmapDescriptor icon;
+
+			foreach (HotspotData hotspot in hotspotList) {
+
+				switch (hotspot.Category)
+				{
+				case 1:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.cafe);
+					break;
+				case 2:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.resturant);
+					break;
+				case 3:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.bar);
+					break;
+				default:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.events);
+					break;
+				}
+
 				MarkerOptions markerOptions = new MarkerOptions ()
-					.SetPosition (HotspotLocations [i])
+					.SetPosition (new LatLng (hotspot.Latitude, hotspot.Longitude))
 					.InvokeIcon (icon)
 					.InfoWindowAnchor(200,100)
-					.SetSnippet(String.Format("Starbucks #{0}.", i))
-					.SetTitle(String.Format("Starbucks {0}", i));
+					.SetSnippet(String.Format("Starbucks #{0}.", hotspot.ID))
+					.SetTitle(String.Format("Starbucks {0}",  hotspot.ID));
 				_map.AddMarker(markerOptions);
 			}
 		}
