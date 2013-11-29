@@ -32,6 +32,9 @@
     [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity, ILocationListener
     {
+
+		Window.RequestFeature(WindowFeatures.NoTitle);
+
 		public static readonly int InstallGooglePlayServicesId = 1000;
         public static readonly string Tag = "You're It Map Testing";
 
@@ -98,9 +101,7 @@
 			Console.WriteLine ("---- " +hotspotList + "---" +  powerupList + "---" + customizationList + userList);
 			//hotspotList.ForEach(item => Console.Write("\n------ " + item.Name));
 
-
 			_locMgr = GetSystemService (Context.LocationService) as LocationManager;
-
 
             _isGooglePlayServicesInstalled = TestIfGooglePlayServicesIsInstalled();
 			//InitializeListView();
