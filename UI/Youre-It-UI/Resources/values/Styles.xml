@@ -1,5 +1,9 @@
 <resources>
-  <style name="Theme.notitle" parent="android:Theme">
-    <item name="android:windowNoTitle">true</item>
+  <style name="Theme.General" parent="android:Theme">
   </style>
+  
+  <!--style name="Theme.ActionBar" parent="android:style/Theme.Holo.Light">
+    <item name="android:background">@colour/brand_blue</item>
+  </style-->
+
 </resources>

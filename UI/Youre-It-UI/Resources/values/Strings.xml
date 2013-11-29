@@ -2,4 +2,6 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">Youre-It-UI</string>
+	<string name="Map">Map</string>
+	<string name="Profile">Profile</string>
 </resources>
