@@ -1,4 +1,6 @@
 /* Set all parents to full height */
+
+
 html, body, 
 .container,
 .cbp-fbscroller,
@@ -77,3 +79,13 @@ html, body,
 	background-image: url(../images/6.png);
 }
 
+
+.fixed{
+	position:fixed;
+	
+	
+}
+
+.header{
+	background-color: #00F;
+}
