@@ -21,6 +21,8 @@
 	// **********  ADDED FOR MAP SCREEN
 	using Android.Gms.Maps;
 	using Android.Gms.Maps.Model;
+	using Android.Graphics;
+
 	// **********  
 
 	/// <summary>
@@ -170,7 +172,25 @@
 		private void AddHotspotMarkersToMap()
 		{
 			BitmapDescriptor icon;
-
+			CircleOptions circleOptions = new CircleOptions ();
+			circleOptions.InvokeCenter(new LatLng (45.403208, -75.688433));
+			circleOptions.InvokeRadius (250);
+			circleOptions.InvokeStrokeWidth (0);
+			circleOptions.InvokeFillColor (Color.Argb(102,36,120,166));
+			circleOptions.InvokeZIndex (3);
+			_map.AddCircle(circleOptions);
+			circleOptions.InvokeCenter(new LatLng (45.403208, -75.688433));
+			circleOptions.InvokeRadius (625);
+			circleOptions.InvokeStrokeWidth (0);
+			circleOptions.InvokeFillColor (Color.Argb(102,78,156,201));
+			circleOptions.InvokeZIndex (2);
+			_map.AddCircle(circleOptions);
+			circleOptions.InvokeCenter(new LatLng (45.403208, -75.688433));
+			circleOptions.InvokeRadius (1000);
+			circleOptions.InvokeStrokeWidth (0);
+			circleOptions.InvokeFillColor (Color.Argb(178,110,187,229));
+			circleOptions.InvokeZIndex (1);
+			_map.AddCircle(circleOptions);
 			foreach (HotspotData hotspot in hotspotList) {
 
 				switch (hotspot.Category)
@@ -184,14 +204,34 @@
 				case 3:
 					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.bar);
 					break;
+				case 4:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.events);
+					break;
+				case 5:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.hotel);
+					break;
+				case 6:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.shop);
+					break;
+				case 7:
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.tourism);
+					break;
 				default:
 					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.events);
 					break;
 				}
 
+				circleOptions.InvokeCenter(new LatLng (hotspot.Latitude, hotspot.Longitude));
+				circleOptions.InvokeRadius (250);
+				circleOptions.InvokeStrokeWidth (0);
+				circleOptions.InvokeFillColor (Color.Argb(178,110,187,229));
+				circleOptions.InvokeZIndex (1);
+				_map.AddCircle(circleOptions);
+
 				MarkerOptions markerOptions = new MarkerOptions ()
 					.SetPosition (new LatLng (hotspot.Latitude, hotspot.Longitude))
 					.InvokeIcon (icon)
+					.Anchor(0.5f,0.5f)
 					.InfoWindowAnchor(200,100)
 					.SetSnippet(String.Format("Starbucks #{0}.", hotspot.ID))
 					.SetTitle(String.Format("Starbucks {0}",  hotspot.ID));
@@ -250,9 +290,9 @@
 				{
 					AddHotspotMarkersToMap();
 					CameraPosition cameraPosition = new CameraPosition.Builder()
-						.Target(new LatLng(45.393435, -75.683029))      // Sets the center of the map to Mountain View
+						.Target(new LatLng(45.403208, -75.688433))      // Sets the center of the map to Mountain View
 						.Zoom(14)                   // Sets the zoom
-						//.Bearing(90)                // Sets the orientation of the camera to east
+						//.Bearing(90)              // Sets the orientation of the camera to east
 						.Build();  
 					// Animate the move on the map so that it is showing the markers we added above.
 					_map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(cameraPosition));
