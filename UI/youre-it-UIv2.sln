@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "youre-it-UIv2", "youre-it-UIv2\youre-it-UIv2.csproj", "{26D71B54-5B10-4B92-92C9-C801C2C77D46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawerSample", "..\..\..\Downloads\DrawerSample-master\DrawerSample.csproj", "{0799762E-5230-4E1C-8B81-890AD362107F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0799762E-5230-4E1C-8B81-890AD362107F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0799762E-5230-4E1C-8B81-890AD362107F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0799762E-5230-4E1C-8B81-890AD362107F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0799762E-5230-4E1C-8B81-890AD362107F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D71B54-5B10-4B92-92C9-C801C2C77D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D71B54-5B10-4B92-92C9-C801C2C77D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D71B54-5B10-4B92-92C9-C801C2C77D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D71B54-5B10-4B92-92C9-C801C2C77D46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = youre-it-UIv2\youre-it-UIv2.csproj
+	EndGlobalSection
+EndGlobal

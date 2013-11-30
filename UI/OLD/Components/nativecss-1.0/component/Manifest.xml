@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="nativecss">
+  <name>NativeCSS</name>
+  <publisher>Make Apps Better Ltd.</publisher>
+  <publisher-url>http://nativecss.com</publisher-url>
+  <version>1.0</version>
+  <summary>Style your xamarin iOS and Android apps with CSS.</summary>
+  <samples>
+    <sample id="Tasky">
+      <name>iOS and Android Sample.</name>
+      <summary>Demonstrates nativeCSS on both iOS and Android</summary>
+    </sample>
+    <sample id="TaskyTouch">
+      <name>iOS Sample.</name>
+      <summary>Demonstrates nativeCSS on iOS.</summary>
+    </sample>
+    <sample id="TaskyDroid">
+      <name>Android Sample.</name>
+      <summary>Demonstrates nativeCSS on Android</summary>
+    </sample>
+  </samples>
+</component>

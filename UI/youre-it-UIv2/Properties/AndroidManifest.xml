@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="youre_it_UIv2.youre_it_UIv2">
+	<uses-sdk />
+	<application android:label="youre-it-UIv2" android:icon="@drawable/youre_it_icon">
+	</application>
+</manifest>

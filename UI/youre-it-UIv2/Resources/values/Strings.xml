@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">youre-it-UIv2</string>
+	
+	<string-array name="MenuItemNames">
+    <item>Map</item>
+    <item>Profile</item>
+    <item>Customize</item>
+    <item>Powerups</item>
+    <item>Hotspots</item>
+    <item>Settings</item>
+  </string-array>
+  
+</resources>
