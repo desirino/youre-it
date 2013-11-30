@@ -78,6 +78,7 @@
     <Compile Include="DBFiles\Hotspots.cs" />
     <Compile Include="DBFiles\PowerUp.cs" />
     <Compile Include="DBFiles\User.cs" />
+    <Compile Include="CustomGameMarker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

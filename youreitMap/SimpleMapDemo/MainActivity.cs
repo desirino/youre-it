@@ -47,8 +47,9 @@
 		Location _currentLocation;
 		LocationManager _locMgr;
 		string _locationProvider;
-
-
+		public List<CustomGameMarker> markerList = new List<CustomGameMarker>();
+		public CustomGameMarker customMapMarker = new CustomGameMarker("0","0",0,true);
+	
 		//Lists where all the data is stored 
 		private List<HotspotData> hotspotList;
 		private List<CustomizationData> customizationList;
@@ -58,6 +59,7 @@
 		private GoogleMap _map;
 		private MapFragment _mapFragment;
 		// **********  
+
 
 		// COULD REMOVE :D
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
@@ -173,24 +175,7 @@
 		{
 			BitmapDescriptor icon;
 			CircleOptions circleOptions = new CircleOptions ();
-			circleOptions.InvokeCenter(new LatLng (45.403208, -75.688433));
-			circleOptions.InvokeRadius (250);
-			circleOptions.InvokeStrokeWidth (0);
-			circleOptions.InvokeFillColor (Color.Argb(102,36,120,166));
-			circleOptions.InvokeZIndex (3);
-			_map.AddCircle(circleOptions);
-			circleOptions.InvokeCenter(new LatLng (45.403208, -75.688433));
-			circleOptions.InvokeRadius (625);
-			circleOptions.InvokeStrokeWidth (0);
-			circleOptions.InvokeFillColor (Color.Argb(102,78,156,201));
-			circleOptions.InvokeZIndex (2);
-			_map.AddCircle(circleOptions);
-			circleOptions.InvokeCenter(new LatLng (45.403208, -75.688433));
-			circleOptions.InvokeRadius (1000);
-			circleOptions.InvokeStrokeWidth (0);
-			circleOptions.InvokeFillColor (Color.Argb(178,110,187,229));
-			circleOptions.InvokeZIndex (1);
-			_map.AddCircle(circleOptions);
+
 			foreach (HotspotData hotspot in hotspotList) {
 
 				switch (hotspot.Category)
@@ -227,7 +212,7 @@
 				circleOptions.InvokeFillColor (Color.Argb(178,110,187,229));
 				circleOptions.InvokeZIndex (1);
 				_map.AddCircle(circleOptions);
-
+				Marker marker;
 				MarkerOptions markerOptions = new MarkerOptions ()
 					.SetPosition (new LatLng (hotspot.Latitude, hotspot.Longitude))
 					.InvokeIcon (icon)
@@ -235,7 +220,38 @@
 					.InfoWindowAnchor(200,100)
 					.SetSnippet(String.Format("Starbucks #{0}.", hotspot.ID))
 					.SetTitle(String.Format("Starbucks {0}",  hotspot.ID));
-				_map.AddMarker(markerOptions);
+				//_map.AddMarker(markerOptions);
+				marker = _map.AddMarker(markerOptions);
+				customMapMarker.markerID = marker.Id;
+				customMapMarker.Type = "hotspot";
+				customMapMarker.TypeID = hotspot.ID;
+				markerList.Add(customMapMarker) ;
+			}
+		}
+
+
+		private void AddUserMarkersToMap()
+		{
+			BitmapDescriptor icon;
+
+			foreach (UserData user in userList) {
+
+					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.cafe);
+				//icon = BitmapDescriptorFactory.FromResource(customization.url);
+				Marker marker;
+				MarkerOptions userMarkers = new MarkerOptions ()
+					.SetPosition (new LatLng (user.Latitude, user.Longitude))
+					.InvokeIcon (icon)
+					.Anchor(0.5f,0.5f)
+					.InfoWindowAnchor(200,100)
+					.SetSnippet(String.Format("User #{0}.", user.ID))
+					.SetTitle(String.Format("User {0}",  user.ID));
+				marker = _map.AddMarker(userMarkers);
+				customMapMarker.markerID = marker.Id;
+				customMapMarker.Type = "user";
+				customMapMarker.TypeID = user.ID;
+				markerList.Add(customMapMarker) ;
+
 			}
 		}
 
@@ -265,20 +281,54 @@
 		private void MapOnMarkerClick(object sender, GoogleMap.MarkerClickEventArgs markerClickEventArgs)
 		{
 			markerClickEventArgs.Handled = true;
-
 			Marker marker = markerClickEventArgs.P0;
-			/*if (marker.Id.Equals(_gotoMauiMarkerId))
-			{
-				PositionPolarBearGroundOverlay(InMaui);
-				_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(InMaui, 13));
-				_gotoMauiMarkerId = null;
-				_polarBearMarker.Remove();
-				_polarBearMarker = null;
+			foreach (CustomGameMarker customMarker1 in markerList) {
+
+				if (marker.Id.Equals(customMarker1.markerID))
+				{
+					if (customMarker1.Type == "user") {
+		
+
+						CircleOptions circleOptions = new CircleOptions ();
+
+						if (customMarker1.Click==true) {
+
+							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
+							circleOptions.InvokeRadius (250);
+							circleOptions.InvokeStrokeWidth (0);
+							circleOptions.InvokeFillColor (Color.Argb (102, 36, 120, 166));
+							circleOptions.InvokeZIndex (3);
+							_map.AddCircle (circleOptions);
+							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
+							circleOptions.InvokeRadius (625);
+							circleOptions.InvokeStrokeWidth (0);
+							circleOptions.InvokeFillColor (Color.Argb (102, 78, 156, 201));
+							circleOptions.InvokeZIndex (2);
+							_map.AddCircle (circleOptions);
+							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
+							circleOptions.InvokeRadius (1000);
+							circleOptions.InvokeStrokeWidth (0);
+							circleOptions.InvokeFillColor (Color.Argb (178, 110, 187, 229));
+							circleOptions.InvokeZIndex (1);
+							circleOptions.Visible (true);
+
+							_map.AddCircle (circleOptions);
+
+							customMarker1.Click = false;
+
+						} else {
+							circleOptions.Visible (false);
+						
+						}
+					}
+				}
 			}
-			else
-			{*/
+
+			//	PositionPolarBearGroundOverlay(InMaui);
+			//		_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(InMaui, 13));
+
 				Toast.MakeText(this, String.Format("Starbucks {0}", marker.Id), ToastLength.Short).Show();
-			//}
+
 		}
 
 		private bool SetupMapIfNeeded()
@@ -289,6 +339,7 @@
 				if (_map != null)
 				{
 					AddHotspotMarkersToMap();
+					AddUserMarkersToMap();
 					CameraPosition cameraPosition = new CameraPosition.Builder()
 						.Target(new LatLng(45.403208, -75.688433))      // Sets the center of the map to Mountain View
 						.Zoom(14)                   // Sets the zoom

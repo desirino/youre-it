@@ -72,15 +72,15 @@ namespace youreit
 
 					,"CREATE TABLE [Customizations] (ID int, Name ntext, ImgURL string, Price float);"
 					,
-					"INSERT INTO [Customizations] ([ID], [Name], [ImgURL], [Price]) VALUES ('1', 'Red', 'cusomtizations.png', '0.0')"
+					"INSERT INTO [Customizations] ([ID], [Name], [ImgURL], [Price]) VALUES ('1', 'Red', 'Resource.Drawable.cafe', '0.0')"
 					,
 					"INSERT INTO [Customizations] ([ID], [Name], [ImgURL], [Price]) VALUES ('2', 'Green', 'cusomtizations.png', '2.0')"
 					,
 					"INSERT INTO [Customizations] ([ID], [Name], [ImgURL], [Price]) VALUES ('3', 'Blue', 'cusomtizations.png', '1.0')"
 
-					,"CREATE TABLE [Users] (ID int, Username ntext, TaggedCount int, Points int,  Longitude float, Latitude float, Powerups string, Hotspots string, Customizations string);"
+					,"CREATE TABLE [Users] (ID int, Username ntext, TaggedCount int, Points int,  Longitude float, Latitude float, Powerups string, Customization string, Hotspots string);"
 					,
-					"INSERT INTO [Users] ([ID], [Username], [TaggedCount], [Points], [Longitude], [Latitude]) VALUES ('1', 'DESSSS', '20', '1', '0.0','0.0')"
+					"INSERT INTO [Users] ([ID], [Username], [TaggedCount], [Points], [Latitude], [Longitude] ) VALUES ('1', 'DESSSS', '20', '120', '45.391484','-75.689796')"
 					,
 
 				};
