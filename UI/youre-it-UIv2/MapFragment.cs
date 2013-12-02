@@ -16,7 +16,7 @@ namespace youreitUIv2
 
 		public override View OnCreateView(LayoutInflater p0, ViewGroup p1, Bundle p2)
 		{
-			var rootView = p0.Inflate(Resource.Layout.ProfileScreen, p1, false);
+			var rootView = p0.Inflate(Resource.Layout.MapScreen, p1, false);
 
 
 			Console.WriteLine ("------------MAP FRAGMENT------------");

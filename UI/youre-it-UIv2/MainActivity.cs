@@ -194,7 +194,7 @@ namespace youreitUIv2
 		{
 			//add menu button items
 			menu.Add (0, 0, 0, "Settings");
-			//add actionbar items
+			//add ActionItems
 			MenuInflater.Inflate (Resource.Menu.ActionItems, menu);
 
 			//return true;
