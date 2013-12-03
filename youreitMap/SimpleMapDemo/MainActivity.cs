@@ -319,14 +319,15 @@
 			_mapFragment = FragmentManager.FindFragmentByTag("map") as MapFragment;
 			if (_mapFragment == null)
 			{
-				GoogleMapOptions mapOptions = new GoogleMapOptions()
+					_map = null;
+					GoogleMapOptions mapOptions = new GoogleMapOptions()
 					.InvokeMapType(GoogleMap.MapTypeNormal)
 					.InvokeZoomControlsEnabled(false)
 					.InvokeCompassEnabled(true);
 
 				_mapFragment = MapFragment.NewInstance(mapOptions);
 				FragmentManager.BeginTransaction ()
-					.Replace (Resource.Id.content_frame, _mapFragment)
+					.Replace (Resource.Id.content_frame, _mapFragment, "map")
 					.Commit ();
 
 			} 
@@ -387,7 +388,8 @@
 
 		private bool SetupMapIfNeeded()
 		{
-
+			if (_map == null)
+			{
 				_map = _mapFragment.Map;
 				if (_map != null)
 				{
@@ -403,7 +405,8 @@
 					return true;
 				}
 				return false;
-
+			}
+			return true;
 		}
 
 
@@ -415,6 +418,7 @@
 				InitMapFragment ();
 				SetupMapIfNeeded ();
 
+	
 				_drawerList.SetItemChecked (position, true);
 				ActionBar.Title = _title = _menuTitles [position];
 				_drawer.CloseDrawer (_drawerList);
