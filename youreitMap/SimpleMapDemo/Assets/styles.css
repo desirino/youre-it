@@ -1,0 +1,39 @@
+
+#view{
+    -ncss-style-guide-visible:true
+}
+
+
+#mActionBarView{
+    color:#fff;
+}
+navbar{
+	background:#6ebbe5;
+}
+navbar label{
+    color:#fff;
+}
+DrawerLayout{
+    background:#fff;
+}
+#left_drawer ListView{
+    color:#fff;
+}
+TextView{
+    color:#111;
+}
+android button{
+    width:100px;
+    height:100px;
+    background:#6ebbe5;
+    color:#fff;
+    margin:10px;
+}
+#button_customize, #button_Points, #button_Tags, #button_Tagged{
+    background:#fff;
+    color:#6ebbe5;
+}
+#PowerupV1Layout, #PowerupV2Layout, #PowerupV3Layout{
+    width:50%;
+    background:transparent;
+}

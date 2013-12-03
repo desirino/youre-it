@@ -8,58 +8,54 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
-        android:id="@+id/linearLayout1">
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="60dp"
-            android:layout_height="150dp"
-            android:id="@+id/linearLayout2"
-            android:layout_marginLeft="10dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
             <Button
                 android:text="customize"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:id="@+id/button1"
-                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/button_customize"
                 android:textSize="7dp" />
             <Button
-                android:text="P 3500"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:id="@+id/button1"
-                android:layout_marginTop="15dp"
+                android:text="(P) 3500"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/button_Points"
                 android:textSize="7dp" />
         </LinearLayout>
         <ImageView
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:id="@+id/imageView1"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp" />
+            android:id="@+id/imageView1" />
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="60dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/linearLayout2">
             <Button
-                android:text="customize"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:id="@+id/button1"
-                android:layout_marginTop="10dp"
+                android:text="10 Tags"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/button_Tags"
                 android:textSize="7dp" />
             <Button
-                android:text="P 3500"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:id="@+id/button1"
-                android:layout_marginTop="15dp"
+                android:text="15 Tagged"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/button_Tagged"
                 android:textSize="7dp" />
         </LinearLayout>
     </LinearLayout>
@@ -70,12 +66,6 @@
         android:id="@+id/button2"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp" />
-    <ListView
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView1" />
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"

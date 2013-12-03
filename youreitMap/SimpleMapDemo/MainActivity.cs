@@ -37,6 +37,7 @@ namespace youreit
 	using Environment = System.Environment;
 
 	using Style;
+	using Style.Enums;
 	
 	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
 	
@@ -185,6 +186,10 @@ namespace youreit
 
 			if (null == bundle)
 				SelectItem(0);
+
+			//NATIVE CSS STUFF HERE
+			NativeCSS.StyleWithCSS("styles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/styles.css"), RemoteContentRefreshPeriod.EverySecond);
+
         }
 
 		public void OnLocationChanged(Location location) {
@@ -443,7 +448,7 @@ namespace youreit
 				_drawer.CloseDrawer (_drawerList);
 				break;
 			case 2:
-				var profifragment = new ProfileFragment ();
+				var profifragment = new CustomizeFragment ();
 				var profiarguments = new Bundle ();
 				profiarguments.PutInt ("stuff", position);
 				profifragment.Arguments = profiarguments;
