@@ -43,7 +43,6 @@
             android:id="@+id/linearLayout4"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-<<<<<<< Updated upstream
             android:layout_gravity="center"
             android:gravity="fill">
             <TextView
@@ -53,7 +52,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="187dp"
                 android:gravity="center" />
-=======
             android:layout_gravity="center">
             <TextView
                 android:text="Sounds"
@@ -62,7 +60,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="135dp"
                 android:gravity="start" />
->>>>>>> Stashed changes
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -77,7 +74,6 @@
             android:id="@+id/linearLayout4"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-<<<<<<< Updated upstream
             android:layout_gravity="center"
             android:gravity="fill">
             <TextView
@@ -87,7 +83,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="155dp"
                 android:gravity="center" />
-=======
             android:layout_gravity="center">
             <TextView
                 android:text="Notifications"
@@ -96,7 +91,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="135dp"
                 android:gravity="start" />
->>>>>>> Stashed changes
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -104,15 +98,12 @@
         </LinearLayout>
         <Button
             android:text="Go Offline"
-<<<<<<< Updated upstream
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button2"
-=======
             android:id="@+id/button2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
->>>>>>> Stashed changes
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp" />
     </LinearLayout>

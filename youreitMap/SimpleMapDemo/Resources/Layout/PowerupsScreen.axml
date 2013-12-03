@@ -10,13 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/PowerupRow"
-<<<<<<< Updated upstream
         android:gravity="center">
-=======
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp">
->>>>>>> Stashed changes
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -24,13 +21,10 @@
             android:layout_height="fill_parent"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center"
-<<<<<<< Updated upstream
             android:layout_width="wrap_content">
-=======
             android:layout_width="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
->>>>>>> Stashed changes
             <ImageButton
                 android:id="@+id/PowerupBtn"
                 android:layout_width="60dp"
@@ -54,17 +48,14 @@
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="wrap_content"
-<<<<<<< Updated upstream
             android:layout_height="fill_parent"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center">
-=======
             android:layout_height="wrap_content"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
->>>>>>> Stashed changes
             <ImageButton
                 android:src="@android:drawable/ic_menu_gallery"
                 android:id="@+id/PowerupBtn"
@@ -82,9 +73,7 @@
                 android:id="@+id/textView1"
                 android:layout_gravity="center"
                 android:textSize="12dp" />
-<<<<<<< Updated upstream
         </LinearLayout>
-=======
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -343,17 +332,14 @@
                 android:layout_gravity="center"
                 android:textSize="12dp" />
         </LinearLayout>
->>>>>>> Stashed changes
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="wrap_content"
-<<<<<<< Updated upstream
             android:layout_height="fill_parent"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center">
-=======
             android:layout_height="wrap_content"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center"
@@ -387,7 +373,6 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
->>>>>>> Stashed changes
             <ImageButton
                 android:src="@android:drawable/ic_menu_gallery"
                 android:id="@+id/PowerupBtn"
