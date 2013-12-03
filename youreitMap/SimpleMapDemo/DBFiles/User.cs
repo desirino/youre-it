@@ -18,7 +18,7 @@ namespace youreit
 			this.Longitude = Longitude;
 			this.Latitude = Latitude;
 			this.PowerUps = PowerUps;
-			this.Customizations = Customization;
+			this.Customization = Customization;
 			this.Hotspots = Hotspots;
 		}
 
@@ -31,7 +31,7 @@ namespace youreit
 
 		//Stores ids of all of the following. 
 		public string PowerUps { get; set;} 
-		public string Customizations { get; set; }
+		public string Customization { get; set; }
 		public string Hotspots { get; set; }
 	}
 
@@ -57,33 +57,15 @@ namespace youreit
 
 					userList.Add (new UserData (
 						Convert.ToInt32 (r ["ID"]), r ["Username"].ToString (),
-						//Convert.ToInt32(r["Tagged"]), Convert.ToInt32(r["Points"]),
-						Convert.ToInt32 (r ["Tagged"]), 100,
-						Convert.ToDouble (r ["Longitude"]), Convert.ToDouble (r ["Latitude"]), 
-						r ["Powerups"].ToString (), r ["Customizations"].ToString (), r ["Hotspots"].ToString ()
+						Convert.ToInt32(r["Tagged"]), Convert.ToInt32(r["Points"]),
+						Convert.ToDouble(r["Longitude"]), Convert.ToDouble(r["Latitude"]),
+						r ["Powerups"].ToString(), r ["Customizations"].ToString(), r ["Hotspots"].ToString()
+
 					));
 				}
 			}
 			connection.Close ();
 			return userList;
-		}
-
-		public bool UpdateUser() {
-
-			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
-
-
-
-			connection = new SqliteConnection ("Data Source=" + dbPath);
-			connection.Open ();
-			using (var contents = connection.CreateCommand ()) {
-				contents.CommandText = "SELECT * from [Users]";
-				var r = contents.ExecuteReader ();
-
-			}
-			connection.Close ();
-
-			return false;
 		}
 	}
 }

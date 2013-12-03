@@ -67,6 +67,12 @@
     <Reference Include="NativeCSS.Android">
       <HintPath>..\Components\nativecss-1.0\lib\android\NativeCSS.Android.dll</HintPath>
     </Reference>
+    <Reference Include="Photon3DotNet">
+      <HintPath>..\Components\Photon-Xamarin-3.2.1.5\lib\android\Photon3DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonLoadbalancingApi">
+      <HintPath>..\Components\Photon-Xamarin-3.2.1.5\lib\android\PhotonLoadbalancingApi.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ErrorDialogFragment.cs" />
@@ -89,6 +95,7 @@
     <Compile Include="DBFiles\Hotspots.cs" />
     <Compile Include="DBFiles\PowerUp.cs" />
     <Compile Include="DBFiles\User.cs" />
+    <Compile Include="DBFiles\personalInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -170,6 +177,11 @@
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+    <XamarinComponentReference Include="Photon-Xamarin">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>3.2.1.5</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Raw\" />
@@ -179,5 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\youreit.sqlite" />
+    <AndroidAsset Include="Assets\personal.sqlite" />
   </ItemGroup>
 </Project>

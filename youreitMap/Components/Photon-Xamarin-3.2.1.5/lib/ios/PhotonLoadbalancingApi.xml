@@ -1,0 +1,1343 @@
+<doc>
+    <assembly>
+        <name>Photon3DotNet</name>
+    </assembly>
+    <members>
+        <member name="ExitGames.Client.Photon.ConnectionProtocol.Tcp">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.ConnectionProtocol.Udp">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.DebugLevel.ALL">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.DebugLevel.ERROR">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.DebugLevel.INFO">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.DebugLevel.OFF">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.DebugLevel.WARNING">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.EventData..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.EventData.Code">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.EventData.Item">
+            <param name="key">To be added.</param>
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.EventData.Parameters">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.EventData.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.EventData.ToStringFull">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.IPhotonPeerListener.DebugReturn">
+            <param name="level">To be added.</param>
+            <param name="message">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.IPhotonPeerListener.OnEvent">
+            <param name="eventData">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.IPhotonPeerListener.OnOperationResponse">
+            <param name="operationResponse">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.IPhotonPeerListener.OnStatusChanged">
+            <param name="statusCode">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.IncomingJitter">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.IncomingLag">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.IncomingLossPercentage">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.IsSimulationEnabled">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.LostPackagesIn">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.LostPackagesOut">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.NetSimManualResetEvent">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.OutgoingJitter">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.OutgoingLag">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.OutgoingLossPercentage">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.NetworkSimulationSet.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationRequest..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationRequest.OperationCode">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationRequest.Parameters">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse.DebugMessage">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse.Item">
+            <param name="parameterCode">To be added.</param>
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse.OperationCode">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse.Parameters">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse.ReturnCode">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.OperationResponse.ToStringFull">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PeerStateValue.Connected">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.PeerStateValue.Connecting">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.PeerStateValue.Disconnected">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.PeerStateValue.Disconnecting">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.PeerStateValue.InitializingApplication">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer..ctor">
+            <param name="protocolType">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer..ctor">
+            <param name="listener">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer..ctor">
+            <param name="listener">To be added.</param>
+            <param name="protocolType">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer..ctor">
+            <param name="listener">To be added.</param>
+            <param name="useTcp">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.ByteCountCurrentDispatch">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.ByteCountLastOperation">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.BytesIn">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.BytesOut">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.ChannelCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.CommandBufferSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.Connect">
+            <param name="serverAddress">To be added.</param>
+            <param name="applicationName">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.CrcEnabled">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.DebugOut">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.Disconnect">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.DisconnectTimeout">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.DispatchIncomingCommands">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.EstablishEncryption">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.FetchServerTimestamp">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.IsEncryptionAvailable">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.IsSendingOnlyAcks">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.IsSimulationEnabled">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.LimitOfUnreliableCommands">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.Listener">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.LocalMsTimestampDelegate">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.LocalTimeInMilliSeconds">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.MaximumTransferUnit">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.NetworkSimulationSettings">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.OpCustom">
+            <param name="customOpCode">To be added.</param>
+            <param name="customOpParameters">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.OpCustom">
+            <param name="operationRequest">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <param name="encrypt">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.OpCustom">
+            <param name="customOpCode">To be added.</param>
+            <param name="customOpParameters">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.OpCustom">
+            <param name="customOpCode">To be added.</param>
+            <param name="customOpParameters">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <param name="encrypt">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.OutgoingStreamBufferSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.PacketLossByCrc">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.PeerID">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.PeerState">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.QueuedIncomingCommands">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.QueuedOutgoingCommands">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.RegisterType">
+            <param name="customType">To be added.</param>
+            <param name="code">To be added.</param>
+            <param name="serializeMethod">To be added.</param>
+            <param name="constructor">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.ResentReliableCommands">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.RoundTripTime">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.RoundTripTimeVariance">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.SendAcksOnly">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.SendOutgoingCommands">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.SentCountAllowance">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.ServerAddress">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.ServerTimeInMilliSeconds">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.Service">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.StopThread">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TimePingInterval">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TimestampOfLastSocketReceive">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TrafficStatsElapsedMs">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TrafficStatsEnabled">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TrafficStatsGameLevel">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TrafficStatsIncoming">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TrafficStatsOutgoing">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.TrafficStatsReset">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.UsedProtocol">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.VitalStatsToString">
+            <param name="all">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.PhotonPeer.WarningSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Deserialize">
+            <param name="serializedData">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Deserialize">
+            <param name="value">To be added.</param>
+            <param name="source">To be added.</param>
+            <param name="offset">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Deserialize">
+            <param name="value">To be added.</param>
+            <param name="source">To be added.</param>
+            <param name="offset">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Deserialize">
+            <param name="value">To be added.</param>
+            <param name="source">To be added.</param>
+            <param name="offset">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Serialize">
+            <param name="obj">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Serialize">
+            <param name="value">To be added.</param>
+            <param name="target">To be added.</param>
+            <param name="targetOffset">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Serialize">
+            <param name="value">To be added.</param>
+            <param name="target">To be added.</param>
+            <param name="targetOffset">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Protocol.Serialize">
+            <param name="value">To be added.</param>
+            <param name="target">To be added.</param>
+            <param name="targetOffset">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.Connect">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.Disconnect">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.DisconnectByServer">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.DisconnectByServerLogic">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.DisconnectByServerUserLimit">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.EncryptionEstablished">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.EncryptionFailedToEstablish">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.Exception">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.ExceptionOnConnect">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.InternalReceiveException">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.QueueIncomingReliableWarning">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.QueueIncomingUnreliableWarning">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.QueueOutgoingAcksWarning">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.QueueOutgoingReliableWarning">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.QueueOutgoingUnreliableWarning">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.QueueSentWarning">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.SecurityExceptionOnConnect">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.SendError">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.TcpRouterResponseEndpointUnknown">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.TcpRouterResponseNodeIdUnknown">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.TcpRouterResponseNodeNotReady">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.TcpRouterResponseOk">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.StatusCode.TimeoutDisconnect">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.ByteArrayToString">
+            <param name="list">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.CalculateCrc">
+            <param name="buffer">To be added.</param>
+            <param name="length">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.CallInBackground">
+            <param name="myThread">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.DictionaryToString">
+            <param name="dictionary">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.DictionaryToString">
+            <param name="dictionary">To be added.</param>
+            <param name="includeTypes">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.GetMethods">
+            <param name="type">To be added.</param>
+            <param name="attribute">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.GetTickCount">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.HashtableToString">
+            <param name="hash">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.IntegerMilliseconds">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.NumberToByteArray">
+            <param name="buffer">To be added.</param>
+            <param name="index">To be added.</param>
+            <param name="number">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.NumberToByteArray">
+            <param name="buffer">To be added.</param>
+            <param name="index">To be added.</param>
+            <param name="number">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.WriteStackTrace">
+            <param name="throwable">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass.WriteStackTrace">
+            <param name="throwable">To be added.</param>
+            <param name="stream">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass+ThreadSafeRandom..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.SupportClass+ThreadSafeRandom.Next">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.ControlCommandBytes">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.ControlCommandCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.FragmentCommandBytes">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.FragmentCommandCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.PackageHeaderSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.ReliableCommandBytes">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.ReliableCommandCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.TotalCommandBytes">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.TotalCommandCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.TotalCommandsInPackets">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.TotalPacketBytes">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.TotalPacketCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.UnreliableCommandBytes">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStats.UnreliableCommandCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.DispatchCalls">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.DispatchIncomingCommandsCalls">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.EventByteCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.EventCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.LongestDeltaBetweenDispatching">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.LongestDeltaBetweenSending">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.LongestEventCallback">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.LongestEventCallbackCode">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.LongestOpResponseCallback">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.LongestOpResponseCallbackOpCode">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.OperationByteCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.OperationCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.ResetMaximumCounters">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.ResultByteCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.ResultCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.SendOutgoingCommandsCalls">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.ToStringVitalStats">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.TotalByteCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.TotalIncomingByteCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.TotalIncomingMessageCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.TotalMessageCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.TotalOutgoingByteCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.TrafficStatsGameLevel.TotalOutgoingMessageCount">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.AddToRoomCache">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.AddToRoomCacheGlobal">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.DoNotCache">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.MergeCache">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.RemoveCache">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.RemoveFromRoomCache">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.RemoveFromRoomCacheForActorsLeft">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.EventCaching.ReplaceCache">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventCode.Join">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventCode.Leave">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventCode.PropertiesChanged">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.ActorList">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.ActorNr">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.ActorProperties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.CustomContent">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.Data">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.GameProperties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.Properties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteEventKey.TargetActorNr">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpCode.ChangeGroups">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpCode.ExchangeKeysForEncryption">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpCode.GetProperties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpCode.Join">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpCode.Leave">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpCode.RaiseEvent">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpCode.SetProperties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.ActorList">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.ActorNr">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.ActorProperties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Add">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Asid">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Broadcast">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Cache">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Code">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Data">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.GameId">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.GameProperties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Group">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Properties">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.ReceiverGroup">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.Remove">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.RoomName">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LiteOpKey.TargetActorNr">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer..ctor">
+            <param name="protocolType">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer..ctor">
+            <param name="listener">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer..ctor">
+            <param name="listener">To be added.</param>
+            <param name="protocolType">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpChangeGroups">
+            <param name="groupsToRemove">To be added.</param>
+            <param name="groupsToAdd">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpGetProperties">
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpGetPropertiesOfActor">
+            <param name="actorNrList">To be added.</param>
+            <param name="properties">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpGetPropertiesOfActor">
+            <param name="actorNrList">To be added.</param>
+            <param name="properties">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpGetPropertiesOfGame">
+            <param name="properties">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpGetPropertiesOfGame">
+            <param name="properties">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpJoin">
+            <param name="gameName">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpJoin">
+            <param name="gameName">To be added.</param>
+            <param name="gameProperties">To be added.</param>
+            <param name="actorProperties">To be added.</param>
+            <param name="broadcastActorProperties">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpLeave">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpRaiseEvent">
+            <param name="eventCode">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="customEventContent">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpRaiseEvent">
+            <param name="eventCode">To be added.</param>
+            <param name="customEventContent">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpRaiseEvent">
+            <param name="eventCode">To be added.</param>
+            <param name="interestGroup">To be added.</param>
+            <param name="customEventContent">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpRaiseEvent">
+            <param name="eventCode">To be added.</param>
+            <param name="customEventContent">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpRaiseEvent">
+            <param name="eventCode">To be added.</param>
+            <param name="customEventContent">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <param name="targetActors">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpRaiseEvent">
+            <param name="eventCode">To be added.</param>
+            <param name="customEventContent">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <param name="cache">To be added.</param>
+            <param name="receivers">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpRaiseEvent">
+            <param name="eventCode">To be added.</param>
+            <param name="sendReliable">To be added.</param>
+            <param name="customEventContent">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <param name="cache">To be added.</param>
+            <param name="targetActors">To be added.</param>
+            <param name="receivers">To be added.</param>
+            <param name="interestGroup">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpSetPropertiesOfActor">
+            <param name="actorNr">To be added.</param>
+            <param name="properties">To be added.</param>
+            <param name="broadcast">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePeer.OpSetPropertiesOfGame">
+            <param name="properties">To be added.</param>
+            <param name="broadcast">To be added.</param>
+            <param name="channelId">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePropertyTypes.Actor">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePropertyTypes.Game">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePropertyTypes.GameAndActor">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.LitePropertyTypes.None">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.ReceiverGroup.All">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.ReceiverGroup.MasterClient">
+            <summary>To be added.</summary>
+        </member>
+        <member name="ExitGames.Client.Photon.Lite.ReceiverGroup.Others">
+            <summary>To be added.</summary>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider..ctor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.Decrypt">
+            <param name="data">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.Decrypt">
+            <param name="data">To be added.</param>
+            <param name="offset">To be added.</param>
+            <param name="count">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.DeriveSharedKey">
+            <param name="otherPartyPublicKey">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.Dispose">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.Dispose">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.Encrypt">
+            <param name="data">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.Encrypt">
+            <param name="data">To be added.</param>
+            <param name="offset">To be added.</param>
+            <param name="count">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.IsInitialized">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.PublicKey">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="Photon.SocketServer.Security.DiffieHellmanCryptoProvider.SharedKey">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+    </members>
+</doc>

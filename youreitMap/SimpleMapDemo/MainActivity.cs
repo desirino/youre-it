@@ -1,5 +1,4 @@
-﻿using Java.IO;
-
+﻿
 namespace youreit
 {
 	using System;
@@ -9,18 +8,22 @@ namespace youreit
 	using System.Linq;
 	using System.Text;
 	using System.IO;
+
+	using Android;
     using Android.App;
     using Android.Content;
+	using Android.Content.PM;
 	using Android.Content.Res;
+	using Android.Graphics;
     using Android.Gms.Common;
     using Android.OS;
     using Android.Util;
     using Android.Views;
     using Android.Widget;
+	using Android.Support.V4.Widget;
 	using Android.Locations;
 
 	using DrawerSample;
-	using Android.Support.V4.Widget;
 
     using AndroidUri = Android.Net.Uri;
 
@@ -32,8 +35,11 @@ namespace youreit
 	// **********  
 	using Mono.Data.Sqlite;
 	using Environment = System.Environment;
+
+	using Style;
 	
-    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
+	
 	public class MainActivity : Activity, ILocationListener
     {
 
@@ -56,6 +62,7 @@ namespace youreit
 		private List<CustomizationData> customizationList;
 		private List<PowerupData> powerupList;
 		private List<UserData> userList;
+		private PersonalInfoData myData; 
 
 		private GoogleMap _map;
 		private MapFragment _mapFragment;
@@ -107,24 +114,36 @@ namespace youreit
 				source.CopyTo (dest);
 			}
 
+			//We dont want to delete the personal DB, so only create it if its not in the file system
+			string myDbName = "personal.sqlite";
+			string myDbPath = System.IO.Path.Combine (Android.OS.Environment.ExternalStorageDirectory.ToString (), myDbName);
+
+			if (!File.Exists (myDbPath)) {
+				using (Stream source = Assets.Open(myDbName))
+				using (var dest2 = System.IO.File.Create (myDbPath)) {
+					source.CopyTo (dest2);
+				}
+			} 
+
 			//Returns a list of hotspots (ID, Name, Longtitude, Latitude, Reward, Price, TimeDate)
 			hotspotList = Hotspots.DoSomeDataAccess ();
 			powerupList = Powerups.DoSomeDataAccess ();
 			customizationList = Customizations.DoSomeDataAccess ();
 			userList = User.DoSomeDataAccess ();
+			myData = PersonalInfo.DoSomeDataAccess ();
+			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
 
-			Console.WriteLine ("- There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
+			PersonalInfo.UpdateUser (myData, "green", 10000, "shield");
+			myData = PersonalInfo.DoSomeDataAccess ();
+
+			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
+			Console.WriteLine ("There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
 
 			_locMgr = GetSystemService (Context.LocationService) as LocationManager;
 
             _isGooglePlayServicesInstalled = TestIfGooglePlayServicesIsInstalled();
-			//InitializeListView();
-
-			// **********  ADDED FOR MAP SCREEN
 
 			SetContentView(Resource.Layout.MapWithOverlayLayout);
-
-			//Start up location Manager to get long and lat.
 
 			_title = _drawerTitle = "Menu";
 			_menuTitles = Resources.GetStringArray(Resource.Array.MenuItemNames);
@@ -166,61 +185,40 @@ namespace youreit
 
 			if (null == bundle)
 				SelectItem(0);
-
-			// **********  
-
-			//activity = new SampleActivity(Resource.String.activity_label_mapwithoverlays, Resource.String.activity_description_mapwithoverlays, typeof(MapWithOverlaysActivity));
-
-			//activity.Start(this);
-
-
         }
 
-		// **********  ADDED FOR MAP SCREEN
-		public void OnLocationChanged(Location location)
-		{
+		public void OnLocationChanged(Location location) {
 			_currentLocation = location;
 			Log.Debug(LocationTag, "{0}, {1}", location.Longitude, location.Latitude);
 
 		}
 
-		public void OnProviderDisabled(string provider)
-		{
+		public void OnProviderDisabled(string provider) {
 		}
 
-		public void OnProviderEnabled(string provider)
-		{
+		public void OnProviderEnabled(string provider) {
 		}
 
-		public void OnStatusChanged(string provider, Availability status, Bundle extras)
-		{
+		public void OnStatusChanged(string provider, Availability status, Bundle extras){
 			Log.Debug(LocationTag, "{0}, {1}", provider, status);
 		}
 
-		protected override void OnPause()
-		{
+		protected override void OnPause() {
 			base.OnPause();
 
-			// Pause the GPS - we won't have to worry about showing the 
-			// location.
 			_map.MyLocationEnabled = false;
-
 			_map.MarkerClick -= MapOnMarkerClick;
-
 			_map.InfoWindowClick += HandleInfoWindowClick;
 
 			_locMgr.RemoveUpdates(this);
-			Log.Debug(LocationTag, "No longer listening for location updates.");
-
+			Log.Debug (LocationTag, "No longer listening for location updates.");
 
 		}
 
-		protected override void OnResume()
-		{
+		protected override void OnResume() {
 			base.OnResume();
 			_locMgr.RequestLocationUpdates (LocationManager.GpsProvider, 2000, 1, this);
 			Log.Debug(LocationTag, "Listening for location updates using " + _locationProvider + ".");
-
 
 			if (SetupMapIfNeeded())
 			{
@@ -230,9 +228,7 @@ namespace youreit
 			}
 		}
 
-		/// <summary>
-		///   Add three markers to the map.
-		/// </summary>
+
 		private void AddHotspotMarkersToMap()
 		{
 			BitmapDescriptor icon;
@@ -296,22 +292,22 @@ namespace youreit
 		{
 			BitmapDescriptor icon;
 
-			foreach (UserData user in userList) {
+			foreach (UserData m_user in userList) {
 
-					icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.cafe);
-				//icon = BitmapDescriptorFactory.FromResource(customization.url);
+				icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.cafe);
+		
 				Marker marker;
 				MarkerOptions userMarkers = new MarkerOptions ()
-					.SetPosition (new LatLng (user.Latitude, user.Longitude))
+					.SetPosition (new LatLng (m_user.Latitude, m_user.Longitude))
 					.InvokeIcon (icon)
 					.Anchor(0.5f,0.5f)
 					.InfoWindowAnchor(200,100)
-					.SetSnippet(String.Format("User #{0}.", user.ID))
-					.SetTitle(String.Format("User {0}",  user.ID));
+					.SetSnippet(String.Format("User #{0}.", m_user.ID))
+					.SetTitle(String.Format("User {0}",  m_user.ID));
 				marker = _map.AddMarker(userMarkers);
 				customMapMarker.markerID = marker.Id;
 				customMapMarker.Type = "user";
-				customMapMarker.TypeID = user.ID;
+				customMapMarker.TypeID = m_user.ID;
 				markerList.Add(customMapMarker) ;
 
 			}
@@ -563,6 +559,19 @@ namespace youreit
 				dialogFrag.Show (FragmentManager, "GooglePlayServicesDialog");
 			}
 			return false;
+		}
+
+		public double Measure(Double lat1, Double lon1, Double lat2, Double lon2) {
+			var R = 6378.137; // Radius of earth in KM
+			var dLat = (lat2 - lat1) * Math.PI / 180;
+			var dLon = (lon2 - lon1) * Math.PI / 180;
+			var a = Math.Sin(dLat/2) * Math.Sin(dLat/2) +
+			Math.Cos(lat1 * Math.PI / 180) * Math.Cos(lat2 * Math.PI / 180) *
+			        Math.Sin(dLon/2) * Math.Sin(dLon/2);
+			var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1-a));
+			var d = R * c;
+			return d * 1000; // meters
+
 		}
     }
 }

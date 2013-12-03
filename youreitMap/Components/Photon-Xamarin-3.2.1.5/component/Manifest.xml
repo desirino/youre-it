@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="Photon-Xamarin">
+  <name>Photon Cloud</name>
+  <publisher>Exit Games GmbH</publisher>
+  <publisher-url>http://cloud.exitgames.com</publisher-url>
+  <docs-url>http://doc.exitgames.com/photon-cloud</docs-url>
+  <version>3.2.1.5</version>
+  <summary>Development framework for realtime multiplayer games.</summary>
+  <screenshots>
+    <img src="screenshots/Photon-Xamarin-Screen-1.png" title="Photon Cloud 1" />
+    <img src="screenshots/Photon-Xamarin-Screen-2.png" title="Photon Cloud 2" />
+  </screenshots>
+  <samples>
+    <sample id="XamarinCloudSdk">
+      <name>Photon Particle Demo for iOS, Android.</name>
+      <summary>Shows basic usage of Photon and Photon Cloud.</summary>
+    </sample>
+  </samples>
+</component>
