@@ -16,4 +16,45 @@
   <string name="activity_label_mapwithoverlays">Overlays Test</string>
   <string name="activity_description_mapwithoverlays">Shows how our overlays are going to work.</string>
 
+  <string-array name="MenuItemNames">
+	    <item>Map</item>
+	    <item>Profile</item>
+	    <item>Customize</item>
+	    <item>Powerups</item>
+	    <item>Hotspots</item>
+	    <item>Settings</item>
+  	</string-array>
+  	
+  	<string-array name="RecentActivityMockData">
+	    <item>Went to Starbucks</item>
+	    <item>Used Invisibility Cloak</item>
+	    <item>Was tagged by Finger1</item>
+	    <item>Joined Youre It</item>
+  	</string-array>
+  	
+  	<string-array name="CurrentHotspotsMockData">
+	    <item>Greek Festival</item>
+	    <item>Starbucks</item>
+	    <item>Cineplex</item>
+  	</string-array>
+  	
+  	<string-array name="CurrentHotspotsDatesMockData">
+	    <item>Expires December 23rd</item>
+	    <item>Expires December 23rd</item>
+	    <item>Expires December 23rd</item>
+  	</string-array>
+  	
+  	<string-array name="UpcomingHotspotsMockData">
+	    <item>Canadian Tire</item>
+	    <item>Bridgehead</item>
+	    <item>Rideau Center</item>
+  	</string-array>
+  	
+  	<string-array name="UpcomingHotspotsDatesMockData">
+	    <item>Starts December 23rd</item>
+	    <item>Starts December 23rd</item>
+	    <item>Starts December 23rd</item>
+  	</string-array>
+  	
+
 </resources>

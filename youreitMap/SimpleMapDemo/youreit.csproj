@@ -63,6 +63,7 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="Mono.Android.Support.v4" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ErrorDialogFragment.cs" />
@@ -79,6 +80,12 @@
     <Compile Include="DBFiles\PowerUp.cs" />
     <Compile Include="DBFiles\User.cs" />
     <Compile Include="CustomGameMarker.cs" />
+    <Compile Include="Fragments\HotspotsFragment.cs" />
+    <Compile Include="Fragments\MapFragment.cs" />
+    <Compile Include="Fragments\PowerupsFragment.cs" />
+    <Compile Include="Fragments\ProfileFragment.cs" />
+    <Compile Include="Fragments\SettingsFragment.cs" />
+    <Compile Include="MyActionBarDrawerToggle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -100,14 +107,26 @@
     <AndroidResource Include="Resources\Drawable\shop.png" />
     <AndroidResource Include="Resources\Drawable\tourism.png" />
     <AndroidResource Include="Resources\Drawable\events.png" />
+    <AndroidResource Include="Resources\Layout\HotspotsScreen.axml" />
+    <AndroidResource Include="Resources\Layout\DrawerListItem.axml" />
+    <AndroidResource Include="Resources\Layout\PowerupsScreen.axml" />
+    <AndroidResource Include="Resources\Layout\ProfileScreen.axml" />
+    <AndroidResource Include="Resources\Layout\SettingsScreen.axml" />
+    <AndroidResource Include="Resources\Menu\ActionItems.xml" />
+    <AndroidResource Include="Resources\Drawable\hotspot_icon_white.png" />
+    <AndroidResource Include="Resources\Drawable\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\Drawable\map_icon_white.png" />
+    <AndroidResource Include="Resources\Drawable\powerup_icon_white.png" />
+    <AndroidResource Include="Resources\Drawable\profile_icon_white.png" />
+    <AndroidResource Include="Resources\Layout\Main.axml" />
+    <AndroidResource Include="Resources\Drawable\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\Drawable\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
@@ -148,5 +167,7 @@
   <ItemGroup>
     <Folder Include="Resources\Raw\" />
     <Folder Include="DBFiles\" />
+    <Folder Include="Fragments\" />
+    <Folder Include="Resources\Menu\" />
   </ItemGroup>
 </Project>

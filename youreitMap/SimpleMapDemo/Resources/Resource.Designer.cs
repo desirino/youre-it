@@ -30,6 +30,37 @@ namespace youreit
 			global::SQLite.Resource.String.Hello = global::youreit.Resource.String.Hello;
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f090003
+			public const int CurrentHotspotsDatesMockData = 2131296259;
+			
+			// aapt resource value: 0x7f090002
+			public const int CurrentHotspotsMockData = 2131296258;
+			
+			// aapt resource value: 0x7f090000
+			public const int MenuItemNames = 2131296256;
+			
+			// aapt resource value: 0x7f090001
+			public const int RecentActivityMockData = 2131296257;
+			
+			// aapt resource value: 0x7f090005
+			public const int UpcomingHotspotsDatesMockData = 2131296261;
+			
+			// aapt resource value: 0x7f090004
+			public const int UpcomingHotspotsMockData = 2131296260;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -222,37 +253,58 @@ namespace youreit
 			public const int common_signin_btn_text_pressed_light = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int events = 2130837530;
+			public const int drawer_shadow_dark = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int hotel = 2130837531;
+			public const int drawer_shadow_light = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int ic_plusone_medium_off_client = 2130837532;
+			public const int events = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int ic_plusone_small_off_client = 2130837533;
+			public const int hotel = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int ic_plusone_standard_off_client = 2130837534;
+			public const int hotspot_icon_white = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int ic_plusone_tall_off_client = 2130837535;
+			public const int ic_drawer_light = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int Icon = 2130837536;
+			public const int ic_plusone_medium_off_client = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int monoandroidsplash = 2130837537;
+			public const int ic_plusone_small_off_client = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int resturant = 2130837538;
+			public const int ic_plusone_standard_off_client = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int shop = 2130837539;
+			public const int ic_plusone_tall_off_client = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int tourism = 2130837540;
+			public const int Icon = 2130837540;
+			
+			// aapt resource value: 0x7f020025
+			public const int map_icon_white = 2130837541;
+			
+			// aapt resource value: 0x7f020026
+			public const int monoandroidsplash = 2130837542;
+			
+			// aapt resource value: 0x7f020027
+			public const int powerup_icon_white = 2130837543;
+			
+			// aapt resource value: 0x7f020028
+			public const int profile_icon_white = 2130837544;
+			
+			// aapt resource value: 0x7f020029
+			public const int resturant = 2130837545;
+			
+			// aapt resource value: 0x7f02002a
+			public const int shop = 2130837546;
+			
+			// aapt resource value: 0x7f02002b
+			public const int tourism = 2130837547;
 			
 			static Drawable()
 			{
@@ -267,20 +319,62 @@ namespace youreit
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f06000c
+			public const int Recent_Activity_Feed = 2131099660;
+			
 			// aapt resource value: 0x7f06000a
-			public const int animateButton = 2131099658;
+			public const int Recent_Activity_Title = 2131099658;
+			
+			// aapt resource value: 0x7f060012
+			public const int animateButton = 2131099666;
+			
+			// aapt resource value: 0x7f060015
+			public const int button1 = 2131099669;
+			
+			// aapt resource value: 0x7f060017
+			public const int button2 = 2131099671;
+			
+			// aapt resource value: 0x7f06000e
+			public const int content_frame = 2131099662;
 			
 			// aapt resource value: 0x7f060007
 			public const int description = 2131099655;
 			
+			// aapt resource value: 0x7f06000d
+			public const int drawer_layout = 2131099661;
+			
 			// aapt resource value: 0x7f060004
 			public const int hybrid = 2131099652;
+			
+			// aapt resource value: 0x7f060016
+			public const int imageView1 = 2131099670;
+			
+			// aapt resource value: 0x7f06000f
+			public const int left_drawer = 2131099663;
+			
+			// aapt resource value: 0x7f06000b
+			public const int line_blue = 2131099659;
+			
+			// aapt resource value: 0x7f060013
+			public const int linearLayout1 = 2131099667;
+			
+			// aapt resource value: 0x7f060014
+			public const int linearLayout2 = 2131099668;
+			
+			// aapt resource value: 0x7f060009
+			public const int linearLayout3 = 2131099657;
+			
+			// aapt resource value: 0x7f060008
+			public const int listView1 = 2131099656;
 			
 			// aapt resource value: 0x7f060005
 			public const int map = 2131099653;
 			
-			// aapt resource value: 0x7f06000b
-			public const int mapWithOverlay = 2131099659;
+			// aapt resource value: 0x7f060018
+			public const int menu_map = 2131099672;
+			
+			// aapt resource value: 0x7f060019
+			public const int menu_profile = 2131099673;
 			
 			// aapt resource value: 0x7f060000
 			public const int none = 2131099648;
@@ -297,11 +391,11 @@ namespace youreit
 			// aapt resource value: 0x7f060006
 			public const int title = 2131099654;
 			
-			// aapt resource value: 0x7f060008
-			public const int zoomInButton = 2131099656;
+			// aapt resource value: 0x7f060010
+			public const int zoomInButton = 2131099664;
 			
-			// aapt resource value: 0x7f060009
-			public const int zoomOutButton = 2131099657;
+			// aapt resource value: 0x7f060011
+			public const int zoomOutButton = 2131099665;
 			
 			static Id()
 			{
@@ -336,13 +430,31 @@ namespace youreit
 			public const int BasicDemo = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Feature = 2130903041;
+			public const int DrawerListItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int MapLayout = 2130903042;
+			public const int Feature = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int MapWithOverlayLayout = 2130903043;
+			public const int HotspotsScreen = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Main = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int MapLayout = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int MapWithOverlayLayout = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int PowerupsScreen = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int ProfileScreen = 2130903048;
+			
+			// aapt resource value: 0x7f030009
+			public const int SettingsScreen = 2130903049;
 			
 			static Layout()
 			{
@@ -350,6 +462,22 @@ namespace youreit
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0b0000
+			public const int ActionItems = 2131427328;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
@@ -500,8 +628,8 @@ namespace youreit
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f090000
-			public const int Mono_Android_Theme_Splash = 2131296256;
+			// aapt resource value: 0x7f0a0000
+			public const int Mono_Android_Theme_Splash = 2131361792;
 			
 			static Style()
 			{

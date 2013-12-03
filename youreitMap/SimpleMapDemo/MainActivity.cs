@@ -9,12 +9,16 @@
 	using System.IO;
     using Android.App;
     using Android.Content;
+	using Android.Content.Res;
     using Android.Gms.Common;
     using Android.OS;
     using Android.Util;
     using Android.Views;
     using Android.Widget;
 	using Android.Locations;
+
+	using DrawerSample;
+	using Android.Support.V4.Widget;
 
     using AndroidUri = Android.Net.Uri;
 
@@ -34,7 +38,6 @@
     [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity, ILocationListener
     {
-
 
 		public static readonly int InstallGooglePlayServicesId = 1000;
         public static readonly string Tag = "You're It Map Testing";
@@ -58,6 +61,16 @@
 
 		private GoogleMap _map;
 		private MapFragment _mapFragment;
+
+		//For the Draw (Menu)
+		private DrawerLayout _drawer;
+		private MyActionBarDrawerToggle _drawerToggle;
+		private ListView _drawerList;
+
+		private string _title;
+		private string _drawerTitle;
+		private string[] _menuTitles;
+
 		// **********  
 
 
@@ -103,8 +116,48 @@
 			SetContentView(Resource.Layout.MapWithOverlayLayout);
 
 			//Start up location Manager to get long and lat.
-			InitMapFragment();
-			SetupMapIfNeeded();
+
+			_title = _drawerTitle = "Menu";
+			_menuTitles = Resources.GetStringArray(Resource.Array.MenuItemNames);
+			_drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+			_drawerList = FindViewById<ListView>(Resource.Id.left_drawer);
+
+			_drawer.SetDrawerShadow(Resource.Drawable.drawer_shadow_dark, (int)GravityFlags.Start);
+
+			_drawerList.Adapter = new ArrayAdapter<string>(this,
+				Resource.Layout.DrawerListItem, _menuTitles);
+			_drawerList.ItemClick += (sender, args) => SelectItem(args.Position);
+
+
+			ActionBar.SetDisplayHomeAsUpEnabled(true);
+			ActionBar.SetHomeButtonEnabled(true);
+
+			//DrawerToggle is the animation that happens with the indicator next to the
+			//ActionBar icon. You can choose not to use this.
+			_drawerToggle = new MyActionBarDrawerToggle(this, _drawer,
+				Resource.Drawable.ic_drawer_light,
+				Resource.String.app_name,
+				Resource.String.app_name);
+
+			//You can alternatively use _drawer.DrawerClosed here
+			_drawerToggle.DrawerClosed += delegate
+			{
+				ActionBar.Title = _title;
+				InvalidateOptionsMenu();
+			};
+
+			//You can alternatively use _drawer.DrawerOpened here
+			_drawerToggle.DrawerOpened += delegate
+			{
+				ActionBar.Title = _drawerTitle;
+				InvalidateOptionsMenu();
+			};
+
+			_drawer.SetDrawerListener(_drawerToggle);
+
+			if (null == bundle)
+				SelectItem(0);
+
 			// **********  
 
 			//activity = new SampleActivity(Resource.String.activity_label_mapwithoverlays, Resource.String.activity_description_mapwithoverlays, typeof(MapWithOverlaysActivity));
@@ -273,9 +326,9 @@
 
 				FragmentTransaction fragTx = FragmentManager.BeginTransaction();
 				_mapFragment = MapFragment.NewInstance(mapOptions);
-				fragTx.Add(Resource.Id.mapWithOverlay, _mapFragment, "map");
+				fragTx.Add(Resource.Id.content_frame, _mapFragment, "map");
 				fragTx.Commit();
-			}
+			} 
 		}
 
 		private void MapOnMarkerClick(object sender, GoogleMap.MarkerClickEventArgs markerClickEventArgs)
@@ -353,51 +406,143 @@
 			}
 			return true;
 		}
-		// **********  
 
 
-		/*
-		// COULD REMOVE :D
-        protected override void OnListItemClick(ListView l, View v, int position, long id)
-        {
-            if (position == 0)
-            {
-                AndroidUri geoUri = AndroidUri.Parse("geo:42.374260,-71.120824");
-                Intent mapIntent = new Intent(Intent.ActionView, geoUri);
-                StartActivity(mapIntent);
-                return;
-            }
+		private void SelectItem(int position){
 
-            SampleActivity activity = _activities[position];
-            activity.Start(this);
-        }
+			switch (position) {
+			case 0:
 
-*/
-		
-		/*
-		// COULD REMOVE :D
-        private void InitializeListView()
-        {
-            if (_isGooglePlayServicesInstalled)
-            {
-                _activities = new List<SampleActivity>
-                      {
-                          //new SampleActivity(Resource.String.mapsAppText, Resource.String.mapsAppTextDescription, null),
-                          //new SampleActivity(Resource.String.activity_label_axml, Resource.String.activity_description_axml, typeof(BasicDemoActivity)),
-                          new SampleActivity(Resource.String.activity_label_mapwithmarkers, Resource.String.activity_description_mapwithmarkers, typeof(MapWithMarkersActivity)),
-                          new SampleActivity(Resource.String.activity_label_mapwithoverlays, Resource.String.activity_description_mapwithoverlays, typeof(MapWithOverlaysActivity))
-                      };
+				InitMapFragment ();
+				SetupMapIfNeeded ();
+				var mapFrag = _mapFragment;
 
-                ListAdapter = new SimpleMapDemoActivityAdapter(this, _activities);
-            }
-            else
-            {
-                Log.Error("MainActivity", "Google Play Services is not installed");
-                ListAdapter = new SimpleMapDemoActivityAdapter(this, null);
-            }
-        }
-		*/
+				var maparguments = new Bundle ();
+				maparguments.PutInt ("stuff", position);
+				mapFrag.Arguments = maparguments;
 
+				FragmentManager.BeginTransaction ()
+					.Replace (Resource.Id.content_frame, mapFrag)
+					.Commit ();
+
+				_drawerList.SetItemChecked (position, true);
+				ActionBar.Title = _title = _menuTitles [position];
+				_drawer.CloseDrawer (_drawerList);
+				break;
+			case 1:
+				var proffragment = new ProfileFragment ();
+				var profarguments = new Bundle ();
+				profarguments.PutInt ("stuff", position);
+				proffragment.Arguments = profarguments;
+
+				FragmentManager.BeginTransaction ()
+					.Replace (Resource.Id.content_frame, proffragment)
+					.Commit ();
+
+				_drawerList.SetItemChecked (position, true);
+				ActionBar.Title = _title = _menuTitles [position];
+				_drawer.CloseDrawer (_drawerList);
+				break;
+			case 2:
+				var profifragment = new ProfileFragment ();
+				var profiarguments = new Bundle ();
+				profiarguments.PutInt ("stuff", position);
+				profifragment.Arguments = profiarguments;
+
+				FragmentManager.BeginTransaction ()
+					.Replace (Resource.Id.content_frame, profifragment)
+					.Commit ();
+
+				_drawerList.SetItemChecked (position, true);
+				ActionBar.Title = _title = _menuTitles [position];
+				_drawer.CloseDrawer (_drawerList);
+				break;
+			case 3:
+				var powerfragment = new PowerupsFragment ();
+				var powerarguments = new Bundle ();
+				powerarguments.PutInt ("stuff", position);
+				powerfragment.Arguments = powerarguments;
+
+				FragmentManager.BeginTransaction ()
+					.Replace (Resource.Id.content_frame, powerfragment)
+					.Commit ();
+
+				_drawerList.SetItemChecked (position, true);
+				ActionBar.Title = _title = _menuTitles [position];
+				_drawer.CloseDrawer (_drawerList);
+				break;
+			case 4:
+				var hotspfragment = new HotspotsFragment ();
+				var hotarguments = new Bundle ();
+				hotarguments.PutInt ("stuff", position);
+				hotspfragment.Arguments = hotarguments;
+
+				FragmentManager.BeginTransaction ()
+					.Replace (Resource.Id.content_frame, hotspfragment)
+					.Commit ();
+
+				_drawerList.SetItemChecked (position, true);
+				ActionBar.Title = _title = _menuTitles [position];
+				_drawer.CloseDrawer (_drawerList);
+				break;
+			case 5:
+				var settingsfragment = new SettingsFragment ();
+				var setarguments = new Bundle ();
+				setarguments.PutInt ("stuff", position);
+				settingsfragment.Arguments = setarguments;
+
+				FragmentManager.BeginTransaction ()
+					.Replace (Resource.Id.content_frame, settingsfragment)
+					.Commit ();
+
+				_drawerList.SetItemChecked (position, true);
+				ActionBar.Title = _title = _menuTitles [position];
+				_drawer.CloseDrawer (_drawerList);
+				break;
+			}
+		}
+
+		protected override void OnPostCreate(Bundle savedInstanceState)
+		{
+			base.OnPostCreate(savedInstanceState);
+			_drawerToggle.SyncState();
+		}
+
+		public override void OnConfigurationChanged(Configuration newConfig)
+		{
+			base.OnConfigurationChanged(newConfig);
+			_drawerToggle.OnConfigurationChanged(newConfig);
+		}
+		public override bool OnCreateOptionsMenu(IMenu menu)
+		{
+			//add menu button items
+			menu.Add (0, 0, 0, "Settings");
+			//add ActionItems
+			MenuInflater.Inflate (Resource.Menu.ActionItems, menu);
+			return base.OnCreateOptionsMenu(menu);
+		}
+
+		//drawer stuff
+		public override bool OnPrepareOptionsMenu(IMenu menu)
+		{
+			var drawerOpen = _drawer.IsDrawerOpen(Resource.Id.left_drawer);
+			menu.FindItem(Resource.Id.menu_map).SetVisible(!drawerOpen);
+			menu.FindItem(Resource.Id.menu_profile).SetVisible(!drawerOpen);
+			return base.OnPrepareOptionsMenu(menu);
+		}
+
+		public override bool OnOptionsItemSelected (IMenuItem item)
+		{
+			//drawer stuff
+			if (_drawerToggle.OnOptionsItemSelected(item))
+				return true;
+
+			Android.Widget.Toast.MakeText (this, 
+				"Selected Item: " + 
+				item.TitleFormatted, 
+				Android.Widget.ToastLength.Short).Show();
+			return true;
+		}
         private bool TestIfGooglePlayServicesIsInstalled()
 		{
 			int queryResult = GooglePlayServicesUtil.IsGooglePlayServicesAvailable (this);
