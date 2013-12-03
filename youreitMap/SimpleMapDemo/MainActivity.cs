@@ -8,7 +8,10 @@ namespace youreit
 	using System.Linq;
 	using System.Text;
 	using System.IO;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 	using Android;
     using Android.App;
     using Android.Content;
@@ -25,6 +28,9 @@ namespace youreit
 
 	using DrawerSample;
 
+	using Style;
+	using Style.Enums;
+
     using AndroidUri = Android.Net.Uri;
 
 	// **********  ADDED FOR MAP SCREEN
@@ -37,7 +43,6 @@ namespace youreit
 	using Environment = System.Environment;
 
 	using Style;
-	using Style.Enums;
 	
 	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
 	
@@ -186,10 +191,18 @@ namespace youreit
 
 			if (null == bundle)
 				SelectItem(0);
+<<<<<<< Updated upstream
+=======
 
-			//NATIVE CSS STUFF HERE
+			// **********  
+
+			//activity = new SampleActivity(Resource.String.activity_label_mapwithoverlays, Resource.String.activity_description_mapwithoverlays, typeof(MapWithOverlaysActivity));
+
+			//activity.Start(this);
+
 			NativeCSS.StyleWithCSS("styles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/styles.css"), RemoteContentRefreshPeriod.EverySecond);
 
+>>>>>>> Stashed changes
         }
 
 		public void OnLocationChanged(Location location) {
