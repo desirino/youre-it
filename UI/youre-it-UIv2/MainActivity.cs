@@ -6,11 +6,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
 using Android.Support.V4.Widget;
 
-//using Styles;
-//using Styles.Enum;
+using Style;
+using Style.Enums;
 using DrawerSample;
 
 namespace youreitUIv2
@@ -34,7 +33,7 @@ namespace youreitUIv2
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			//NativeCSS.StyleWithCSS("styles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/styles.css"), RemoteContentRefreshPeriod.EverySecond);
+			NativeCSS.StyleWithCSS("styles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/styles.css"), RemoteContentRefreshPeriod.EverySecond);
 
 			//drawer stuff
 			_title = _drawerTitle = "Menu";
@@ -42,20 +41,20 @@ namespace youreitUIv2
 			_drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 			_drawerList = FindViewById<ListView>(Resource.Id.left_drawer);
 
-			_drawer.SetDrawerShadow(Resource.Drawable.Icon, (int)GravityFlags.Start);
+			//_drawer.SetDrawerShadow(Resource.Drawable.Icon, (int)GravityFlags.Start);
 
 			_drawerList.Adapter = new ArrayAdapter<string>(this,
 			                                               Resource.Layout.DrawerListItem, _menuTitles);
 			_drawerList.ItemClick += (sender, args) => SelectItem(args.Position);
 
 
-			ActionBar.SetDisplayHomeAsUpEnabled(true);
+			ActionBar.SetDisplayHomeAsUpEnabled(false);
 			ActionBar.SetHomeButtonEnabled(true);
 
 			//DrawerToggle is the animation that happens with the indicator next to the
 			//ActionBar icon. You can choose not to use this.
 			_drawerToggle = new MyActionBarDrawerToggle(this, _drawer,
-			                                            Resource.Drawable.Icon,
+			                                            Resource.Drawable.youre_it_icon,
 			                                            Resource.String.hello,
 			                                            Resource.String.hello);
 
@@ -114,7 +113,7 @@ namespace youreitUIv2
 				_drawer.CloseDrawer (_drawerList);
 				break;
 			case 2:
-				var profifragment = new ProfileFragment ();
+				var profifragment = new CustomizeFragment ();
 				var profiarguments = new Bundle ();
 				profiarguments.PutInt ("stuff", position);
 				profifragment.Arguments = profiarguments;

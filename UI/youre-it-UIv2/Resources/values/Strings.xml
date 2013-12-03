@@ -43,7 +43,11 @@
 	    <item>Starts December 23rd</item>
   	</string-array>
   	
-  	
-  
+  	<string-array name="SettingsAbout">
+	    <item>Version 0.0</item>
+	    <item>Twitter youreitgame</item>
+	    <item>Crash Reports</item>
+	    <item>youreit.com/support</item>
+  	</string-array>
   
 </resources>

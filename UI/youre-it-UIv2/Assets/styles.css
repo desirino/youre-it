@@ -1,0 +1,30 @@
+/*
+-ncss-style-guide-visible:true
+*/
+
+#mActionBarView{
+    color:#FFF;
+}
+navbar{
+	background:#00adef;
+}
+navbar label{
+    color:#FFF;
+}
+
+DrawerLayout{
+    background:#FFF;
+}
+
+#left_drawer ListView{
+    color:#FFF;
+}
+
+TextView{
+    color:#111;
+}
+
+android button{
+    background:#00adef;
+    color:#FFF;
+}

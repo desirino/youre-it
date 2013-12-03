@@ -1,24 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="youre-it-UIv2/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="youre-it-UIv2/MainActivity.cs" Line="97" Column="5" />
-      <File FileName="youre-it-UIv2/HotspotsFragment.cs" Line="21" Column="4" />
-      <File FileName="youre-it-UIv2/Resources/values/Strings.xml" Line="18" Column="40" />
+      <File FileName="youre-it-UIv2/MainActivity.cs" Line="58" Column="23" />
+      <File FileName="youre-it-UIv2/Resources/values/Strings.xml" Line="47" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="youre-it-UIv2" expanded="True">
-            <Node name="Resources" expanded="True">
-              <Node name="drawable" expanded="True" />
-              <Node name="layout" expanded="True" />
-              <Node name="Menu" expanded="True" />
-              <Node name="values" expanded="True" />
-            </Node>
-            <Node name="MainActivity.cs" selected="True" />
-          </Node>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -26,6 +15,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.DrawerSample MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
   <MonoDevelop.Ide.ItemProperties.youre-it-UIv2 AndroidDeviceId-Debug="42f7c602e54caf73" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
 </Properties>

@@ -43,6 +43,9 @@ namespace youreitUIv2
 			// aapt resource value: 0x7f050001
 			public const int RecentActivityMockData = 2131034113;
 			
+			// aapt resource value: 0x7f050006
+			public const int SettingsAbout = 2131034118;
+			
 			// aapt resource value: 0x7f050005
 			public const int UpcomingHotspotsDatesMockData = 2131034117;
 			
@@ -112,50 +115,74 @@ namespace youreitUIv2
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080004
-			public const int Recent_Activity_Feed = 2131230724;
-			
-			// aapt resource value: 0x7f080002
-			public const int Recent_Activity_Title = 2131230722;
-			
-			// aapt resource value: 0x7f08000a
-			public const int button1 = 2131230730;
-			
-			// aapt resource value: 0x7f08000c
-			public const int button2 = 2131230732;
-			
-			// aapt resource value: 0x7f080006
-			public const int content_frame = 2131230726;
-			
-			// aapt resource value: 0x7f080005
-			public const int drawer_layout = 2131230725;
-			
-			// aapt resource value: 0x7f08000b
-			public const int imageView1 = 2131230731;
+			// aapt resource value: 0x7f080014
+			public const int About_Title = 2131230740;
 			
 			// aapt resource value: 0x7f080007
-			public const int left_drawer = 2131230727;
-			
-			// aapt resource value: 0x7f080003
-			public const int line_blue = 2131230723;
-			
-			// aapt resource value: 0x7f080008
-			public const int linearLayout1 = 2131230728;
-			
-			// aapt resource value: 0x7f080009
-			public const int linearLayout2 = 2131230729;
+			public const int Recent_Activity_Feed = 2131230727;
 			
 			// aapt resource value: 0x7f080001
-			public const int linearLayout3 = 2131230721;
+			public const int Recent_Activity_Title = 2131230721;
 			
-			// aapt resource value: 0x7f080000
-			public const int listView1 = 2131230720;
+			// aapt resource value: 0x7f08000f
+			public const int SettingsScreen = 2131230735;
 			
-			// aapt resource value: 0x7f08000d
-			public const int menu_map = 2131230733;
+			// aapt resource value: 0x7f080011
+			public const int User_Settings_Items = 2131230737;
+			
+			// aapt resource value: 0x7f080010
+			public const int User_Settings_Title = 2131230736;
 			
 			// aapt resource value: 0x7f08000e
-			public const int menu_profile = 2131230734;
+			public const int button1 = 2131230734;
+			
+			// aapt resource value: 0x7f080005
+			public const int button2 = 2131230725;
+			
+			// aapt resource value: 0x7f080009
+			public const int content_frame = 2131230729;
+			
+			// aapt resource value: 0x7f080008
+			public const int drawer_layout = 2131230728;
+			
+			// aapt resource value: 0x7f08000c
+			public const int imageButton1 = 2131230732;
+			
+			// aapt resource value: 0x7f080004
+			public const int imageView1 = 2131230724;
+			
+			// aapt resource value: 0x7f08000a
+			public const int left_drawer = 2131230730;
+			
+			// aapt resource value: 0x7f080002
+			public const int line_blue = 2131230722;
+			
+			// aapt resource value: 0x7f080003
+			public const int linearLayout1 = 2131230723;
+			
+			// aapt resource value: 0x7f08000b
+			public const int linearLayout2 = 2131230731;
+			
+			// aapt resource value: 0x7f080000
+			public const int linearLayout3 = 2131230720;
+			
+			// aapt resource value: 0x7f080012
+			public const int linearLayout4 = 2131230738;
+			
+			// aapt resource value: 0x7f080006
+			public const int listView1 = 2131230726;
+			
+			// aapt resource value: 0x7f080015
+			public const int menu_map = 2131230741;
+			
+			// aapt resource value: 0x7f080016
+			public const int menu_profile = 2131230742;
+			
+			// aapt resource value: 0x7f08000d
+			public const int textView1 = 2131230733;
+			
+			// aapt resource value: 0x7f080013
+			public const int toggleButton1 = 2131230739;
 			
 			static Id()
 			{
@@ -171,25 +198,28 @@ namespace youreitUIv2
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int DrawerListItem = 2130903040;
+			public const int CustomizeScreen = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int HotspotsScreen = 2130903041;
+			public const int DrawerListItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int HotspotsScreen = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int MapScreen = 2130903043;
+			public const int Main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int PowerupsScreen = 2130903044;
+			public const int MapScreen = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int ProfileScreen = 2130903045;
+			public const int PowerupsScreen = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SettingsScreen = 2130903046;
+			public const int ProfileScreen = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int SettingsScreen = 2130903047;
 			
 			static Layout()
 			{
