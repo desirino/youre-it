@@ -1,0 +1,70 @@
+/*
+<<<<<<< Updated upstream
+-ncss-style-guide-visible:true
+*/
+
+#mActionBarView{
+    color:#FFF;
+}
+navbar{
+	background:#00adef;
+}
+navbar label{
+    color:#FFF;
+}
+
+DrawerLayout{
+    background:#FFF;
+}
+
+#left_drawer ListView{
+    color:#FFF;
+}
+
+TextView{
+    color:#111;
+}
+
+android button{
+    background:#00adef;
+    color:#FFF;
+=======
+#view{
+    -ncss-style-guide-visible:true
+}
+*/
+
+#mActionBarView{
+    color:#fff;
+}
+navbar{
+	background:#6ebbe5;
+}
+navbar label{
+    color:#fff;
+}
+DrawerLayout{
+    background:#fff;
+}
+#left_drawer ListView{
+    color:#fff;
+}
+TextView{
+    color:#111;
+}
+android button{
+    width:100px;
+    height:100px;
+    background:#6ebbe5;
+    color:#fff;
+    margin:10px;
+}
+#button_customize, #button_points, #button_tags, #button_tagged{
+    background:#fff;
+    color:#6ebbe5;
+}
+#PowerupV1Layout, #PowerupV2Layout, #PowerupV3Layout{
+    width:50%;
+    background:transparent;
+>>>>>>> Stashed changes
+}

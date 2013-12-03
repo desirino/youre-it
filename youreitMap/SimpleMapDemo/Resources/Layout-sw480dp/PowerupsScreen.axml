@@ -10,121 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/PowerupRow"
-<<<<<<< Updated upstream
         android:gravity="center">
-=======
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
->>>>>>> Stashed changes
-        <LinearLayout
-            android:orientation="vertical"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_height="fill_parent"
-            android:id="@+id/PowerupLayout"
-            android:layout_gravity="center"
-<<<<<<< Updated upstream
-            android:layout_width="wrap_content">
-=======
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
->>>>>>> Stashed changes
-            <ImageButton
-                android:id="@+id/PowerupBtn"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
-                android:src="@android:drawable/ic_menu_gallery" />
-            <TextView
-                android:text="Powerup V1"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView1"
-                android:layout_gravity="center"
-                android:textSize="12dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="wrap_content"
-<<<<<<< Updated upstream
-            android:layout_height="fill_parent"
-            android:id="@+id/PowerupLayout"
-            android:layout_gravity="center">
-=======
-            android:layout_height="wrap_content"
-            android:id="@+id/PowerupLayout"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
->>>>>>> Stashed changes
-            <ImageButton
-                android:src="@android:drawable/ic_menu_gallery"
-                android:id="@+id/PowerupBtn"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp" />
-            <TextView
-                android:text="Powerup V2"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView1"
-                android:layout_gravity="center"
-                android:textSize="12dp" />
-<<<<<<< Updated upstream
-        </LinearLayout>
-=======
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:id="@+id/PowerupLayout"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
-            <ImageButton
-                android:src="@android:drawable/ic_menu_gallery"
-                android:id="@+id/PowerupBtn"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp" />
-            <TextView
-                android:text="Powerup V3"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView1"
-                android:layout_gravity="center"
-                android:textSize="12dp" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/PowerupRow"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -158,7 +44,7 @@
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
@@ -217,9 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/PowerupRow"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:gravity="center">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -253,7 +137,7 @@
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
@@ -312,9 +196,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/PowerupRow"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:gravity="center">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -343,18 +225,12 @@
                 android:layout_gravity="center"
                 android:textSize="12dp" />
         </LinearLayout>
->>>>>>> Stashed changes
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="wrap_content"
-<<<<<<< Updated upstream
             android:layout_height="fill_parent"
-            android:id="@+id/PowerupLayout"
-            android:layout_gravity="center">
-=======
-            android:layout_height="wrap_content"
             android:id="@+id/PowerupLayout"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
@@ -387,7 +263,192 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
->>>>>>> Stashed changes
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/PowerupBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="Powerup V3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PowerupRow"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_height="fill_parent"
+            android:id="@+id/PowerupLayout"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:id="@+id/PowerupBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@android:drawable/ic_menu_gallery" />
+            <TextView
+                android:text="Powerup V1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/PowerupLayout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/PowerupBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="Powerup V2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/PowerupLayout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/PowerupBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="Powerup V3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PowerupRow"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_height="fill_parent"
+            android:id="@+id/PowerupLayout"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:id="@+id/PowerupBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@android:drawable/ic_menu_gallery" />
+            <TextView
+                android:text="Powerup V1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/PowerupLayout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/PowerupBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="Powerup V2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/PowerupLayout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
             <ImageButton
                 android:src="@android:drawable/ic_menu_gallery"
                 android:id="@+id/PowerupBtn"

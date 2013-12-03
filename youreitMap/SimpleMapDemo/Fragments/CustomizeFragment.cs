@@ -9,17 +9,21 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+<<<<<<< Updated upstream
+namespace youreitUIv2
+=======
 namespace youreit
+>>>>>>> Stashed changes
 {
-	class SettingsFragment : Fragment
+	class CustomizeFragment : Fragment
 	{
 
 		public override View OnCreateView(LayoutInflater p0, ViewGroup p1, Bundle p2)
 		{
-			var rootView = p0.Inflate(Resource.Layout.SettingsScreen, p1, false);
+			var rootView = p0.Inflate(Resource.Layout.CustomizeScreen, p1, false);
 
 
-			Console.WriteLine ("------------SETTINGS FRAGMENT------------");
+			Console.WriteLine ("------------CUSTOMIZE FRAGMENT------------");
 			return rootView;
 
 		}

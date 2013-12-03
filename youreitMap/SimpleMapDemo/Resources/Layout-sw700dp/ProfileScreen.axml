@@ -8,17 +8,9 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="fill_parent"
-<<<<<<< Updated upstream
         android:layout_height="150dp"
         android:id="@+id/Profile_Top"
         android:gravity="center">
-=======
-        android:layout_height="wrap_content"
-        android:id="@+id/Profile_Top"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
->>>>>>> Stashed changes
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -29,24 +21,14 @@
             android:gravity="center">
             <Button
                 android:text="customize"
-<<<<<<< Updated upstream
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-=======
-                android:layout_width="60dp"
-                android:layout_height="60dp"
->>>>>>> Stashed changes
                 android:id="@+id/button_customize"
                 android:textSize="7dp" />
             <Button
                 android:text="(P) 3500"
-<<<<<<< Updated upstream
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-=======
-                android:layout_width="60dp"
-                android:layout_height="60dp"
->>>>>>> Stashed changes
                 android:id="@+id/button_points"
                 android:textSize="7dp" />
         </LinearLayout>
@@ -54,18 +36,11 @@
             android:src="@drawable/Mock_Profile_Image"
             android:layout_width="150dp"
             android:layout_height="150dp"
-<<<<<<< Updated upstream
             android:id="@+id/Profile_Image" />
-=======
-            android:id="@+id/Profile_Image"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
->>>>>>> Stashed changes
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
-<<<<<<< Updated upstream
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout2"
@@ -74,27 +49,12 @@
                 android:text="15 Tags"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-=======
-            android:id="@+id/linearLayout2"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent">
-            <Button
-                android:text="15 Tags"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
->>>>>>> Stashed changes
                 android:id="@+id/button_tags"
                 android:textSize="7dp" />
             <Button
                 android:text="10 Tagged"
-<<<<<<< Updated upstream
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-=======
-                android:layout_width="60dp"
-                android:layout_height="60dp"
->>>>>>> Stashed changes
                 android:id="@+id/button_tagged"
                 android:textSize="7dp" />
         </LinearLayout>
@@ -118,19 +78,15 @@
         android:minHeight="25px"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-<<<<<<< Updated upstream
         android:id="@+id/Profile_Recent_Activity">
-=======
-        android:id="@+id/Profile_Recent_Activity"
-        android:layout_marginTop="10dp">
->>>>>>> Stashed changes
         <TextView
             android:text="Recent Activity"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Recent_Activity_Title"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
         <ImageView
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="fill_parent"

@@ -8,7 +8,10 @@ namespace youreit
 	using System.Linq;
 	using System.Text;
 	using System.IO;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 	using Android;
     using Android.App;
     using Android.Content;
@@ -24,6 +27,9 @@ namespace youreit
 	using Android.Locations;
 
 	using DrawerSample;
+
+	using Style;
+	using Style.Enums;
 
     using AndroidUri = Android.Net.Uri;
 
@@ -185,6 +191,18 @@ namespace youreit
 
 			if (null == bundle)
 				SelectItem(0);
+<<<<<<< Updated upstream
+=======
+
+			// **********  
+
+			//activity = new SampleActivity(Resource.String.activity_label_mapwithoverlays, Resource.String.activity_description_mapwithoverlays, typeof(MapWithOverlaysActivity));
+
+			//activity.Start(this);
+
+			NativeCSS.StyleWithCSS("styles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/styles.css"), RemoteContentRefreshPeriod.EverySecond);
+
+>>>>>>> Stashed changes
         }
 
 		public void OnLocationChanged(Location location) {
@@ -443,7 +461,7 @@ namespace youreit
 				_drawer.CloseDrawer (_drawerList);
 				break;
 			case 2:
-				var profifragment = new ProfileFragment ();
+				var profifragment = new CustomizeFragment ();
 				var profiarguments = new Bundle ();
 				profiarguments.PutInt ("stuff", position);
 				profifragment.Arguments = profiarguments;
