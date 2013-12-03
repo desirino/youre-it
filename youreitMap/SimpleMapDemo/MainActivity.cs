@@ -1,4 +1,6 @@
-﻿namespace youreit
+﻿using Java.IO;
+
+namespace youreit
 {
 	using System;
 	using System.Threading;
@@ -28,11 +30,7 @@
 	using Android.Graphics;
 
 	// **********  
-
-	/// <summary>
-	/// ADDED FOR DB MANAGEMENT 
-	/// </summary>
-	using SQLite;
+	using Mono.Data.Sqlite;
 	using Environment = System.Environment;
 	
     [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
@@ -96,15 +94,26 @@
             base.OnCreate(bundle);
 
 			//DATAMANAGEMENT STUFF!
-			SQLite3.Config (SQLite3.ConfigOption.Serialized);
+
+			string dbName = "youreit.sqlite";
+			string dbPath = System.IO.Path.Combine (Android.OS.Environment.ExternalStorageDirectory.ToString (), dbName);
+	
+			if (File.Exists (dbPath)) {
+				File.Delete (dbPath);
+			} 
+
+			using (Stream source = Assets.Open(dbName))
+			using (var dest = System.IO.File.Create (dbPath)) {
+				source.CopyTo (dest);
+			}
 
 			//Returns a list of hotspots (ID, Name, Longtitude, Latitude, Reward, Price, TimeDate)
 			hotspotList = Hotspots.DoSomeDataAccess ();
 			powerupList = Powerups.DoSomeDataAccess ();
 			customizationList = Customizations.DoSomeDataAccess ();
 			userList = User.DoSomeDataAccess ();
-			Console.WriteLine ("---- " +hotspotList + "---" +  powerupList + "---" + customizationList + userList);
-			//hotspotList.ForEach(item => Console.Write("\n------ " + item.Name));
+
+			Console.WriteLine ("- There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
 
 			_locMgr = GetSystemService (Context.LocationService) as LocationManager;
 

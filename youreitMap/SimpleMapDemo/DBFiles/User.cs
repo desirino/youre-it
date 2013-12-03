@@ -9,7 +9,7 @@ namespace youreit
 	public class UserData
 	{
 
-		public UserData(int ID, string Username, int TaggedCount, int Points, Double Latitude, Double Longitude, string Powerups, string Customization, string Hotspots)
+		public UserData(int ID, string Username, int TaggedCount, int Points, Double Longitude, Double Latitude, string Powerups, string Customization, string Hotspots)
 		{
 			this.ID = ID;
 			this.Username = Username;
@@ -18,7 +18,7 @@ namespace youreit
 			this.Longitude = Longitude;
 			this.Latitude = Latitude;
 			this.PowerUps = PowerUps;
-			this.Customization = Customization;
+			this.Customizations = Customization;
 			this.Hotspots = Hotspots;
 		}
 
@@ -31,7 +31,7 @@ namespace youreit
 
 		//Stores ids of all of the following. 
 		public string PowerUps { get; set;} 
-		public string Customization { get; set; }
+		public string Customizations { get; set; }
 		public string Hotspots { get; set; }
 	}
 
@@ -42,22 +42,27 @@ namespace youreit
 		public static List<UserData>  DoSomeDataAccess ()
 		{
 			List<UserData> userList = new List<UserData>(); 
-			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
+
+			string dbName = "youreit.sqlite";
+			string dbPath = Path.Combine (Android.OS.Environment.ExternalStorageDirectory.ToString (), dbName);
 
 			connection = new SqliteConnection ("Data Source=" + dbPath);
+			connection.InitializeLifetimeService ();
 			connection.Open ();
 			using (var contents = connection.CreateCommand ()) {
-				contents.CommandText = "SELECT * from [Users]";
+				contents.CommandText = "SELECT * from [User]";
 				var r = contents.ExecuteReader ();
-				while (r.Read ())
-					userList.Add(new UserData(
-						Convert.ToInt32(r["ID"]), r ["Username"].ToString(),
-						Convert.ToInt32(r["TaggedCount"]), Convert.ToInt32(r["Points"]),
-						Convert.ToDouble(r["Latitude"]), Convert.ToDouble(r["Longitude"]),
-						r ["Powerups"].ToString(), r ["Customization"].ToString(), r ["Hotspots"].ToString()
 
+				while (r.Read ()) {
+
+					userList.Add (new UserData (
+						Convert.ToInt32 (r ["ID"]), r ["Username"].ToString (),
+						//Convert.ToInt32(r["Tagged"]), Convert.ToInt32(r["Points"]),
+						Convert.ToInt32 (r ["Tagged"]), 100,
+						Convert.ToDouble (r ["Longitude"]), Convert.ToDouble (r ["Latitude"]), 
+						r ["Powerups"].ToString (), r ["Customizations"].ToString (), r ["Hotspots"].ToString ()
 					));
-
+				}
 			}
 			connection.Close ();
 			return userList;
@@ -66,6 +71,8 @@ namespace youreit
 		public bool UpdateUser() {
 
 			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
+
+
 
 			connection = new SqliteConnection ("Data Source=" + dbPath);
 			connection.Open ();

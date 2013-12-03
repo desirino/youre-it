@@ -78,10 +78,6 @@
     <Compile Include="MapWithMarkersActivity.cs" />
     <Compile Include="BasicDemoActivity.cs" />
     <Compile Include="SimpleMapDemoActivityAdapter.cs" />
-    <Compile Include="DBFiles\Customization.cs" />
-    <Compile Include="DBFiles\Hotspots.cs" />
-    <Compile Include="DBFiles\PowerUp.cs" />
-    <Compile Include="DBFiles\User.cs" />
     <Compile Include="CustomGameMarker.cs" />
     <Compile Include="Fragments\HotspotsFragment.cs" />
     <Compile Include="Fragments\MapFragment.cs" />
@@ -89,6 +85,10 @@
     <Compile Include="Fragments\ProfileFragment.cs" />
     <Compile Include="Fragments\SettingsFragment.cs" />
     <Compile Include="MyActionBarDrawerToggle.cs" />
+    <Compile Include="DBFiles\Customization.cs" />
+    <Compile Include="DBFiles\Hotspots.cs" />
+    <Compile Include="DBFiles\PowerUp.cs" />
+    <Compile Include="DBFiles\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -167,7 +167,6 @@
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="nativecss">
-      <InstallationInProgress>True</InstallationInProgress>
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
@@ -177,5 +176,8 @@
     <Folder Include="DBFiles\" />
     <Folder Include="Fragments\" />
     <Folder Include="Resources\Menu\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\youreit.sqlite" />
   </ItemGroup>
 </Project>

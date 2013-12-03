@@ -32,12 +32,11 @@ namespace youreit
 		{
 			List<CustomizationData> cusomtizationList = new List<CustomizationData>(); 
 
-			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "youreit.db3");
+			string dbName = "youreit.sqlite";
+			string dbPath = Path.Combine (Android.OS.Environment.ExternalStorageDirectory.ToString (), dbName);
 
 			connection = new SqliteConnection ("Data Source=" + dbPath);
 			connection.Open ();
-	
-			// query the database to prove data was inserted!
 
 			using (var contents = connection.CreateCommand ()) {
 				contents.CommandText = "SELECT * from [Customizations]";
