@@ -292,16 +292,16 @@ namespace youreit
 			public const int Mock_Circle = 2130837542;
 			
 			// aapt resource value: 0x7f020027
-			public const int monoandroidsplash = 2130837543;
+			public const int Mock_Profile_Image = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int powerup_icon_white = 2130837544;
+			public const int monoandroidsplash = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int profile_icon_white = 2130837545;
+			public const int powerup_icon_white = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int Profile_Image = 2130837546;
+			public const int profile_icon_white = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
 			public const int resturant = 2130837547;
@@ -334,8 +334,8 @@ namespace youreit
 			// aapt resource value: 0x7f060017
 			public const int animateButton = 2131099671;
 			
-			// aapt resource value: 0x7f06001a
-			public const int button1 = 2131099674;
+			// aapt resource value: 0x7f060019
+			public const int button1 = 2131099673;
 			
 			// aapt resource value: 0x7f06000e
 			public const int button2 = 2131099662;
@@ -382,8 +382,8 @@ namespace youreit
 			// aapt resource value: 0x7f060018
 			public const int linearLayout1 = 2131099672;
 			
-			// aapt resource value: 0x7f060019
-			public const int linearLayout2 = 2131099673;
+			// aapt resource value: 0x7f06001a
+			public const int linearLayout2 = 2131099674;
 			
 			// aapt resource value: 0x7f060006
 			public const int linearLayout3 = 2131099654;
@@ -484,13 +484,16 @@ namespace youreit
 			public const int MapWithOverlayLayout = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int PowerupsScreen = 2130903048;
+			public const int MenuScreen = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int ProfileScreen = 2130903049;
+			public const int PowerupsScreen = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int SettingsScreen = 2130903050;
+			public const int ProfileScreen = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int SettingsScreen = 2130903051;
 			
 			static Layout()
 			{

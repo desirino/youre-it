@@ -8,10 +8,6 @@ namespace youreit
 	using System.Linq;
 	using System.Text;
 	using System.IO;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 	using Android;
     using Android.App;
     using Android.Content;
@@ -191,8 +187,6 @@ namespace youreit
 
 			if (null == bundle)
 				SelectItem(0);
-<<<<<<< Updated upstream
-=======
 
 			// **********  
 
@@ -201,8 +195,6 @@ namespace youreit
 			//activity.Start(this);
 
 			NativeCSS.StyleWithCSS("styles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/styles.css"), RemoteContentRefreshPeriod.EverySecond);
-
->>>>>>> Stashed changes
         }
 
 		public void OnLocationChanged(Location location) {
