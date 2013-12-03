@@ -1,0 +1,87 @@
+
+/*
+TaskDetailsScreen#view *,Screen#view *{
+style-guide-visible:true;
+}*/
+
+/* COMMON STYLING */
+
+label,input[type=text] {
+color:#111;
+margin:auto;
+width:90%;
+
+}
+
+
+/* NAV / ACTIONBARS */
+navbar{
+-max-ios6.1-tint-color:#811;
+-min-ios7-tint-color:white;
+color:white;
+background:red,linear-gradient(bottom,red,#811);
+-ios-translucent:false;
+}
+
+navbar label{
+color:white !important;
+}
+
+/* LIST VIEW */
+
+#view {
+background:#FFF;
+-ios-font-family:Futura-Medium;
+}
+
+android button#btnAddTask {
+background-image:linear-gradient(black,#811);
+width:80%;
+margin:20px auto;
+}
+
+
+android #TaskDetailsHeader{
+display:none;
+}
+
+
+
+/* DETAIL VIEW */
+
+android TaskDetailsScreen label{
+margin-top:-10px;
+}
+
+input[type=text] {
+background:white;
+width:85%;
+border-radius:0px;
+border-bottom:3px solid red;
+margin-top:-10px;
+-ios-padding:3px 5px;
+-android-font-size:12px;
+-android-height:30px;
+}
+
+TaskDetailsScreen button, Screen button {
+font-size:18px;
+margin:auto;
+-ios-padding: 5px 0px;
+width:90%;
+color:#eee;
+}
+
+button#btnSave {
+top:153px;
+-android-top:130px;
+background-image:linear-gradient(#111,#111);
+
+}
+
+button#btnCancelDelete {
+top:203px;
+-android-top:183px;
+background-image:linear-gradient(bottom,red,#811);
+}
+

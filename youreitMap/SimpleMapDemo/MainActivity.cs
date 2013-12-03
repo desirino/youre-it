@@ -324,10 +324,11 @@
 					.InvokeZoomControlsEnabled(false)
 					.InvokeCompassEnabled(true);
 
-				FragmentTransaction fragTx = FragmentManager.BeginTransaction();
 				_mapFragment = MapFragment.NewInstance(mapOptions);
-				fragTx.Add(Resource.Id.content_frame, _mapFragment, "map");
-				fragTx.Commit();
+				FragmentManager.BeginTransaction ()
+					.Replace (Resource.Id.content_frame, _mapFragment)
+					.Commit ();
+
 			} 
 		}
 
@@ -386,8 +387,7 @@
 
 		private bool SetupMapIfNeeded()
 		{
-			if (_map == null)
-			{
+
 				_map = _mapFragment.Map;
 				if (_map != null)
 				{
@@ -403,8 +403,7 @@
 					return true;
 				}
 				return false;
-			}
-			return true;
+
 		}
 
 
@@ -415,15 +414,6 @@
 
 				InitMapFragment ();
 				SetupMapIfNeeded ();
-				var mapFrag = _mapFragment;
-
-				var maparguments = new Bundle ();
-				maparguments.PutInt ("stuff", position);
-				mapFrag.Arguments = maparguments;
-
-				FragmentManager.BeginTransaction ()
-					.Replace (Resource.Id.content_frame, mapFrag)
-					.Commit ();
 
 				_drawerList.SetItemChecked (position, true);
 				ActionBar.Title = _title = _menuTitles [position];

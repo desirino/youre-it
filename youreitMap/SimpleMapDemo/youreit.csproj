@@ -64,6 +64,9 @@
     <Reference Include="System.Data" />
     <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="NativeCSS.Android">
+      <HintPath>..\Components\nativecss-1.0\lib\android\NativeCSS.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ErrorDialogFragment.cs" />
@@ -161,6 +164,11 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="sqlite-net">
       <Version>1.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="nativecss">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
