@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>You're it - A mobile tag game</title>
+		<meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
+		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<div id="headerLeft">
+					<h1>You're it</h1>
+					<img src="images/icon.png" class="logo">
+					<div class="clearfix"></div>
+					<span>Tag Reinvented.</span>
+				</div>
+				<nav> <img src="images/twitter.png" ></nav>
+			</header>
+			<div id="cbp-fbscroller" class="cbp-fbscroller">
+				<nav>
+					<a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
+					<a href="#fbsection2">Section 2</a>
+					<a href="#fbsection3">Section 3</a>
+					<a href="#fbsection4">Section 4</a>
+					<a href="#fbsection5">Section 5</a>
+				</nav>
+				<section id="fbsection1"></section>
+				<section id="fbsection2">
+					<p> How it works?</p>
+					<div id="imgContainer">
+					<img src="images/map_framed.png" class="fullImg"/>
+					</div>
+				</section>
+				<section id="fbsection3">
+					<p> Current Hotspots</p>
+				</section>
+				<section id="fbsection4">
+					<p> How it was made</p>
+				</section>
+				<section id="fbsection5">
+					<p>Future Release Plan</p>
+					<div id="imgContainer">
+					<img src="images/futureplans.png" class="fullImg"/>
+					</div>
+				</section>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
+		<script src="js/jquery.easing.min.js"></script>
+		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+		<script src="js/jquery.debouncedresize.js"></script>
+		<script src="js/cbpFixedScrollLayout.min.js"></script>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+			});
+		</script>
+	</body>
+</html>

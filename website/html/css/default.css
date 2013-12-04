@@ -1,0 +1,151 @@
+
+@font-face
+{
+font-family: BentonSans-Black;
+src: url(bentonsans-black-webfont.ttf);
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+p {
+	margin:0px 10px;
+	padding-top:20px;
+}
+.container > header {
+	padding: 1.875em 1.875em 1.875em;
+	position: fixed;
+	z-index: 1000;
+	background-color: #6ebbe5;
+	width:100%;
+	box-shadow: 2px 2px 0px #888888;
+
+}
+.container #headerLeft {
+	width:80%;
+	float:left;
+}
+.container .logo {
+	height:50px;
+	float:left;
+	margin-top: -5px;
+}
+.container > header h1 {
+	font-size: 2.125em;
+	line-height: 1.3;
+	margin: 0;
+	float: left;
+	font-family: BentonSans;
+	text-transform: uppercase;
+
+}
+
+.container > header span {
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.container > header nav {
+	padding-top:5px;
+	float: right;
+	width:20%;
+	text-align: right;
+}
+
+.container > header nav a {
+	display: block;
+	float: left;
+	position: relative;
+	width: 2.5em;
+	height: 2.5em;
+	background: #fff;
+	border-radius: 50%;
+	color: transparent;
+	margin: 0 0.1em;
+	border: 4px solid #fff;
+	text-indent: -8000px;
+}
+
+.container > header nav a:after {
+	content: attr(data-info);
+	color: #fff;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.container > header nav a:hover:after {
+	opacity: 1;
+}
+
+.container > header nav a:hover {
+	background: #47a3da;
+}
+
+nav img {
+	height: 25px !important;
+}
+.icon-drop:before,
+.icon-arrow-left:before {
+	font-family: 'fontawesome';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	color: #47a3da;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 8000px;
+	padding-left: 8px;
+}
+
+.container > header nav a:hover:before {
+	color: #fff;
+}
+
+.icon-drop:before {
+	content: "\e000";
+}
+
+.icon-arrow-left:before {
+	content: "\f060";
+}
+
+ .fullImg {
+	width:100%;
+	vertical-align: middle;
+}
+#fbsection5 #imgContainer {
+	display:table-cell;
+	 vertical-align:middle;
+	 height:889px;
+}
