@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 namespace youreit
 {
 	using System;
@@ -368,8 +368,8 @@ namespace youreit
 						Console.WriteLine ("---------------its a user");
 						if (customMarker1.Click == true) {
 
-							foreach(CustomGameMarker marker1 in markerList){
-								if (marker1.Click=false) 
+							foreach (CustomGameMarker marker1 in markerList) {
+								if (marker1.Click = false)
 									marker1.Click = true;
 							}
 							if (circle1 != null) {
@@ -377,43 +377,38 @@ namespace youreit
 								circle2.Remove ();
 								circle3.Remove ();
 							}
-							circle1 = _map.AddCircle(new CircleOptions()
+							circle1 = _map.AddCircle (new CircleOptions ()
 								.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude))
-								.InvokeRadius(250)
+								.InvokeRadius (250)
 								.InvokeStrokeWidth (0)
-								.Visible(true)
+								.Visible (true)
 								.InvokeFillColor (Color.Argb (102, 36, 120, 166)));
-							circle2 = _map.AddCircle(new CircleOptions()
+							circle2 = _map.AddCircle (new CircleOptions ()
 								.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude))
-								.InvokeRadius(625)
+								.InvokeRadius (625)
 								.InvokeStrokeWidth (0)
-								.Visible(true)
+								.Visible (true)
 								.InvokeFillColor (Color.Argb (102, 78, 156, 201)));
-							circle3 = _map.AddCircle(new CircleOptions()
+							circle3 = _map.AddCircle (new CircleOptions ()
 								.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude))
-								.InvokeRadius(1000)
+								.InvokeRadius (1000)
 								.InvokeStrokeWidth (0)
-								.Visible(true)
+								.Visible (true)
 								.InvokeFillColor (Color.Argb (178, 110, 187, 229)));
-//							circleOptions.InvokeRadius (250);
-//							circleOptions.InvokeStrokeWidth (0);
-//							circleOptions.InvokeFillColor (Color.Argb (102, 36, 120, 166));
-//							circleOptions.InvokeZIndex (3);
-//							_map.AddCircle (circleOptions);
-//							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
-//							circleOptions.InvokeRadius (625);
-//							circleOptions.InvokeStrokeWidth (0);
-//							circleOptions.InvokeFillColor (Color.Argb (102, 78, 156, 201));
-//							circleOptions.InvokeZIndex (2);
-//							_map.AddCircle (circleOptions);
-//							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
-//							circleOptions.InvokeRadius (1000);
-//							circleOptions.InvokeStrokeWidth (0);
-//							circleOptions.InvokeFillColor (Color.Argb (178, 110, 187, 229));
-//							circleOptions.InvokeZIndex (1);
-//							circleOptions.Visible (true);
 
-
+							double distance = Measure (userList.ElementAt (Convert.ToInt32 (customMarker1.TypeID) - 1).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude, myData.Latitude, myData.Longitude);
+							if (distance >= 1000) {//Console.WriteLine ("_______________You get NOTHING"+distance);
+								Toast.MakeText (this, String.Format ("You Can't Tag This User"), ToastLength.Short).Show ();
+							} else if (distance <= 1000 & distance >= 650) {
+								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 50, null);
+							} else if (distance <= 650 & distance >= 250) {
+								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 100, null);
+							} else if (distance <= 250) {
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 200, null);
+								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
+							}
 							customMarker1.Click = false;
 
 						} else {

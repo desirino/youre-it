@@ -9,25 +9,28 @@ namespace youreit
 	public class UserData
 	{
 
-		public UserData(int ID, string Username, int TaggedCount, int Points, Double Longitude, Double Latitude, string Powerups, string Customization, string Hotspots)
+		public UserData(int ID, string Username, int HaveTagged, int Points, Double Longitude, Double Latitude, string Powerups, string Customization, string Hotspots, int BeenTagged)
 		{
 			this.ID = ID;
 			this.Username = Username;
-			this.TaggedCount = TaggedCount;
+			this.HaveTagged = HaveTagged;
 			this.Points = Points;
 			this.Longitude = Longitude;
 			this.Latitude = Latitude;
 			this.PowerUps = PowerUps;
 			this.Customization = Customization;
 			this.Hotspots = Hotspots;
+			this.BeenTagged = BeenTagged;
+
 		}
 
 		public int ID { get; set; }
 		public string Username { get; set;} 
-		public int TaggedCount { get; set;}
+		public int HaveTagged { get; set;}
 		public int Points { get; set;}
 		public Double Longitude { get; set; }
 		public Double Latitude { get; set; }
+		public int BeenTagged { get; set;}
 
 		//Stores ids of all of the following. 
 		public string PowerUps { get; set;} 
@@ -57,9 +60,10 @@ namespace youreit
 
 					userList.Add (new UserData (
 						Convert.ToInt32 (r ["ID"]), r ["Username"].ToString (),
-						Convert.ToInt32(r["Tagged"]), Convert.ToInt32(r["Points"]),
+						Convert.ToInt32(r["HaveTagged"]), Convert.ToInt32(r["Points"]),
 						Convert.ToDouble(r["Longitude"]), Convert.ToDouble(r["Latitude"]),
-						r ["Powerups"].ToString(), r ["Customizations"].ToString(), r ["Hotspots"].ToString()
+						r ["Powerups"].ToString(), r ["Customizations"].ToString(), r ["Hotspots"].ToString(),
+						Convert.ToInt32(r["BeenTagged"])
 
 					));
 				}
