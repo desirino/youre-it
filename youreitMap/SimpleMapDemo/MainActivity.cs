@@ -57,7 +57,6 @@ namespace youreit
 		LocationManager _locMgr;
 		string _locationProvider;
 		public List<CustomGameMarker> markerList = new List<CustomGameMarker>();
-		public CustomGameMarker customMapMarker = new CustomGameMarker("0","0",0,true);
 	
 		//Lists where all the data is stored 
 		private List<HotspotData> hotspotList;
@@ -77,6 +76,12 @@ namespace youreit
 		private string _title;
 		private string _drawerTitle;
 		private string[] _menuTitles;
+		private CircleOptions circleOptions1 = new CircleOptions ();
+		private CircleOptions circleOptions2 = new CircleOptions ();
+		private CircleOptions circleOptions3 = new CircleOptions ();
+		Circle circle1;
+		Circle circle2;
+		Circle circle3;
 
 		// **********  
 
@@ -133,6 +138,7 @@ namespace youreit
 			customizationList = Customizations.DoSomeDataAccess ();
 			userList = User.DoSomeDataAccess ();
 			myData = PersonalInfo.DoSomeDataAccess ();
+
 			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
 
 			PersonalInfo.UpdateUser (myData, "green", 10000, "shield");
@@ -289,11 +295,12 @@ namespace youreit
 					.SetSnippet(String.Format("Starbucks #{0}.", hotspot.ID))
 					.SetTitle(String.Format("Starbucks {0}",  hotspot.ID));
 				//_map.AddMarker(markerOptions);
+
 				marker = _map.AddMarker(markerOptions);
-				customMapMarker.markerID = marker.Id;
-				customMapMarker.Type = "hotspot";
-				customMapMarker.TypeID = hotspot.ID;
+				CustomGameMarker customMapMarker = new CustomGameMarker(marker.Id,"hotspot",hotspot.ID,true);
+
 				markerList.Add(customMapMarker) ;
+
 			}
 		}
 
@@ -315,9 +322,8 @@ namespace youreit
 					.SetSnippet(String.Format("User #{0}.", m_user.ID))
 					.SetTitle(String.Format("User {0}",  m_user.ID));
 				marker = _map.AddMarker(userMarkers);
-				customMapMarker.markerID = marker.Id;
-				customMapMarker.Type = "user";
-				customMapMarker.TypeID = m_user.ID;
+				CustomGameMarker customMapMarker = new CustomGameMarker(marker.Id,"user",m_user.ID,true);
+
 				markerList.Add(customMapMarker) ;
 
 			}
@@ -345,6 +351,7 @@ namespace youreit
 					.Replace (Resource.Id.content_frame, _mapFragment, "map")
 					.Commit ();
 
+
 			} 
 		}
 
@@ -357,38 +364,63 @@ namespace youreit
 				if (marker.Id.Equals(customMarker1.markerID))
 				{
 					if (customMarker1.Type == "user") {
-		
+//						CircleOptions circleOptions = new CircleOptions ();
+						Console.WriteLine ("---------------its a user");
+						if (customMarker1.Click == true) {
 
-						CircleOptions circleOptions = new CircleOptions ();
+							foreach(CustomGameMarker marker1 in markerList){
+								if (marker1.Click=false) 
+									marker1.Click = true;
+							}
+							if (circle1 != null) {
+								circle1.Remove ();
+								circle2.Remove ();
+								circle3.Remove ();
+							}
+							circle1 = _map.AddCircle(new CircleOptions()
+								.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude))
+								.InvokeRadius(250)
+								.InvokeStrokeWidth (0)
+								.Visible(true)
+								.InvokeFillColor (Color.Argb (102, 36, 120, 166)));
+							circle2 = _map.AddCircle(new CircleOptions()
+								.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude))
+								.InvokeRadius(625)
+								.InvokeStrokeWidth (0)
+								.Visible(true)
+								.InvokeFillColor (Color.Argb (102, 78, 156, 201)));
+							circle3 = _map.AddCircle(new CircleOptions()
+								.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude))
+								.InvokeRadius(1000)
+								.InvokeStrokeWidth (0)
+								.Visible(true)
+								.InvokeFillColor (Color.Argb (178, 110, 187, 229)));
+//							circleOptions.InvokeRadius (250);
+//							circleOptions.InvokeStrokeWidth (0);
+//							circleOptions.InvokeFillColor (Color.Argb (102, 36, 120, 166));
+//							circleOptions.InvokeZIndex (3);
+//							_map.AddCircle (circleOptions);
+//							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
+//							circleOptions.InvokeRadius (625);
+//							circleOptions.InvokeStrokeWidth (0);
+//							circleOptions.InvokeFillColor (Color.Argb (102, 78, 156, 201));
+//							circleOptions.InvokeZIndex (2);
+//							_map.AddCircle (circleOptions);
+//							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
+//							circleOptions.InvokeRadius (1000);
+//							circleOptions.InvokeStrokeWidth (0);
+//							circleOptions.InvokeFillColor (Color.Argb (178, 110, 187, 229));
+//							circleOptions.InvokeZIndex (1);
+//							circleOptions.Visible (true);
 
-						if (customMarker1.Click==true) {
-
-							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
-							circleOptions.InvokeRadius (250);
-							circleOptions.InvokeStrokeWidth (0);
-							circleOptions.InvokeFillColor (Color.Argb (102, 36, 120, 166));
-							circleOptions.InvokeZIndex (3);
-							_map.AddCircle (circleOptions);
-							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
-							circleOptions.InvokeRadius (625);
-							circleOptions.InvokeStrokeWidth (0);
-							circleOptions.InvokeFillColor (Color.Argb (102, 78, 156, 201));
-							circleOptions.InvokeZIndex (2);
-							_map.AddCircle (circleOptions);
-							circleOptions.InvokeCenter (new LatLng (userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude));
-							circleOptions.InvokeRadius (1000);
-							circleOptions.InvokeStrokeWidth (0);
-							circleOptions.InvokeFillColor (Color.Argb (178, 110, 187, 229));
-							circleOptions.InvokeZIndex (1);
-							circleOptions.Visible (true);
-
-							_map.AddCircle (circleOptions);
 
 							customMarker1.Click = false;
 
 						} else {
-							circleOptions.Visible (false);
-						
+							customMarker1.Click = true;
+							circle1.Remove();
+							circle2.Remove();
+							circle3.Remove();
 						}
 					}
 				}
@@ -397,7 +429,7 @@ namespace youreit
 			//	PositionPolarBearGroundOverlay(InMaui);
 			//		_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(InMaui, 13));
 
-				Toast.MakeText(this, String.Format("Starbucks {0}", marker.Id), ToastLength.Short).Show();
+			//Toast.MakeText(this, String.Format("Starbucks {0}", marker.Id), ToastLength.Short).Show();
 
 		}
 
@@ -417,6 +449,7 @@ namespace youreit
 						.Build();  
 					// Animate the move on the map so that it is showing the markers we added above.
 					_map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(cameraPosition));
+
 					return true;
 				}
 				return false;
