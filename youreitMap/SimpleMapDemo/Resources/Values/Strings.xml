@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <string name="app_name" >You Are It Map Demo</string>
+  <string name="app_name">Youre It Map Demo</string>
 
   <string name="mapsAppText" >Show Maps App</string>
   <string name="mapsAppTextDescription">Start up the Android Map application.</string>

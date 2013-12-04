@@ -56,6 +56,16 @@ namespace youreit
 		}
 
 		public static bool UpdateUser(PersonalInfoData personal, string customization, int points, string powerup ) {
+
+
+			if (customization == null)
+				customization = personal.Customization;
+			if (points == null)
+				points = personal.Points;
+			if (powerup == null)
+				powerup = personal.PowerUps;
+
+
 			string dbName = "personal.sqlite";
 			string dbPath = Path.Combine (Android.OS.Environment.ExternalStorageDirectory.ToString (), dbName);
 
