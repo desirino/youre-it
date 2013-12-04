@@ -25,16 +25,16 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:id="@+id/button_customize"
-                android:textSize="7dp" />
+                android:textSize="12dp" />
             <Button
                 android:text="(P) 3500"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:id="@+id/button_Points"
-                android:textSize="7dp" />
+                android:textSize="12dp" />
         </LinearLayout>
         <ImageView
-            android:src="@android:drawable/ic_menu_gallery"
+            android:src="@drawable/Mock_Profile_Image"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:id="@+id/imageView1" />
@@ -50,13 +50,13 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:id="@+id/button_Tags"
-                android:textSize="7dp" />
+                android:textSize="12dp" />
             <Button
                 android:text="15 Tagged"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:id="@+id/button_Tagged"
-                android:textSize="7dp" />
+                android:textSize="12dp" />
         </LinearLayout>
     </LinearLayout>
     <Button

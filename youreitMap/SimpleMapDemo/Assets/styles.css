@@ -1,8 +1,8 @@
-
+/*
 #view{
     -ncss-style-guide-visible:true
 }
-
+*/
 
 #mActionBarView{
     color:#fff;
@@ -32,6 +32,7 @@ android button{
 #button_customize, #button_Points, #button_Tags, #button_Tagged{
     background:#fff;
     color:#6ebbe5;
+    font-size:10px;
 }
 #PowerupV1Layout, #PowerupV2Layout, #PowerupV3Layout{
     width:50%;

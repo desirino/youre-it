@@ -340,20 +340,23 @@ namespace youreit
 			// aapt resource value: 0x7f06000e
 			public const int button2 = 2131099662;
 			
-			// aapt resource value: 0x7f06001c
-			public const int button_Points = 2131099676;
+			// aapt resource value: 0x7f06001f
+			public const int button_Points = 2131099679;
 			
-			// aapt resource value: 0x7f06001e
-			public const int button_Tagged = 2131099678;
+			// aapt resource value: 0x7f060021
+			public const int button_Tagged = 2131099681;
 			
-			// aapt resource value: 0x7f06001d
-			public const int button_Tags = 2131099677;
+			// aapt resource value: 0x7f060020
+			public const int button_Tags = 2131099680;
 			
 			// aapt resource value: 0x7f06000d
 			public const int button_cust_buy = 2131099661;
 			
-			// aapt resource value: 0x7f06001b
-			public const int button_customize = 2131099675;
+			// aapt resource value: 0x7f06001e
+			public const int button_customize = 2131099678;
+			
+			// aapt resource value: 0x7f06001c
+			public const int button_powerup = 2131099676;
 			
 			// aapt resource value: 0x7f060013
 			public const int content_frame = 2131099667;
@@ -382,8 +385,8 @@ namespace youreit
 			// aapt resource value: 0x7f060018
 			public const int linearLayout1 = 2131099672;
 			
-			// aapt resource value: 0x7f06001a
-			public const int linearLayout2 = 2131099674;
+			// aapt resource value: 0x7f06001b
+			public const int linearLayout2 = 2131099675;
 			
 			// aapt resource value: 0x7f060006
 			public const int linearLayout3 = 2131099654;
@@ -397,11 +400,11 @@ namespace youreit
 			// aapt resource value: 0x7f060005
 			public const int map = 2131099653;
 			
-			// aapt resource value: 0x7f060021
-			public const int menu_map = 2131099681;
+			// aapt resource value: 0x7f060023
+			public const int menu_map = 2131099683;
 			
-			// aapt resource value: 0x7f060022
-			public const int menu_profile = 2131099682;
+			// aapt resource value: 0x7f060024
+			public const int menu_profile = 2131099684;
 			
 			// aapt resource value: 0x7f060000
 			public const int none = 2131099648;
@@ -412,17 +415,20 @@ namespace youreit
 			// aapt resource value: 0x7f060002
 			public const int satellite = 2131099650;
 			
+			// aapt resource value: 0x7f06001a
+			public const int scrollView1 = 2131099674;
+			
 			// aapt resource value: 0x7f060003
 			public const int terrain = 2131099651;
 			
-			// aapt resource value: 0x7f06001f
-			public const int textView1 = 2131099679;
+			// aapt resource value: 0x7f06001d
+			public const int textView1 = 2131099677;
 			
 			// aapt resource value: 0x7f06000f
 			public const int title = 2131099663;
 			
-			// aapt resource value: 0x7f060020
-			public const int toggleButton1 = 2131099680;
+			// aapt resource value: 0x7f060022
+			public const int toggleButton1 = 2131099682;
 			
 			// aapt resource value: 0x7f060015
 			public const int zoomInButton = 2131099669;
