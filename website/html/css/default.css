@@ -142,6 +142,8 @@ nav img {
 
  .fullImg {
 	width:100%;
+	/*position:absolute;*/
+
 	vertical-align: middle;
 }
 #fbsection5 #imgContainer {

@@ -74,3 +74,9 @@ html, body,
 	background-image: url(../images/5.jpg);
 }
 
+.Text {
+	position:absolute;
+	top:50px;
+	left:10%;
+	right:10%;
+}
