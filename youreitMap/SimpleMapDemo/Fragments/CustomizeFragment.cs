@@ -24,29 +24,29 @@ namespace youreit
 	class CustomizeFragment : Fragment
 	{
 
-		public override View OnCreateView(LayoutInflater p0, ViewGroup p1, Bundle p2)
+		public override View OnCreateView(LayoutInflater inflater, ViewGroup p1, Bundle p2)
 		{
-			var rootView = p0.Inflate(Resource.Layout.CustomizeScreen, p1, false);
+			var view = inflater.Inflate(Resource.Layout.CustomizeScreen, p1, false);
 
 			List<CustomizationData> customizationList = Customizations.DoSomeDataAccess ();
-//			ArrayAdapter adapter = new ArrayAdapter (rootView, Resource.Layout.CustomizationItem, customizationList);
-			LinearLayout customization1 = rootView.FindViewById<LinearLayout> (Resource.Id.customization_container1);
+			LinearLayout customization1 = view.FindViewById<LinearLayout> (Resource.Id.customization_container1);
+
+			var scrollView1 = view.FindViewById<LinearLayout>(Resource.Id.customization_container1);
 
 			foreach (CustomizationData c in customizationList) {
-				Console.WriteLine (c);
-//				Button b = new Button (this);
-//				b.SetBackgroundResource (Resource.Drawable.cafe);
-//				customization1.AddView (b);
-//				customization1 = (LinearLayout)View.Inflate (View, Resource.Layout.CustomizationItem, null);
 
+				Button btn = new Button (this.Activity);
+				btn.Text = c.Name;
+				scrollView1.AddView (btn);
 			}
 
+			
+
 			Console.WriteLine ("------------CUSTOMIZE FRAGMENT LOADED------------");
-			return rootView;
+			return view;
 
 		}
 
 
 	}
 }
-

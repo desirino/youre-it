@@ -253,67 +253,64 @@ namespace youreit
 			public const int common_signin_btn_text_pressed_light = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int custom_info_bubble = 2130837530;
+			public const int drawer_shadow_dark = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int drawer_shadow_dark = 2130837531;
+			public const int drawer_shadow_light = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int drawer_shadow_light = 2130837532;
+			public const int events = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int events = 2130837533;
+			public const int hotel = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int hotel = 2130837534;
+			public const int hotspot_icon_white = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int hotspot_icon_white = 2130837535;
+			public const int ic_drawer_light = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int ic_drawer_light = 2130837536;
+			public const int ic_plusone_medium_off_client = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int ic_plusone_medium_off_client = 2130837537;
+			public const int ic_plusone_small_off_client = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int ic_plusone_small_off_client = 2130837538;
+			public const int ic_plusone_standard_off_client = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int ic_plusone_standard_off_client = 2130837539;
+			public const int ic_plusone_tall_off_client = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int ic_plusone_tall_off_client = 2130837540;
+			public const int Icon = 2130837540;
 			
 			// aapt resource value: 0x7f020025
-			public const int Icon = 2130837541;
+			public const int map_icon_white = 2130837541;
 			
 			// aapt resource value: 0x7f020026
-			public const int map_icon_white = 2130837542;
+			public const int Mock_Circle = 2130837542;
 			
 			// aapt resource value: 0x7f020027
-			public const int Mock_Circle = 2130837543;
+			public const int Mock_Profile_Image = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int Mock_Profile_Image = 2130837544;
+			public const int monoandroidsplash = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int monoandroidsplash = 2130837545;
+			public const int powerup_icon_white = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int powerup_icon_white = 2130837546;
+			public const int profile_icon_white = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int profile_icon_white = 2130837547;
+			public const int resturant = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int resturant = 2130837548;
+			public const int shop = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int shop = 2130837549;
-			
-			// aapt resource value: 0x7f02002e
-			public const int tourism = 2130837550;
+			public const int tourism = 2130837549;
 			
 			static Drawable()
 			{
@@ -328,11 +325,11 @@ namespace youreit
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060009
-			public const int Recent_Activity_Feed = 2131099657;
+			// aapt resource value: 0x7f06000a
+			public const int Recent_Activity_Feed = 2131099658;
 			
-			// aapt resource value: 0x7f060007
-			public const int Recent_Activity_Title = 2131099655;
+			// aapt resource value: 0x7f060008
+			public const int Recent_Activity_Title = 2131099656;
 			
 			// aapt resource value: 0x7f060019
 			public const int animateButton = 2131099673;
@@ -343,29 +340,29 @@ namespace youreit
 			// aapt resource value: 0x7f060010
 			public const int button2 = 2131099664;
 			
-			// aapt resource value: 0x7f060022
-			public const int button_Points = 2131099682;
-			
-			// aapt resource value: 0x7f060024
-			public const int button_Tagged = 2131099684;
+			// aapt resource value: 0x7f060021
+			public const int button_Points = 2131099681;
 			
 			// aapt resource value: 0x7f060023
-			public const int button_Tags = 2131099683;
+			public const int button_Tagged = 2131099683;
+			
+			// aapt resource value: 0x7f060022
+			public const int button_Tags = 2131099682;
 			
 			// aapt resource value: 0x7f06000f
 			public const int button_cust_buy = 2131099663;
 			
-			// aapt resource value: 0x7f060021
-			public const int button_customize = 2131099681;
+			// aapt resource value: 0x7f060020
+			public const int button_customize = 2131099680;
 			
-			// aapt resource value: 0x7f06001f
-			public const int button_powerup = 2131099679;
+			// aapt resource value: 0x7f06001e
+			public const int button_powerup = 2131099678;
 			
 			// aapt resource value: 0x7f060015
 			public const int content_frame = 2131099669;
 			
-			// aapt resource value: 0x7f06000b
-			public const int customization_container1 = 2131099659;
+			// aapt resource value: 0x7f060006
+			public const int customization_container1 = 2131099654;
 			
 			// aapt resource value: 0x7f06000e
 			public const int customization_container2 = 2131099662;
@@ -373,14 +370,11 @@ namespace youreit
 			// aapt resource value: 0x7f060012
 			public const int description = 2131099666;
 			
-			// aapt resource value: 0x7f06001c
-			public const int dismiss = 2131099676;
-			
 			// aapt resource value: 0x7f060014
 			public const int drawer_layout = 2131099668;
 			
-			// aapt resource value: 0x7f06000a
-			public const int horizontalScrollView1 = 2131099658;
+			// aapt resource value: 0x7f06000b
+			public const int horizontalScrollView1 = 2131099659;
 			
 			// aapt resource value: 0x7f06000d
 			public const int horizontalScrollView2 = 2131099661;
@@ -394,20 +388,20 @@ namespace youreit
 			// aapt resource value: 0x7f060016
 			public const int left_drawer = 2131099670;
 			
-			// aapt resource value: 0x7f060008
-			public const int line_blue = 2131099656;
+			// aapt resource value: 0x7f060009
+			public const int line_blue = 2131099657;
 			
 			// aapt resource value: 0x7f06001a
 			public const int linearLayout1 = 2131099674;
 			
-			// aapt resource value: 0x7f06001e
-			public const int linearLayout2 = 2131099678;
+			// aapt resource value: 0x7f06001d
+			public const int linearLayout2 = 2131099677;
 			
-			// aapt resource value: 0x7f060006
-			public const int linearLayout3 = 2131099654;
+			// aapt resource value: 0x7f060007
+			public const int linearLayout3 = 2131099655;
 			
-			// aapt resource value: 0x7f060025
-			public const int linearLayout4 = 2131099685;
+			// aapt resource value: 0x7f060024
+			public const int linearLayout4 = 2131099684;
 			
 			// aapt resource value: 0x7f060013
 			public const int listView1 = 2131099667;
@@ -415,11 +409,11 @@ namespace youreit
 			// aapt resource value: 0x7f060005
 			public const int map = 2131099653;
 			
-			// aapt resource value: 0x7f060027
-			public const int menu_map = 2131099687;
+			// aapt resource value: 0x7f060026
+			public const int menu_map = 2131099686;
 			
-			// aapt resource value: 0x7f060028
-			public const int menu_profile = 2131099688;
+			// aapt resource value: 0x7f060027
+			public const int menu_profile = 2131099687;
 			
 			// aapt resource value: 0x7f060000
 			public const int none = 2131099648;
@@ -430,20 +424,20 @@ namespace youreit
 			// aapt resource value: 0x7f060002
 			public const int satellite = 2131099650;
 			
-			// aapt resource value: 0x7f06001d
-			public const int scrollView1 = 2131099677;
+			// aapt resource value: 0x7f06001c
+			public const int scrollView1 = 2131099676;
 			
 			// aapt resource value: 0x7f060003
 			public const int terrain = 2131099651;
 			
-			// aapt resource value: 0x7f060020
-			public const int textView1 = 2131099680;
+			// aapt resource value: 0x7f06001f
+			public const int textView1 = 2131099679;
 			
 			// aapt resource value: 0x7f060011
 			public const int title = 2131099665;
 			
-			// aapt resource value: 0x7f060026
-			public const int toggleButton1 = 2131099686;
+			// aapt resource value: 0x7f060025
+			public const int toggleButton1 = 2131099685;
 			
 			// aapt resource value: 0x7f060017
 			public const int zoomInButton = 2131099671;
@@ -484,31 +478,31 @@ namespace youreit
 			public const int BasicDemo = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int CustomizeScreen = 2130903041;
+			public const int CustomizationItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int DrawerListItem = 2130903042;
+			public const int CustomizeScreen = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Feature = 2130903043;
+			public const int DrawerListItem = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int HotspotsScreen = 2130903044;
+			public const int Feature = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Main = 2130903045;
+			public const int HotspotsScreen = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int MapLayout = 2130903046;
+			public const int Main = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int MapWithOverlayLayout = 2130903047;
+			public const int MapLayout = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int MenuScreen = 2130903048;
+			public const int MapWithOverlayLayout = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int Popup = 2130903049;
+			public const int MenuScreen = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
 			public const int PowerupsScreen = 2130903050;

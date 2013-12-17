@@ -34,11 +34,14 @@ namespace youreit
 	// **********  ADDED FOR MAP SCREEN
 	using Android.Gms.Maps;
 	using Android.Gms.Maps.Model;
+	using Android.Graphics;
 
 		// **********  
 	using Mono.Data.Sqlite;
 	using Environment = System.Environment;
 
+	using Style;
+	
 	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
 	
 	public class MainActivity : Activity, ILocationListener
@@ -82,6 +85,8 @@ namespace youreit
 		Circle circle2;
 		Circle circle3;
 
+
+		string[] items; 
 		// **********  
 
 
@@ -139,11 +144,6 @@ namespace youreit
 			myData = PersonalInfo.DoSomeDataAccess ();
 
 			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
-
-			PersonalInfo.UpdateUser (myData, "green", 10000, "shield");
-			myData = PersonalInfo.DoSomeDataAccess ();
-
-			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
 			Console.WriteLine ("There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
 
 			_locMgr = GetSystemService (Context.LocationService) as LocationManager;
@@ -162,7 +162,6 @@ namespace youreit
 			_drawerList.Adapter = new ArrayAdapter<string>(this,
 				Resource.Layout.DrawerListItem, _menuTitles);
 			_drawerList.ItemClick += (sender, args) => SelectItem(args.Position);
-
 
 			ActionBar.SetDisplayHomeAsUpEnabled(true);
 			ActionBar.SetHomeButtonEnabled(true);
@@ -319,16 +318,14 @@ namespace youreit
 				//icon = BitmapDescriptorFactory.FromPath("cafe.png");
 				icon = BitmapDescriptorFactory.FromAsset (imgURL);
 
-
 				Marker marker;
 				MarkerOptions userMarkers = new MarkerOptions ()
 					.SetPosition (new LatLng (m_user.Latitude, m_user.Longitude))
 					.InvokeIcon (icon)
 					.Anchor(0.5f,0.5f)
-					//.SetTitle("Melbourne")
-					//.InfoWindowAnchor(200,100)
-					.SetSnippet(String.Format("{0}", m_user.Username))
-					.SetTitle(String.Format("P {0}",  m_user.Points));
+					.InfoWindowAnchor(200,100)
+					.SetSnippet(String.Format("User #{0}.", m_user.ID))
+					.SetTitle(String.Format("User {0}",  m_user.ID));
 				marker = _map.AddMarker(userMarkers);
 				CustomGameMarker customMapMarker = new CustomGameMarker(marker.Id,"user",m_user.ID,true);
 
@@ -375,20 +372,9 @@ namespace youreit
 //						CircleOptions circleOptions = new CircleOptions ();
 						Console.WriteLine ("---------------its a user");
 						if (customMarker1.Click == true) {
-							//.showInfoWindow();
-
-							marker.ShowInfoWindow ();
-//							LayoutInflater layoutInflater 
-//							= (LayoutInflater)getBaseContext()
-//								.getSystemService(LAYOUT_INFLATER_SERVICE);  
-//							View popupView = layoutInflater.inflate(R.layout.popup, null);
-//							PopupWindow thisWindow = new PopupWindow(
-//								popupView, 
-//								LayoutParams.WRAP_CONTENT,  
-//								LayoutParams.WRAP_CONTENT); 
 
 							foreach (CustomGameMarker marker1 in markerList) {
-								if (marker1.Click == false)
+								if (marker1.Click = false)
 									marker1.Click = true;
 							}
 							if (circle1 != null) {
@@ -417,16 +403,16 @@ namespace youreit
 
 							double distance = Measure (userList.ElementAt (Convert.ToInt32 (customMarker1.TypeID) - 1).Latitude, userList.ElementAt ((Convert.ToInt32 (customMarker1.TypeID) - 1)).Longitude, myData.Latitude, myData.Longitude);
 							if (distance >= 1000) {//Console.WriteLine ("_______________You get NOTHING"+distance);
-								//Toast.MakeText (this, String.Format ("You Can't Tag This User"), ToastLength.Short).Show ();
+								Toast.MakeText (this, String.Format ("You Can't Tag This User"), ToastLength.Short).Show ();
 							} else if (distance <= 1000 & distance >= 650) {
-								//Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
-								PersonalInfo.UpdateUser (myData, null, myData.Points + 50, null);
+								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 50, null, null);
 							} else if (distance <= 650 & distance >= 250) {
-								//Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
-								PersonalInfo.UpdateUser (myData, null, myData.Points + 100, null);
+								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 100, null, null);
 							} else if (distance <= 250) {
-								PersonalInfo.UpdateUser (myData, null, myData.Points + 200, null);
-								//Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 200, null, null);
+								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
 							}
 							customMarker1.Click = false;
 
@@ -593,9 +579,22 @@ namespace youreit
 			if (_drawerToggle.OnOptionsItemSelected(item))
 				return true;
 
+			switch(item.ItemId){
+				case 2131099687:
+					SelectItem (0);
+					break;
+				case 2131099688:
+					SelectItem (1);
+					break;
+				case 0:
+					SelectItem(5);
+					break;
+			}
+
+
 			Android.Widget.Toast.MakeText (this, 
 				"Selected Item: " + 
-				item.TitleFormatted, 
+				item.ItemId, 
 				Android.Widget.ToastLength.Short).Show();
 			return true;
 		}
@@ -631,5 +630,4 @@ namespace youreit
 
 		}
     }
-
 }

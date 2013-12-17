@@ -18,6 +18,7 @@ namespace youreit
 		//Stores ids of all of the following. 
 		public string PowerUps { get; set;} 
 		public string Customization { get; set; }
+		public string CurrentCustomization {get; set;} 
 		public string Hotspots { get; set; }
 	}
 
@@ -48,6 +49,7 @@ namespace youreit
 					myData.PowerUps = r ["Powerups"].ToString ();
 					myData.Customization = r ["Customizations"].ToString();
 					myData.Hotspots = r ["Hotspots"].ToString ();
+					myData.CurrentCustomization = r ["CurrentCustomization"].ToString ();
 
 				}
 			}
@@ -55,7 +57,7 @@ namespace youreit
 			return myData;
 		}
 
-		public static bool UpdateUser(PersonalInfoData personal, string customization, int points, string powerup ) {
+		public static bool UpdateUser(PersonalInfoData personal, string customization, int points, string powerup, string currentCustomization ) {
 
 
 			if (customization == null)
@@ -64,6 +66,8 @@ namespace youreit
 				points = personal.Points;
 			if (powerup == null)
 				powerup = personal.PowerUps;
+			if (currentCustomization == null)
+				currentCustomization = personal.CurrentCustomization;
 
 
 			string dbName = "personal.sqlite";
@@ -76,12 +80,13 @@ namespace youreit
 				var commands = new[] {
 					"UPDATE [USER] SET Customizations='"+ customization +"' WHERE ID=" + personal.ID,
 					"UPDATE [USER] SET Powerups='"+ powerup +"'WHERE ID=" + personal.ID,
-					"UPDATE [USER] SET Points='"+ points +"' WHERE ID=" + personal.ID
+					"UPDATE [USER] SET Points='"+ points +"' WHERE ID=" + personal.ID,
+					"UPDATE [USER] SET CurrentCustomization='" + currentCustomization+"'WHERE ID+" + personal.ID
 				};
 				foreach (var command in commands) {
 					using (var c = connection.CreateCommand ()) {
 						c.CommandText = command;
-						var i = c.ExecuteNonQuery ();
+						c.ExecuteNonQuery ();
 					}
 				}
 			}
