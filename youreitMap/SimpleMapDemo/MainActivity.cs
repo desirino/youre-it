@@ -1,4 +1,6 @@
-﻿﻿
+﻿using System.Net;
+
+
 namespace youreit
 {
 	using System;
@@ -34,7 +36,7 @@ namespace youreit
 	using Android.Gms.Maps.Model;
 	using Android.Graphics;
 
-	// **********  
+		// **********  
 	using Mono.Data.Sqlite;
 	using Environment = System.Environment;
 
@@ -304,15 +306,22 @@ namespace youreit
 			}
 		}
 
-
 		private void AddUserMarkersToMap()
 		{
 			BitmapDescriptor icon;
-
 			foreach (UserData m_user in userList) {
+				string[] customization = m_user.Customization.Split (',');
+				int location = Convert.ToInt32(customization [0]);
+				CustomizationData custom = customizationList.ElementAt (location);
 
-				icon = BitmapDescriptorFactory.FromResource(Resource.Drawable.cafe);
-		
+
+				string imgURL = string.Format("smallCustomizations/{0}",custom.ImgURL);
+				Console.WriteLine ("------------------------------- "+imgURL);
+
+				//string imgURL = "smallCustomizations/canada.jpg";
+				//icon = BitmapDescriptorFactory.FromPath("cafe.png");
+				icon = BitmapDescriptorFactory.FromAsset (imgURL);
+
 				Marker marker;
 				MarkerOptions userMarkers = new MarkerOptions ()
 					.SetPosition (new LatLng (m_user.Latitude, m_user.Longitude))
@@ -443,7 +452,7 @@ namespace youreit
 						//.Bearing(90)              // Sets the orientation of the camera to east
 						.Build();  
 					// Animate the move on the map so that it is showing the markers we added above.
-					_map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(cameraPosition));
+					_map.AnimateCamera(CameraUpdateFactory.NewCameraPosition(cameraPosition)); 
 
 					return true;
 				}
