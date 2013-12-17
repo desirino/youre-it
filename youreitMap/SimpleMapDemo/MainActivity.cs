@@ -579,9 +579,22 @@ namespace youreit
 			if (_drawerToggle.OnOptionsItemSelected(item))
 				return true;
 
+			switch(item.ItemId){
+				case 2131099687:
+					SelectItem (0);
+					break;
+				case 2131099688:
+					SelectItem (1);
+					break;
+				case 0:
+					SelectItem(5);
+					break;
+			}
+
+
 			Android.Widget.Toast.MakeText (this, 
 				"Selected Item: " + 
-				item.TitleFormatted, 
+				item.ItemId, 
 				Android.Widget.ToastLength.Short).Show();
 			return true;
 		}
