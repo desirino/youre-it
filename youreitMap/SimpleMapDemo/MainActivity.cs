@@ -85,6 +85,8 @@ namespace youreit
 		Circle circle2;
 		Circle circle3;
 
+
+		string[] items; 
 		// **********  
 
 
@@ -142,11 +144,6 @@ namespace youreit
 			myData = PersonalInfo.DoSomeDataAccess ();
 
 			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
-
-			PersonalInfo.UpdateUser (myData, "green", 10000, "shield");
-			myData = PersonalInfo.DoSomeDataAccess ();
-
-			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
 			Console.WriteLine ("There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
 
 			_locMgr = GetSystemService (Context.LocationService) as LocationManager;
@@ -165,7 +162,6 @@ namespace youreit
 			_drawerList.Adapter = new ArrayAdapter<string>(this,
 				Resource.Layout.DrawerListItem, _menuTitles);
 			_drawerList.ItemClick += (sender, args) => SelectItem(args.Position);
-
 
 			ActionBar.SetDisplayHomeAsUpEnabled(true);
 			ActionBar.SetHomeButtonEnabled(true);
@@ -410,12 +406,12 @@ namespace youreit
 								Toast.MakeText (this, String.Format ("You Can't Tag This User"), ToastLength.Short).Show ();
 							} else if (distance <= 1000 & distance >= 650) {
 								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
-								PersonalInfo.UpdateUser (myData, null, myData.Points + 50, null);
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 50, null, null);
 							} else if (distance <= 650 & distance >= 250) {
 								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
-								PersonalInfo.UpdateUser (myData, null, myData.Points + 100, null);
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 100, null, null);
 							} else if (distance <= 250) {
-								PersonalInfo.UpdateUser (myData, null, myData.Points + 200, null);
+								PersonalInfo.UpdateUser (myData, null, myData.Points + 200, null, null);
 								Toast.MakeText (this, String.Format ("You Tag This User"), ToastLength.Short).Show ();
 							}
 							customMarker1.Click = false;

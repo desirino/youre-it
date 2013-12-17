@@ -156,22 +156,18 @@
   -->
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices12">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>12.0.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="sqlite-net">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="nativecss">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="Photon-Xamarin">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>3.2.1.5</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
