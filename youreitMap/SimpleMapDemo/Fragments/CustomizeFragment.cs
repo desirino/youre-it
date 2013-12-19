@@ -29,15 +29,24 @@ namespace youreit
 			var view = inflater.Inflate(Resource.Layout.CustomizeScreen, p1, false);
 
 			List<CustomizationData> customizationList = Customizations.DoSomeDataAccess ();
-			LinearLayout customization1 = view.FindViewById<LinearLayout> (Resource.Id.customization_container1);
 
-			var scrollView1 = view.FindViewById<LinearLayout>(Resource.Id.customization_container1);
+			var ownedCustomizations = view.FindViewById<LinearLayout>(Resource.Id.customization_container1);
+			//var notOwnedCustomizations = view.FindViewById<LinearLayout>(Resource.Id.customization_container2);
 
 			foreach (CustomizationData c in customizationList) {
 
-				Button btn = new Button (this.Activity);
-				btn.Text = c.Name;
-				scrollView1.AddView (btn);
+				ImageButton btn = new ImageButton (this.Activity);
+//				btn.SetMinimumWidth (20);
+//				btn.SetMinimumHeight (20);
+//				btn.SetMaxWidth (20);
+//				btn.SetMaxHeight (20);
+				char[] end = {'.','p','n','g'};
+				string imgName = c.ImgURL.TrimEnd(end);
+				//Console.WriteLine ("--------------------" + imgName + Resources.GetIdentifier (imgName, "drawable", this.Activity.PackageName));
+
+				btn.SetBackgroundResource (Resources.GetIdentifier (imgName, "drawable", this.Activity.PackageName));
+				ownedCustomizations.AddView (btn);
+				//notOwnedCustomizations.AddView();
 			}
 
 			
