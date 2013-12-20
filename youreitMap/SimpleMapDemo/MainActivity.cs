@@ -118,7 +118,7 @@ namespace youreit
 	
 			if (File.Exists (dbPath)) {
 				File.Delete (dbPath);
-			} 
+			}
 
 			using (Stream source = Assets.Open(dbName))
 			using (var dest = System.IO.File.Create (dbPath)) {
@@ -307,6 +307,9 @@ namespace youreit
 			BitmapDescriptor icon;
 			foreach (UserData m_user in userList) {
 				string[] customization = m_user.Customization.Split (',');
+
+				//string customization = m_user.c
+
 				int location = Convert.ToInt32(customization [0]);
 				CustomizationData custom = customizationList.ElementAt (location);
 
@@ -458,7 +461,7 @@ namespace youreit
 		}
 
 
-		private void SelectItem(int position){
+		public void SelectItem(int position){
 
 			switch (position) {
 			case 0:

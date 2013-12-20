@@ -138,6 +138,99 @@
     <AndroidResource Include="Resources\Layout\PowerupsScreen.axml" />
     <AndroidResource Include="Resources\Drawable\custom_info_bubble.9.png" />
     <AndroidResource Include="Resources\Layout\Popup.axml" />
+    <AndroidResource Include="Resources\Drawable\Profile_Image.png" />
+    <AndroidResource Include="Resources\Drawable\a.png" />
+    <AndroidResource Include="Resources\Drawable\b.png" />
+    <AndroidResource Include="Resources\Drawable\basketball.png" />
+    <AndroidResource Include="Resources\Drawable\blueSolid.png" />
+    <AndroidResource Include="Resources\Drawable\brownSolid.png" />
+    <AndroidResource Include="Resources\Drawable\bulb.png" />
+    <AndroidResource Include="Resources\Drawable\button.png" />
+    <AndroidResource Include="Resources\Drawable\c.png" />
+    <AndroidResource Include="Resources\Drawable\camo.png" />
+    <AndroidResource Include="Resources\Drawable\canada.png" />
+    <AndroidResource Include="Resources\Drawable\cow.png" />
+    <AndroidResource Include="Resources\Drawable\crown.png" />
+    <AndroidResource Include="Resources\Drawable\cyborgEye.png" />
+    <AndroidResource Include="Resources\Drawable\d.png" />
+    <AndroidResource Include="Resources\Drawable\dice.png" />
+    <AndroidResource Include="Resources\Drawable\dots.png" />
+    <AndroidResource Include="Resources\Drawable\e.png" />
+    <AndroidResource Include="Resources\Drawable\f.png" />
+    <AndroidResource Include="Resources\Drawable\fire.png" />
+    <AndroidResource Include="Resources\Drawable\fireworks.png" />
+    <AndroidResource Include="Resources\Drawable\football.png" />
+    <AndroidResource Include="Resources\Drawable\france.png" />
+    <AndroidResource Include="Resources\Drawable\g.png" />
+    <AndroidResource Include="Resources\Drawable\gBlue.png" />
+    <AndroidResource Include="Resources\Drawable\h.png" />
+    <AndroidResource Include="Resources\Drawable\i.png" />
+    <AndroidResource Include="Resources\Drawable\icecream.png" />
+    <AndroidResource Include="Resources\Drawable\invaders.png" />
+    <AndroidResource Include="Resources\Drawable\j.png" />
+    <AndroidResource Include="Resources\Drawable\k.png" />
+    <AndroidResource Include="Resources\Drawable\l.png" />
+    <AndroidResource Include="Resources\Drawable\lightning.png" />
+    <AndroidResource Include="Resources\Drawable\m.png" />
+    <AndroidResource Include="Resources\Drawable\mario.png" />
+    <AndroidResource Include="Resources\Drawable\maroonSolid.png" />
+    <AndroidResource Include="Resources\Drawable\mushroom.png" />
+    <AndroidResource Include="Resources\Drawable\musicnote.png" />
+    <AndroidResource Include="Resources\Drawable\n.png" />
+    <AndroidResource Include="Resources\Drawable\nigeria.png" />
+    <AndroidResource Include="Resources\Drawable\night.png" />
+    <AndroidResource Include="Resources\Drawable\o.png" />
+    <AndroidResource Include="Resources\Drawable\orangeGradient.png" />
+    <AndroidResource Include="Resources\Drawable\p.png" />
+    <AndroidResource Include="Resources\Drawable\pDots1.png" />
+    <AndroidResource Include="Resources\Drawable\pDots2.png" />
+    <AndroidResource Include="Resources\Drawable\pacman.png" />
+    <AndroidResource Include="Resources\Drawable\paw.png" />
+    <AndroidResource Include="Resources\Drawable\penguin.png" />
+    <AndroidResource Include="Resources\Drawable\plus.png" />
+    <AndroidResource Include="Resources\Drawable\pokeball.png" />
+    <AndroidResource Include="Resources\Drawable\q.png" />
+    <AndroidResource Include="Resources\Drawable\r.png" />
+    <AndroidResource Include="Resources\Drawable\radioactive.png" />
+    <AndroidResource Include="Resources\Drawable\rainbowFlag.png" />
+    <AndroidResource Include="Resources\Drawable\raven.png" />
+    <AndroidResource Include="Resources\Drawable\record.png" />
+    <AndroidResource Include="Resources\Drawable\roses.png" />
+    <AndroidResource Include="Resources\Drawable\rubberDuck.png" />
+    <AndroidResource Include="Resources\Drawable\s.png" />
+    <AndroidResource Include="Resources\Drawable\sBlue.png" />
+    <AndroidResource Include="Resources\Drawable\sGreen.png" />
+    <AndroidResource Include="Resources\Drawable\sLightBlue.png" />
+    <AndroidResource Include="Resources\Drawable\sLightGreen.png" />
+    <AndroidResource Include="Resources\Drawable\sLightPink.png" />
+    <AndroidResource Include="Resources\Drawable\sLightYellow.png" />
+    <AndroidResource Include="Resources\Drawable\sOrange.png" />
+    <AndroidResource Include="Resources\Drawable\sPeach.png" />
+    <AndroidResource Include="Resources\Drawable\sPink.png" />
+    <AndroidResource Include="Resources\Drawable\sPurple.png" />
+    <AndroidResource Include="Resources\Drawable\sRed.png" />
+    <AndroidResource Include="Resources\Drawable\sYellow.png" />
+    <AndroidResource Include="Resources\Drawable\skittles.png" />
+    <AndroidResource Include="Resources\Drawable\skull.png" />
+    <AndroidResource Include="Resources\Drawable\smiley.png" />
+    <AndroidResource Include="Resources\Drawable\soccerBall.png" />
+    <AndroidResource Include="Resources\Drawable\sticks.png" />
+    <AndroidResource Include="Resources\Drawable\t.png" />
+    <AndroidResource Include="Resources\Drawable\target.png" />
+    <AndroidResource Include="Resources\Drawable\tessellate1.png" />
+    <AndroidResource Include="Resources\Drawable\tessellate2.png" />
+    <AndroidResource Include="Resources\Drawable\trophy.png" />
+    <AndroidResource Include="Resources\Drawable\u.png" />
+    <AndroidResource Include="Resources\Drawable\unionjack.png" />
+    <AndroidResource Include="Resources\Drawable\v.png" />
+    <AndroidResource Include="Resources\Drawable\w.png" />
+    <AndroidResource Include="Resources\Drawable\waves.png" />
+    <AndroidResource Include="Resources\Drawable\x.png" />
+    <AndroidResource Include="Resources\Drawable\xmen.png" />
+    <AndroidResource Include="Resources\Drawable\y.png" />
+    <AndroidResource Include="Resources\Drawable\yinYang.png" />
+    <AndroidResource Include="Resources\Drawable\z.png" />
+    <AndroidResource Include="Resources\Drawable\zebraStripes.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml">
@@ -157,18 +250,22 @@
   -->
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices12">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>12.0.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="sqlite-net">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="nativecss">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="Photon-Xamarin">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>3.2.1.5</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
@@ -180,107 +277,10 @@
     <Folder Include="Resources\Menu\" />
     <Folder Include="Resources\Layout\" />
     <Folder Include="Assets\smallCustomizations\" />
-    <Folder Include="Assets\customizations\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\youreit.sqlite" />
     <AndroidAsset Include="Assets\personal.sqlite" />
-    <AndroidAsset Include="Assets\customizations\a.png" />
-    <AndroidAsset Include="Assets\customizations\b.png" />
-    <AndroidAsset Include="Assets\customizations\basketball.png" />
-    <AndroidAsset Include="Assets\customizations\blueSolid.png" />
-    <AndroidAsset Include="Assets\customizations\brownSolid.png" />
-    <AndroidAsset Include="Assets\customizations\bulb.png" />
-    <AndroidAsset Include="Assets\customizations\button.png" />
-    <AndroidAsset Include="Assets\customizations\c.png" />
-    <AndroidAsset Include="Assets\customizations\camo.png" />
-    <AndroidAsset Include="Assets\customizations\canada.png" />
-    <AndroidAsset Include="Assets\customizations\cow.png" />
-    <AndroidAsset Include="Assets\customizations\crown.png" />
-    <AndroidAsset Include="Assets\customizations\cyborgEye.png" />
-    <AndroidAsset Include="Assets\customizations\d.png" />
-    <AndroidAsset Include="Assets\customizations\dice.png" />
-    <AndroidAsset Include="Assets\customizations\dots.png" />
-    <AndroidAsset Include="Assets\customizations\e.png" />
-    <AndroidAsset Include="Assets\customizations\f.png" />
-    <AndroidAsset Include="Assets\customizations\fire.png" />
-    <AndroidAsset Include="Assets\customizations\fireworks.png" />
-    <AndroidAsset Include="Assets\customizations\football.png" />
-    <AndroidAsset Include="Assets\customizations\france.png" />
-    <AndroidAsset Include="Assets\customizations\g.png" />
-    <AndroidAsset Include="Assets\customizations\gBlue.png" />
-    <AndroidAsset Include="Assets\customizations\h.png" />
-    <AndroidAsset Include="Assets\customizations\i.png" />
-    <AndroidAsset Include="Assets\customizations\icecream.png" />
-    <AndroidAsset Include="Assets\customizations\invaders.png" />
-    <AndroidAsset Include="Assets\customizations\j.png" />
-    <AndroidAsset Include="Assets\customizations\k.png" />
-    <AndroidAsset Include="Assets\customizations\l.png" />
-    <AndroidAsset Include="Assets\customizations\lightning.png" />
-    <AndroidAsset Include="Assets\customizations\m.png" />
-    <AndroidAsset Include="Assets\customizations\mario.png" />
-    <AndroidAsset Include="Assets\customizations\maroonSolid.png" />
-    <AndroidAsset Include="Assets\customizations\mushroom.png" />
-    <AndroidAsset Include="Assets\customizations\musicnote.png" />
-    <AndroidAsset Include="Assets\customizations\n.png" />
-    <AndroidAsset Include="Assets\customizations\nigeria.png" />
-    <AndroidAsset Include="Assets\customizations\night.png" />
-    <AndroidAsset Include="Assets\customizations\o.png" />
-    <AndroidAsset Include="Assets\customizations\orangeGradient.png" />
-    <AndroidAsset Include="Assets\customizations\p.png" />
-    <AndroidAsset Include="Assets\customizations\pDots1.png" />
-    <AndroidAsset Include="Assets\customizations\pDots2.png" />
-    <AndroidAsset Include="Assets\customizations\pacman.png" />
-    <AndroidAsset Include="Assets\customizations\paw.png" />
-    <AndroidAsset Include="Assets\customizations\penguin.png" />
-    <AndroidAsset Include="Assets\customizations\plus.png" />
-    <AndroidAsset Include="Assets\customizations\pokeball.png" />
-    <AndroidAsset Include="Assets\customizations\q.png" />
-    <AndroidAsset Include="Assets\customizations\r.png" />
-    <AndroidAsset Include="Assets\customizations\radioactive.png" />
-    <AndroidAsset Include="Assets\customizations\raven.png" />
-    <AndroidAsset Include="Assets\customizations\record.png" />
-    <AndroidAsset Include="Assets\customizations\roses.png" />
-    <AndroidAsset Include="Assets\customizations\s.png" />
-    <AndroidAsset Include="Assets\customizations\sBlue.png" />
-    <AndroidAsset Include="Assets\customizations\sGreen.png" />
-    <AndroidAsset Include="Assets\customizations\sLightBlue.png" />
-    <AndroidAsset Include="Assets\customizations\sLightGreen.png" />
-    <AndroidAsset Include="Assets\customizations\sLightPink.png" />
-    <AndroidAsset Include="Assets\customizations\sLightYellow.png" />
-    <AndroidAsset Include="Assets\customizations\sOrange.png" />
-    <AndroidAsset Include="Assets\customizations\sPeach.png" />
-    <AndroidAsset Include="Assets\customizations\sPink.png" />
-    <AndroidAsset Include="Assets\customizations\sPurple.png" />
-    <AndroidAsset Include="Assets\customizations\sRed.png" />
-    <AndroidAsset Include="Assets\customizations\sYellow.png" />
-    <AndroidAsset Include="Assets\customizations\skittles.png" />
-    <AndroidAsset Include="Assets\customizations\skull.png" />
-    <AndroidAsset Include="Assets\customizations\smiley.png" />
-    <AndroidAsset Include="Assets\customizations\sticks.png" />
-    <AndroidAsset Include="Assets\customizations\t.png" />
-    <AndroidAsset Include="Assets\customizations\target.png" />
-    <AndroidAsset Include="Assets\customizations\tessellate1.png" />
-    <AndroidAsset Include="Assets\customizations\tessellate2.png" />
-    <AndroidAsset Include="Assets\customizations\trophy.png" />
-    <AndroidAsset Include="Assets\customizations\u.png" />
-    <AndroidAsset Include="Assets\customizations\unionjack.png" />
-    <AndroidAsset Include="Assets\customizations\v.png" />
-    <AndroidAsset Include="Assets\customizations\w.png" />
-    <AndroidAsset Include="Assets\customizations\waves.png" />
-    <AndroidAsset Include="Assets\customizations\x.png" />
-    <AndroidAsset Include="Assets\customizations\xmen.png" />
-    <AndroidAsset Include="Assets\customizations\y.png" />
-    <AndroidAsset Include="Assets\customizations\z.png" />
-    <AndroidAsset Include="Assets\customizations\zebraStripes.png" />
-    <AndroidAsset Include="Assets\customizations\yinYang.png" />
-    <AndroidAsset Include="Assets\customizations\rainbowFlag.png">
-      <DependentUpon>r.png</DependentUpon>
-    </AndroidAsset>
-    <AndroidAsset Include="Assets\customizations\soccerBall.png" />
-    <AndroidAsset Include="Assets\customizations\rubberDuck.png">
-      <DependentUpon>lightning.png</DependentUpon>
-    </AndroidAsset>
     <AndroidAsset Include="Assets\smallCustomizations\a.png" />
     <AndroidAsset Include="Assets\smallCustomizations\b.png" />
     <AndroidAsset Include="Assets\smallCustomizations\basketball.png" />
