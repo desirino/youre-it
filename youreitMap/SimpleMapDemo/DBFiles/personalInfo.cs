@@ -20,11 +20,12 @@ namespace youreit
 		public string Customization { get; set; }
 		public string CurrentCustomization {get; set;} 
 		public string Hotspots { get; set; }
+		public int Tags { get; set; }
 	}
 
 	public class storedPersonalInfoData {
 
-		public storedPersonalInfoData(int ID, string Name, Double Latitude, Double Longitude, int TaggedCount, int Points, string Powerups, string Customization,  string currentCustomization, string Hotspots)
+		public storedPersonalInfoData(int ID, string Name, Double Latitude, Double Longitude, int TaggedCount, int Points, string Powerups, string Customization,  string currentCustomization, string Hotspots, int tags)
 			{
 				this.ID = ID;
 				this.Username = Name;
@@ -36,11 +37,13 @@ namespace youreit
 				this.Customization = Customization;
 				this.CurrentCustomization = CurrentCustomization;
 				this.Hotspots = Hotspots;
+				this.Tags = tags;
 			}
 
 			public int ID { get; set; }
 			public string Username { get; set;} 
 			public int TaggedCount { get; set;}
+
 			public int Points { get; set;}
 			public Double Longitude { get; set; }
 			public Double Latitude { get; set; }
@@ -50,6 +53,7 @@ namespace youreit
 			public string Customization { get; set; }
 			public string CurrentCustomization {get; set;} 
 			public string Hotspots { get; set; }
+			public int Tags {get; set;}
 		}
 
 
@@ -77,7 +81,8 @@ namespace youreit
 						Convert.ToDouble (r ["Latitude"]), Convert.ToDouble (r ["Longitude"]), 
 						Convert.ToInt32 (r ["TaggedCount"]),Convert.ToInt32 (r ["Points"]),
 						r ["Powerups"].ToString(), r ["Customizations"].ToString (),
-						r ["CurrentCustomization"].ToString(), r ["Hotspots"].ToString ()
+						r ["CurrentCustomization"].ToString(), r ["Hotspots"].ToString (),
+						Convert.ToInt32 (r["Tags"])
 					));
 				}
 			}
@@ -123,6 +128,7 @@ namespace youreit
 						myData.Customization = r ["Customizations"].ToString();
 						myData.Hotspots = r ["Hotspots"].ToString ();
 						myData.CurrentCustomization = r ["CurrentCustomization"].ToString ();
+						myData.Tags = Convert.ToInt32(r ["Tags"]);
 					}
 				}
 			}

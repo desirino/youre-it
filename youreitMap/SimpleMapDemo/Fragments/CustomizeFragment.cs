@@ -28,8 +28,7 @@ namespace youreit
 		{
 			var view = inflater.Inflate(Resource.Layout.CustomizeScreen, p1, false);
 			List<CustomizationData> customizationList = Customizations.DoSomeDataAccess ();
-
-	
+		
 			PersonalInfoData myData = PersonalInfo.getCurrentUserData (((MainActivity)this.Activity).activeUsername);
 			string[] myCustomizations = myData.Customization.Split (',');
 
@@ -57,7 +56,7 @@ namespace youreit
 						//check if user has enough points to buy customization, if so equip and subtract points, else toast "not enough points"
 						if (myData.Points > c.Price) {
 							string allCustomization =  myData.Customization + "," + Convert.ToString (c.ID);
-							PersonalInfo.UpdateUser (myData, allCustomization, myData.Points, null, Convert.ToString (c.ID));
+							PersonalInfo.UpdateUser (myData, allCustomization, myData.Points - (int)c.Price, null, Convert.ToString (c.ID));
 							Android.Widget.Toast.MakeText (this.Activity, "Customization " + c.Name + " was bought", Android.Widget.ToastLength.Short).Show ();
 							((MainActivity)this.Activity).SelectItem(2);
 						} else {
@@ -92,7 +91,6 @@ namespace youreit
 				ownedCustomizations.AddView (btn);
 			}
 
-			Console.WriteLine ("------------CUSTOMIZE FRAGMENT LOADED------------");
 			return view;
 
 		}
