@@ -30,7 +30,7 @@ namespace youreit
 			List<CustomizationData> customizationList = Customizations.DoSomeDataAccess ();
 
 	
-			PersonalInfoData myData = PersonalInfo.DoSomeDataAccess ();
+			PersonalInfoData myData = PersonalInfo.getCurrentUserData (((MainActivity)this.Activity).activeUsername);
 			string[] myCustomizations = myData.Customization.Split (',');
 
 			var ownedCustomizations = view.FindViewById<LinearLayout>(Resource.Id.customization_container1);
