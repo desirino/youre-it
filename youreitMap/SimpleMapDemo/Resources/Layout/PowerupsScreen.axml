@@ -33,7 +33,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp">
                 <ImageButton
-                    android:src="@android:drawable/ic_menu_gallery"
+                    android:src="@drawable/aradius"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:id="@+id/button_powerup" />
@@ -56,7 +56,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp">
                 <ImageButton
-                    android:src="@android:drawable/ic_menu_gallery"
+                    android:src="@drawable/hologram"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:id="@+id/button_powerup" />
@@ -79,7 +79,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp">
                 <ImageButton
-                    android:src="@android:drawable/ic_menu_gallery"
+                    android:src="@drawable/inCloak"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:id="@+id/button_powerup" />

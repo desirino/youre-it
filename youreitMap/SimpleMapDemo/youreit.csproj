@@ -97,6 +97,7 @@
     <Compile Include="DBFiles\User.cs" />
     <Compile Include="DBFiles\personalInfo.cs" />
     <Compile Include="Fragments\CustomizeFragment.cs" />
+    <Compile Include="LoginActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -138,6 +139,14 @@
     <AndroidResource Include="Resources\Layout\PowerupsScreen.axml" />
     <AndroidResource Include="Resources\Drawable\custom_info_bubble.9.png" />
     <AndroidResource Include="Resources\Layout\Popup.axml" />
+    <AndroidResource Include="Resources\Drawable\hologram.png" />
+    <AndroidResource Include="Resources\Drawable\tShield.png" />
+    <AndroidResource Include="Resources\Drawable\star.png" />
+    <AndroidResource Include="Resources\Drawable\pShield.png" />
+    <AndroidResource Include="Resources\Drawable\multi.png" />
+    <AndroidResource Include="Resources\Drawable\aradius.png" />
+    <AndroidResource Include="Resources\Drawable\incloak.png" />
+    <AndroidResource Include="Resources\Layout\Login.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml">

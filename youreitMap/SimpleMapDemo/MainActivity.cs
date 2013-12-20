@@ -40,9 +40,8 @@ namespace youreit
 	using Mono.Data.Sqlite;
 	using Environment = System.Environment;
 
-	using Style;
-	
-	[Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
+
+	[Activity(Label = "@string/app_name", Icon = "@drawable/icon")]
 	
 	public class MainActivity : Activity, ILocationListener
     {
@@ -66,6 +65,7 @@ namespace youreit
 		private List<PowerupData> powerupList;
 		private List<UserData> userList;
 		private PersonalInfoData myData; 
+		private List<storedPersonalInfoData> storedData; 
 
 		private GoogleMap _map;
 		private MapFragment _mapFragment;
@@ -141,10 +141,19 @@ namespace youreit
 			powerupList = Powerups.DoSomeDataAccess ();
 			customizationList = Customizations.DoSomeDataAccess ();
 			userList = User.DoSomeDataAccess ();
-			myData = PersonalInfo.DoSomeDataAccess ();
+			storedData = PersonalInfo.accessAllStoredData (); 
 
-			Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.Customization);
-			Console.WriteLine ("There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
+			string enteredName = Intent.GetStringExtra ("PlayerName").ToLower (); 
+
+			if (PersonalInfo.checkifUserExists (storedData, enteredName)) {
+				Console.WriteLine ("------ YIPPPEEEE");
+			} else {
+				PersonalInfo.createUser(enteredName);
+			}
+
+			myData = PersonalInfo.getCurrentUserData (enteredName);
+			//	Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.CurrentCustomization);
+			//Console.WriteLine ("There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
 
 			_locMgr = GetSystemService (Context.LocationService) as LocationManager;
 
@@ -312,7 +321,6 @@ namespace youreit
 
 
 				string imgURL = string.Format("smallCustomizations/{0}",custom.ImgURL);
-				Console.WriteLine ("------------------------------- "+imgURL);
 
 				//string imgURL = "smallCustomizations/canada.jpg";
 				//icon = BitmapDescriptorFactory.FromPath("cafe.png");
