@@ -1,4 +1,4 @@
-﻿using System.Net;
+﻿﻿using System.Net;
 
 
 namespace youreit
@@ -66,6 +66,8 @@ namespace youreit
 		private List<UserData> userList;
 		private PersonalInfoData myData; 
 		private List<storedPersonalInfoData> storedData; 
+
+		public string activeUsername;
 
 		private GoogleMap _map;
 		private MapFragment _mapFragment;
@@ -143,15 +145,15 @@ namespace youreit
 			userList = User.DoSomeDataAccess ();
 			storedData = PersonalInfo.accessAllStoredData (); 
 
-			string enteredName = Intent.GetStringExtra ("PlayerName").ToLower (); 
+			activeUsername = Intent.GetStringExtra ("PlayerName").ToLower (); 
 
-			if (PersonalInfo.checkifUserExists (storedData, enteredName)) {
+			if (PersonalInfo.checkifUserExists (storedData, activeUsername)) {
 				Console.WriteLine ("------ YIPPPEEEE");
 			} else {
-				PersonalInfo.createUser(enteredName);
+				PersonalInfo.createUser(activeUsername);
 			}
 
-			myData = PersonalInfo.getCurrentUserData (enteredName);
+			myData = PersonalInfo.getCurrentUserData (activeUsername);
 			//	Console.WriteLine ("My current player is " + myData.Username +" and "+ myData.CurrentCustomization);
 			//Console.WriteLine ("There are " +hotspotList.Count + " hotspots. There are" +  powerupList.Count + " powerups. There are" + customizationList.Count + "customizations. There are" + userList.Count + "users");
 
@@ -315,10 +317,11 @@ namespace youreit
 		{
 			BitmapDescriptor icon;
 			foreach (UserData m_user in userList) {
-				string[] customization = m_user.Customization.Split (',');
-				int location = Convert.ToInt32(customization [0]);
-				CustomizationData custom = customizationList.ElementAt (location);
 
+				string customization2 = m_user.currentCustomization; 
+				int location = Convert.ToInt32(customization2);
+				CustomizationData custom = customizationList.ElementAt (location);
+			
 
 				string imgURL = string.Format("smallCustomizations/{0}",custom.ImgURL);
 

@@ -9,7 +9,7 @@ namespace youreit
 	public class UserData
 	{
 
-		public UserData(int ID, string Username, int HaveTagged, int Points, Double Longitude, Double Latitude, string Powerups, string Customization, string Hotspots, int BeenTagged)
+		public UserData(int ID, string Username, int HaveTagged, int Points, Double Longitude, Double Latitude, string Powerups, string Customization, string Hotspots, int BeenTagged, string currentCustomization)
 		{
 			this.ID = ID;
 			this.Username = Username;
@@ -21,6 +21,7 @@ namespace youreit
 			this.Customization = Customization;
 			this.Hotspots = Hotspots;
 			this.BeenTagged = BeenTagged;
+			this.currentCustomization = currentCustomization;
 
 		}
 
@@ -36,6 +37,7 @@ namespace youreit
 		public string PowerUps { get; set;} 
 		public string Customization { get; set; }
 		public string Hotspots { get; set; }
+		public string currentCustomization { get; set; }
 	}
 
 	public class User
@@ -63,7 +65,7 @@ namespace youreit
 						Convert.ToInt32(r["HaveTagged"]), Convert.ToInt32(r["Points"]),
 						Convert.ToDouble(r["Longitude"]), Convert.ToDouble(r["Latitude"]),
 						r ["Powerups"].ToString(), r ["Customizations"].ToString(), r ["Hotspots"].ToString(),
-						Convert.ToInt32(r["BeenTagged"])
+						Convert.ToInt32(r["BeenTagged"]), r ["currentCustomization"].ToString()
 
 					));
 				}
