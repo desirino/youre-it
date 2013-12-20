@@ -43,8 +43,10 @@ namespace youreit
 		{
 			base.OnCreate (bundle);
 
-			SetContentView (Resource.Layout.Login);
-			NativeCSS.StyleWithCSS("styles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/styles.css"), RemoteContentRefreshPeriod.EverySecond);
+			ActionBar.Hide ();
+
+			SetContentView (Resource.Layout.LoginScreen);
+			NativeCSS.StyleWithCSS("loginStyles.css", new Uri("http://ugrad.bitdegree.ca/~andrewbrough/youreit/loginStyles.css"), RemoteContentRefreshPeriod.EverySecond);
 
 			var editText = FindViewById<EditText> (Resource.Id.editText);
 			var joinGame = FindViewById<Button> (Resource.Id.joinGame);

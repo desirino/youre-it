@@ -37,19 +37,30 @@ namespace youreit
 
 			//Add buttons for all customizations
 			foreach (CustomizationData c in customizationList) {
-				bool makeButton = false;
+				bool makeButton = true;
 
 				foreach (string id in myCustomizations) {
-					if (c.ID == Convert.ToInt32(id)) {
-						//Console.WriteLine ("----------------------------id: " + id + ", c.ID: " + c.ID);
-						makeButton = true;
+					if (c.ID-2 == Convert.ToInt32(id)) {
+						Console.WriteLine ("BLOCK CUSTOMIZATION BUTTON----------------------------id: " + id + ", c.ID: " + c.ID);
+						makeButton = false;
 					}
 				}
-				if (!makeButton) {
+				if (makeButton) {
+					LinearLayout container = new LinearLayout (this.Activity);
+					container.SetGravity (GravityFlags.Center);
+					container.Orientation = Android.Widget.Orientation.Vertical;
+
 					ImageButton btn = new ImageButton (this.Activity);
 
 					string[] imgName = c.ImgURL.Split ('.');
 					btn.SetBackgroundResource (Resources.GetIdentifier (imgName [0].ToLower (), "drawable", this.Activity.PackageName));
+
+					//price stuff
+					TextView price = new TextView (this.Activity);
+					price.Text = "(P)" + Convert.ToString(c.Price);
+					price.Gravity = GravityFlags.Center;
+					price.SetPadding (10, 10, 10, 10);
+					price.SetTextSize (ComplexUnitType.Pt, 10);;
 
 					//button event
 					btn.Click += (sender, e) => {
@@ -65,7 +76,9 @@ namespace youreit
 						}
 					};
 
-					allCustomizations.AddView (btn);
+					container.AddView(btn);
+					container.AddView (price);
+					allCustomizations.AddView (container);
 				}
 			}
 

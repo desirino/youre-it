@@ -394,226 +394,229 @@ namespace youreit
 			public const int lightning = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int m = 2130837577;
+			public const int logo_login = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int map_icon_white = 2130837578;
+			public const int m = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int mario = 2130837579;
+			public const int map_icon_white = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int maroonSolid = 2130837580;
+			public const int mario = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int Mock_Circle = 2130837581;
+			public const int maroonSolid = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int Mock_Profile_Image = 2130837582;
+			public const int Mock_Circle = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int monoandroidsplash = 2130837583;
+			public const int Mock_Profile_Image = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int multi = 2130837584;
+			public const int monoandroidsplash = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int mushroom = 2130837585;
+			public const int multi = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int musicnote = 2130837586;
+			public const int mushroom = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int n = 2130837587;
+			public const int musicnote = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int nigeria = 2130837588;
+			public const int n = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int night = 2130837589;
+			public const int nigeria = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int o = 2130837590;
+			public const int night = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int orangeGradient = 2130837591;
+			public const int o = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int p = 2130837592;
+			public const int orangeGradient = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int pacman = 2130837593;
+			public const int p = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int paw = 2130837594;
+			public const int pacman = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int pDots1 = 2130837595;
+			public const int paw = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int pDots2 = 2130837596;
+			public const int pDots1 = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int penguin = 2130837597;
+			public const int pDots2 = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int plus = 2130837598;
+			public const int penguin = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int pokeball = 2130837599;
+			public const int plus = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int powerup_icon_white = 2130837600;
+			public const int pokeball = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int profile_icon_white = 2130837601;
+			public const int powerup_icon_white = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int Profile_Image = 2130837602;
+			public const int profile_icon_white = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int pShield = 2130837603;
+			public const int Profile_Image = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int q = 2130837604;
+			public const int pShield = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int r = 2130837605;
+			public const int q = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int radioactive = 2130837606;
+			public const int r = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int rainbowFlag = 2130837607;
+			public const int radioactive = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int raven = 2130837608;
+			public const int rainbow = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int record = 2130837609;
+			public const int raven = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int resturant = 2130837610;
+			public const int record = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int roses = 2130837611;
+			public const int resturant = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int rubberDuck = 2130837612;
+			public const int roses = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int s = 2130837613;
+			public const int rubberDuck = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int sBlue = 2130837614;
+			public const int s = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int sGreen = 2130837615;
+			public const int sBlue = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int shop = 2130837616;
+			public const int sGreen = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int skittles = 2130837617;
+			public const int shop = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int skull = 2130837618;
+			public const int skittles = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int sLightBlue = 2130837619;
+			public const int skull = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int sLightGreen = 2130837620;
+			public const int sLightBlue = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int sLightPink = 2130837621;
+			public const int sLightGreen = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int sLightYellow = 2130837622;
+			public const int sLightPink = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int smiley = 2130837623;
+			public const int sLightYellow = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int soccerBall = 2130837624;
+			public const int smiley = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int sOrange = 2130837625;
+			public const int soccerBall = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int sPeach = 2130837626;
+			public const int sOrange = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int sPink = 2130837627;
+			public const int sPeach = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int sPurple = 2130837628;
+			public const int sPink = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int sRed = 2130837629;
+			public const int sPurple = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int star = 2130837630;
+			public const int sRed = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int sticks = 2130837631;
+			public const int star = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int sYellow = 2130837632;
+			public const int sticks = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int t = 2130837633;
+			public const int sYellow = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int target = 2130837634;
+			public const int t = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int tessellate1 = 2130837635;
+			public const int target = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int tessellate2 = 2130837636;
+			public const int tessellate1 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int tourism = 2130837637;
+			public const int tessellate2 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int trophy = 2130837638;
+			public const int tourism = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int tShield = 2130837639;
+			public const int trophy = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int u = 2130837640;
+			public const int tShield = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int unionjack = 2130837641;
+			public const int u = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int v = 2130837642;
+			public const int unionjack = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int w = 2130837643;
+			public const int v = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int waves = 2130837644;
+			public const int w = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int x = 2130837645;
+			public const int waves = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int xmen = 2130837646;
+			public const int x = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int y = 2130837647;
+			public const int xmen = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int yinYang = 2130837648;
+			public const int y = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int z = 2130837649;
+			public const int yinYang = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int zebraStripes = 2130837650;
+			public const int z = 2130837650;
+			
+			// aapt resource value: 0x7f020093
+			public const int zebraStripes = 2130837651;
 			
 			static Drawable()
 			{
@@ -628,6 +631,9 @@ namespace youreit
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f060011
+			public const int Login_Screen = 2131099665;
+			
 			// aapt resource value: 0x7f060009
 			public const int Recent_Activity_Feed = 2131099657;
 			
@@ -640,23 +646,23 @@ namespace youreit
 			// aapt resource value: 0x7f06001c
 			public const int button1 = 2131099676;
 			
-			// aapt resource value: 0x7f060026
-			public const int button2 = 2131099686;
-			
-			// aapt resource value: 0x7f060023
-			public const int button_Points = 2131099683;
-			
-			// aapt resource value: 0x7f060025
-			public const int button_Tagged = 2131099685;
+			// aapt resource value: 0x7f060027
+			public const int button2 = 2131099687;
 			
 			// aapt resource value: 0x7f060024
-			public const int button_Tags = 2131099684;
+			public const int button_Points = 2131099684;
 			
-			// aapt resource value: 0x7f060022
-			public const int button_customize = 2131099682;
+			// aapt resource value: 0x7f060026
+			public const int button_Tagged = 2131099686;
 			
-			// aapt resource value: 0x7f060020
-			public const int button_powerup = 2131099680;
+			// aapt resource value: 0x7f060025
+			public const int button_Tags = 2131099685;
+			
+			// aapt resource value: 0x7f060023
+			public const int button_customize = 2131099683;
+			
+			// aapt resource value: 0x7f060021
+			public const int button_powerup = 2131099681;
 			
 			// aapt resource value: 0x7f060016
 			public const int content_frame = 2131099670;
@@ -670,8 +676,8 @@ namespace youreit
 			// aapt resource value: 0x7f06000f
 			public const int description = 2131099663;
 			
-			// aapt resource value: 0x7f06001d
-			public const int dismiss = 2131099677;
+			// aapt resource value: 0x7f06001e
+			public const int dismiss = 2131099678;
 			
 			// aapt resource value: 0x7f060015
 			public const int drawer_layout = 2131099669;
@@ -688,8 +694,8 @@ namespace youreit
 			// aapt resource value: 0x7f060004
 			public const int hybrid = 2131099652;
 			
-			// aapt resource value: 0x7f060011
-			public const int imageView1 = 2131099665;
+			// aapt resource value: 0x7f06001d
+			public const int imageView1 = 2131099677;
 			
 			// aapt resource value: 0x7f060014
 			public const int joinGame = 2131099668;
@@ -703,26 +709,29 @@ namespace youreit
 			// aapt resource value: 0x7f06001b
 			public const int linearLayout1 = 2131099675;
 			
-			// aapt resource value: 0x7f06001f
-			public const int linearLayout2 = 2131099679;
+			// aapt resource value: 0x7f060020
+			public const int linearLayout2 = 2131099680;
 			
 			// aapt resource value: 0x7f060006
 			public const int linearLayout3 = 2131099654;
 			
-			// aapt resource value: 0x7f060027
-			public const int linearLayout4 = 2131099687;
+			// aapt resource value: 0x7f060028
+			public const int linearLayout4 = 2131099688;
 			
 			// aapt resource value: 0x7f060010
 			public const int listView1 = 2131099664;
 			
+			// aapt resource value: 0x7f060012
+			public const int logo = 2131099666;
+			
 			// aapt resource value: 0x7f060005
 			public const int map = 2131099653;
 			
-			// aapt resource value: 0x7f060029
-			public const int menu_map = 2131099689;
-			
 			// aapt resource value: 0x7f06002a
-			public const int menu_profile = 2131099690;
+			public const int menu_map = 2131099690;
+			
+			// aapt resource value: 0x7f06002b
+			public const int menu_profile = 2131099691;
 			
 			// aapt resource value: 0x7f060000
 			public const int none = 2131099648;
@@ -733,23 +742,20 @@ namespace youreit
 			// aapt resource value: 0x7f060002
 			public const int satellite = 2131099650;
 			
-			// aapt resource value: 0x7f06001e
-			public const int scrollView1 = 2131099678;
+			// aapt resource value: 0x7f06001f
+			public const int scrollView1 = 2131099679;
 			
 			// aapt resource value: 0x7f060003
 			public const int terrain = 2131099651;
 			
-			// aapt resource value: 0x7f060012
-			public const int textView = 2131099666;
-			
-			// aapt resource value: 0x7f060021
-			public const int textView1 = 2131099681;
+			// aapt resource value: 0x7f060022
+			public const int textView1 = 2131099682;
 			
 			// aapt resource value: 0x7f06000e
 			public const int title = 2131099662;
 			
-			// aapt resource value: 0x7f060028
-			public const int toggleButton1 = 2131099688;
+			// aapt resource value: 0x7f060029
+			public const int toggleButton1 = 2131099689;
 			
 			// aapt resource value: 0x7f060018
 			public const int zoomInButton = 2131099672;
@@ -802,7 +808,7 @@ namespace youreit
 			public const int HotspotsScreen = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Login = 2130903045;
+			public const int LoginScreen = 2130903045;
 			
 			// aapt resource value: 0x7f030006
 			public const int Main = 2130903046;

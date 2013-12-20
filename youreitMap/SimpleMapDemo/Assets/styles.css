@@ -42,3 +42,10 @@ android button{
 #1234{
 	background-color:#aaa;
 }
+
+#joinGame{
+	width:90%;
+	height:50px;
+	background:#999;
+	margin:0px;
+}

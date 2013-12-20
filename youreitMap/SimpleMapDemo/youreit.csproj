@@ -146,7 +146,6 @@
     <AndroidResource Include="Resources\Drawable\multi.png" />
     <AndroidResource Include="Resources\Drawable\aradius.png" />
     <AndroidResource Include="Resources\Drawable\incloak.png" />
-    <AndroidResource Include="Resources\Layout\Login.axml" />
     <AndroidResource Include="Resources\Drawable\Profile_Image.png" />
     <AndroidResource Include="Resources\Drawable\a.png" />
     <AndroidResource Include="Resources\Drawable\b.png" />
@@ -201,7 +200,6 @@
     <AndroidResource Include="Resources\Drawable\q.png" />
     <AndroidResource Include="Resources\Drawable\r.png" />
     <AndroidResource Include="Resources\Drawable\radioactive.png" />
-    <AndroidResource Include="Resources\Drawable\rainbowFlag.png" />
     <AndroidResource Include="Resources\Drawable\raven.png" />
     <AndroidResource Include="Resources\Drawable\record.png" />
     <AndroidResource Include="Resources\Drawable\roses.png" />
@@ -240,6 +238,10 @@
     <AndroidResource Include="Resources\Drawable\yinYang.png" />
     <AndroidResource Include="Resources\Drawable\z.png" />
     <AndroidResource Include="Resources\Drawable\zebraStripes.png" />
+    <AndroidResource Include="Resources\Drawable\rainbow.png" />
+    <AndroidResource Include="Resources\Layout\LoginScreen.axml" />
+    <None Include="Assets\loginStyles.css" />
+    <AndroidResource Include="Resources\Drawable\logo_login.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml">
@@ -259,18 +261,22 @@
   -->
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices12">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>12.0.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="sqlite-net">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="nativecss">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="Photon-Xamarin">
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>3.2.1.5</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>

@@ -27,7 +27,7 @@ namespace youreit
 			PersonalInfoData myData = PersonalInfo.getCurrentUserData (((MainActivity)this.Activity).activeUsername);
 			List<CustomizationData> customizationList = Customizations.DoSomeDataAccess ();
 
-			var custom = customizationList.ElementAt (Convert.ToInt32 (myData.CurrentCustomization) - 2);
+			var custom = customizationList.ElementAt (Convert.ToInt32 (myData.CurrentCustomization));
 			string[] imgName = custom.ImgURL.Split('.');
 			image.SetBackgroundResource (Resources.GetIdentifier (imgName[0].ToLower(), "drawable", this.Activity.PackageName));
 
