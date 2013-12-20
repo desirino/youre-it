@@ -41,7 +41,6 @@ namespace youreit
 				bool makeButton = false;
 
 				foreach (string id in myCustomizations) {
-					//Console.WriteLine ("----------------------------id: " + id + ", c.ID: " + c.ID);
 					if (c.ID == Convert.ToInt32(id)) {
 						Console.WriteLine ("----------------------------id: " + id + ", c.ID: " + c.ID);
 						makeButton = true;
@@ -51,15 +50,16 @@ namespace youreit
 					ImageButton btn = new ImageButton (this.Activity);
 
 					string[] imgName = c.ImgURL.Split ('.');
-					Console.WriteLine ("--------------------" + imgName [0].ToLower () + Resources.GetIdentifier (imgName [0].ToLower (), "drawable", this.Activity.PackageName));
 					btn.SetBackgroundResource (Resources.GetIdentifier (imgName [0].ToLower (), "drawable", this.Activity.PackageName));
 
 					//button event
 					btn.Click += (sender, e) => {
 						//check if user has enough points to buy customization, if so equip and subtract points, else toast "not enough points"
 						if (myData.Points > c.Price) {
-							PersonalInfo.UpdateUser (myData, null, myData.Points, null, Convert.ToString (c.ID));
+							string allCustomization =  myData.Customization + "," + Convert.ToString (c.ID);
+							PersonalInfo.UpdateUser (myData, allCustomization, myData.Points, null, Convert.ToString (c.ID));
 							Android.Widget.Toast.MakeText (this.Activity, "Customization " + c.Name + " was bought", Android.Widget.ToastLength.Short).Show ();
+							((MainActivity)this.Activity).SelectItem(2);
 						} else {
 							Android.Widget.Toast.MakeText (this.Activity, "Not enough points", Android.Widget.ToastLength.Short).Show ();
 						}
@@ -83,13 +83,8 @@ namespace youreit
 				btn.SetBackgroundResource (Resources.GetIdentifier (imgName[0].ToLower(), "drawable", this.Activity.PackageName));
 
 				btn.Click += (sender, e) => {
-					customizationList.Add(c);
-					string s = "";
-					foreach(CustomizationData a in customizationList){
-						s += "," + Convert.ToString(a.ID);
-					}
-					Console.WriteLine(s);
-					PersonalInfo.UpdateUser(myData,s,myData.Points,null,null);
+
+					PersonalInfo.UpdateUser(myData,null,myData.Points,null, Convert.ToString(c.ID));
 					Android.Widget.Toast.MakeText (this.Activity, "Customization changed to: " + c.Name, Android.Widget.ToastLength.Short).Show();
 
 				};

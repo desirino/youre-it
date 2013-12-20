@@ -1,4 +1,4 @@
-﻿﻿using System.Net;
+﻿﻿﻿using System.Net;
 
 
 namespace youreit
@@ -469,7 +469,7 @@ namespace youreit
 		}
 
 
-		private void SelectItem(int position){
+		public void SelectItem(int position){
 
 			switch (position) {
 			case 0:
@@ -477,7 +477,6 @@ namespace youreit
 				InitMapFragment ();
 				SetupMapIfNeeded ();
 
-	
 				_drawerList.SetItemChecked (position, true);
 				ActionBar.Title = _title = _menuTitles [position];
 				_drawer.CloseDrawer (_drawerList);

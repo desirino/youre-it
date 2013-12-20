@@ -105,19 +105,6 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/customization_container2" />
             </HorizontalScrollView>
-            <Button
-                android:text="Buy (P)35"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:id="@+id/button_cust_buy" />
         </LinearLayout>
-        <Button
-            android:text="Save"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="50dp" />
     </LinearLayout>
 </ScrollView>
