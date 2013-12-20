@@ -41,7 +41,7 @@ namespace youreit
 
 				foreach (string id in myCustomizations) {
 					if (c.ID == Convert.ToInt32(id)) {
-						Console.WriteLine ("----------------------------id: " + id + ", c.ID: " + c.ID);
+						//Console.WriteLine ("----------------------------id: " + id + ", c.ID: " + c.ID);
 						makeButton = true;
 					}
 				}
@@ -55,8 +55,9 @@ namespace youreit
 					btn.Click += (sender, e) => {
 						//check if user has enough points to buy customization, if so equip and subtract points, else toast "not enough points"
 						if (myData.Points > c.Price) {
-							string allCustomization =  myData.Customization + "," + Convert.ToString (c.ID);
-							PersonalInfo.UpdateUser (myData, allCustomization, myData.Points - (int)c.Price, null, Convert.ToString (c.ID));
+							string allCustomization =  myData.Customization + "," + Convert.ToString (c.ID-2);
+							customizationList.Remove(c);
+							PersonalInfo.UpdateUser (myData, allCustomization, myData.Points - (int)c.Price, null, Convert.ToString (c.ID-2));
 							Android.Widget.Toast.MakeText (this.Activity, "Customization " + c.Name + " was bought", Android.Widget.ToastLength.Short).Show ();
 							((MainActivity)this.Activity).SelectItem(2);
 						} else {
@@ -78,7 +79,7 @@ namespace youreit
 				//button stuff
 				ImageButton btn = new ImageButton (this.Activity);
 				string[] imgName = c.ImgURL.Split('.');
-				Console.WriteLine ("--------------------" + imgName[0].ToLower() + Resources.GetIdentifier (imgName[0].ToLower(), "drawable", this.Activity.PackageName));
+//				Console.WriteLine ("--------------------" + imgName[0].ToLower() + Resources.GetIdentifier (imgName[0].ToLower(), "drawable", this.Activity.PackageName));
 				btn.SetBackgroundResource (Resources.GetIdentifier (imgName[0].ToLower(), "drawable", this.Activity.PackageName));
 
 				btn.Click += (sender, e) => {
